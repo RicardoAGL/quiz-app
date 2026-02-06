@@ -1,0 +1,592 @@
+{
+  "module": "Módulo 3",
+  "title": "Análisis Empresarial y Private Equity",
+  "totalQuestions": 45,
+  "questions": [
+    {
+      "id": "m3-1",
+      "block": "Estructura Organizativa",
+      "question": "¿En qué se basa la estructura funcional de una organización?",
+      "options": [
+        "En productos o mercados específicos",
+        "En funciones como producción, ventas o finanzas",
+        "En proyectos temporales sin jerarquía fija",
+        "En regiones geográficas y clientes"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La estructura funcional divide la organización según funciones especializadas, como ventas, producción o finanzas. Esto permite claridad de tareas y especialización, aunque puede crear departamentos muy aislados entre sí."
+    },
+    {
+      "id": "m3-2",
+      "block": "Estructura Organizativa",
+      "question": "¿Cuál es la principal ventaja de una estructura divisional?",
+      "options": [
+        "Reduce al mínimo la duplicidad de funciones",
+        "Permite mayor orientación al cliente y adaptación a segmentos específicos",
+        "Elimina la necesidad de jefes funcionales",
+        "Funciona mejor solo en empresas pequeñas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En la estructura divisional se agrupan las actividades por productos, mercados o regiones, lo que facilita enfocarse directamente en las necesidades de cada segmento de cliente. Esto permite una mayor adaptación y rapidez de respuesta, aunque a costa de repetir funciones en cada división."
+    },
+    {
+      "id": "m3-3",
+      "block": "Estructura Organizativa",
+      "question": "En una estructura matricial, ¿cuál es el mayor riesgo que puede aparecer?",
+      "options": [
+        "Falta de especialización en funciones",
+        "Demasiada independencia entre divisiones",
+        "Conflictos de autoridad al existir doble dependencia",
+        "Falta de comunicación entre equipos"
+      ],
+      "correctAnswer": 2,
+      "explanation": "En la estructura matricial los empleados reportan a dos jefes: uno por función y otro por proyecto o división. Esto puede generar conflictos de autoridad, dudas sobre prioridades y tensiones internas si no se gestiona bien la comunicación entre ambos responsables."
+    },
+    {
+      "id": "m3-4",
+      "block": "Cultura Organizativa",
+      "question": "¿Cuál de los siguientes es un elemento fundamental visible de la cultura organizativa?",
+      "options": [
+        "Artefactos",
+        "Supuestos básicos inconscientes",
+        "Estrategias de diversificación",
+        "Factores externos del mercado"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Los artefactos son la parte visible de la cultura: el código de vestimenta, los símbolos, la estructura física de la oficina. Son fáciles de observar, pero difíciles de interpretar sin conocer el contexto."
+    },
+    {
+      "id": "m3-5",
+      "block": "Cultura Organizativa",
+      "question": "¿En qué fase de la evolución cultural se empiezan a estabilizar normas y valores compartidos?",
+      "options": [
+        "Formación (Forming)",
+        "Normalización (Norming)",
+        "Confrontación (Storming)",
+        "Desempeño (Performing)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En la fase de normalización el grupo empieza a consolidar una identidad común, se establecen normas claras y se trabaja con más cohesión."
+    },
+    {
+      "id": "m3-6",
+      "block": "Cultura Organizativa",
+      "question": "¿Cuál de estas afirmaciones describe mejor los supuestos básicos subyacentes de una cultura?",
+      "options": [
+        "Son las metas visibles y expresadas en la misión",
+        "Son los rituales como el dress code y el espacio de trabajo",
+        "Son las normas escritas en un manual de bienvenida",
+        "Son creencias profundas e inconscientes que guían la forma de actuar"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Los supuestos básicos subyacentes son las creencias más profundas que ya no se cuestionan y que moldean cómo se toman decisiones o cómo se entiende el liderazgo."
+    },
+    {
+      "id": "m3-7",
+      "block": "Gestión y Liderazgo",
+      "question": "¿Qué describe mejor la diferencia entre gestión y liderazgo?",
+      "options": [
+        "La gestión mantiene el orden y el liderazgo impulsa el cambio",
+        "La gestión requiere carisma y el liderazgo no",
+        "La gestión se basa en autoridad formal y el liderazgo solo en técnicas",
+        "La gestión es menos eficiente que el liderazgo"
+      ],
+      "correctAnswer": 0,
+      "explanation": "La gestión se centra en organizar y controlar para mantener el orden; el liderazgo busca inspirar, movilizar y generar transformación, aunque no siempre tengas autoridad formal."
+    },
+    {
+      "id": "m3-8",
+      "block": "Gestión y Liderazgo",
+      "question": "¿En qué fase del liderazgo situacional se combina una alta dirección con un alto apoyo emocional?",
+      "options": [
+        "Directivo (S1)",
+        "Persuasivo (S2)",
+        "Participativo (S3)",
+        "Delegador (S4)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El estilo persuasivo (S2) implica que el líder da instrucciones claras pero también aporta apoyo emocional, ideal para equipos en desarrollo que necesitan guía y motivación."
+    },
+    {
+      "id": "m3-9",
+      "block": "Gestión y Liderazgo",
+      "question": "¿Cuál de estos estilos de liderazgo se caracteriza por inspirar, crear cultura y estimular intelectualmente al equipo?",
+      "options": [
+        "Transaccional",
+        "Laissez-faire",
+        "Situacional S3",
+        "Transformacional"
+      ],
+      "correctAnswer": 3,
+      "explanation": "El liderazgo transformacional busca inspirar, proyectar visión, cambiar la cultura y motivar a cada persona para que saque lo mejor de sí misma."
+    },
+    {
+      "id": "m3-10",
+      "block": "Motivación y Resolución de Conflictos",
+      "question": "Según la teoría de Herzberg, ¿cuál de estos es un factor motivador y no solo de higiene?",
+      "options": [
+        "Reconocimiento por un trabajo bien hecho",
+        "Buenas condiciones de iluminación y temperatura",
+        "Un salario competitivo y puntual",
+        "Acceso a políticas de antigüedad"
+      ],
+      "correctAnswer": 0,
+      "explanation": "El reconocimiento es un factor motivador: aumenta la satisfacción y la implicación porque hace que la persona sienta que su trabajo tiene valor."
+    },
+    {
+      "id": "m3-11",
+      "block": "Motivación y Resolución de Conflictos",
+      "question": "¿Qué estilo de la matriz Thomas-Kilmann se considera el más efectivo a largo plazo para resolver un conflicto?",
+      "options": [
+        "Cesión",
+        "Colaboración",
+        "Evasión",
+        "Competencia"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La colaboración implica buscar soluciones que satisfagan a ambas partes. Aunque requiere más tiempo y esfuerzo, genera acuerdos sólidos y relaciones más fuertes."
+    },
+    {
+      "id": "m3-12",
+      "block": "Motivación y Resolución de Conflictos",
+      "question": "¿Qué describe mejor la evolución de la gestión de personas en la actualidad?",
+      "options": [
+        "Se centra solo en tareas administrativas como contratos y despidos",
+        "Considera el talento como resultado de competencias, compromiso y contribución",
+        "Valora únicamente el rendimiento actual de los empleados",
+        "Reduce su función al cumplimiento de la normativa laboral"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Hoy Recursos Humanos se enfoca en el talento como combinación de competencias, compromiso y contribución, buscando no solo lo que una persona es, sino lo que puede llegar a ser."
+    },
+    {
+      "id": "m3-13",
+      "block": "Modelo de Negocio",
+      "question": "¿Qué mide el EBITDA en una empresa?",
+      "options": [
+        "El beneficio operativo antes de intereses, impuestos, depreciaciones y amortizaciones",
+        "La rentabilidad neta después de impuestos",
+        "Los ingresos menos las inversiones futuras previstas de depreciación y amortización",
+        "El flujo de caja libre disponible para el accionista"
+      ],
+      "correctAnswer": 0,
+      "explanation": "El EBITDA muestra la capacidad del negocio para generar beneficios operativos antes de factores financieros y contables, es decir, mide el rendimiento puro de la actividad principal."
+    },
+    {
+      "id": "m3-14",
+      "block": "Modelo de Negocio",
+      "question": "¿Qué caracteriza a un modelo de ingresos recurrentes?",
+      "options": [
+        "Ventas variables y puntuales",
+        "Ingresos estables y predecibles a través de suscripciones o servicios continuos",
+        "Un negocio basado solo en un producto único",
+        "Un sistema de precios basado únicamente en costes fijos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los modelos recurrentes, como suscripciones o servicios continuos, generan ingresos más estables y permiten planificar mejor la evolución financiera."
+    },
+    {
+      "id": "m3-15",
+      "block": "Modelo de Negocio",
+      "question": "¿Qué implica un alto apalancamiento operativo?",
+      "options": [
+        "Que la empresa no tiene costes fijos",
+        "Que los costes variables son siempre mayores que los fijos",
+        "Que un pequeño aumento en las ventas puede generar un aumento significativo en el beneficio operativo",
+        "Que el EBITDA no se puede calcular con precisión"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Con un alto apalancamiento operativo, los costes fijos se reparten entre más unidades vendidas, de modo que un pequeño crecimiento de ingresos impacta mucho en el margen operativo."
+    },
+    {
+      "id": "m3-16",
+      "block": "Modelo de Negocio",
+      "question": "¿Cuál es la principal ventaja de diversificar las fuentes de ingresos?",
+      "options": [
+        "Aumentar la dependencia de un único cliente",
+        "Reducir la previsibilidad de los ingresos",
+        "Generar mayor volatilidad en el flujo de caja",
+        "Reducir la exposición al riesgo al no depender de una única línea de negocio"
+      ],
+      "correctAnswer": 3,
+      "explanation": "La diversificación disminuye la vulnerabilidad ante problemas en un segmento concreto, haciendo que la empresa sea más resiliente ante cambios de mercado."
+    },
+    {
+      "id": "m3-17",
+      "block": "Capital Circulante y Flujo de Caja",
+      "question": "¿Cuál de estos elementos forma parte del capital circulante?",
+      "options": [
+        "Inventarios, cuentas por cobrar, cuentas por pagar, ingresos diferidos y gastos devengados",
+        "Activos intangibles y depreciaciones acumuladas",
+        "Préstamos a largo plazo y dividendos pagados",
+        "Fondos propios y reservas voluntarias"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Todos estos son componentes operativos de corto plazo que determinan cuánto efectivo está retenido o liberado en el ciclo operativo."
+    },
+    {
+      "id": "m3-18",
+      "block": "Capital Circulante y Flujo de Caja",
+      "question": "¿Qué describe mejor el Capex de mantenimiento?",
+      "options": [
+        "Inversiones para abrir nuevos mercados y expandirse",
+        "Inversiones necesarias para sostener la capacidad operativa actual",
+        "Dividendos distribuidos a los accionistas",
+        "Costes variables que dependen del volumen de ventas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El Capex de mantenimiento incluye gastos como la reposición de equipos o mejoras básicas para mantener la capacidad actual sin buscar crecimiento adicional."
+    },
+    {
+      "id": "m3-19",
+      "block": "Capital Circulante y Flujo de Caja",
+      "question": "¿Qué representa el FCFF?",
+      "options": [
+        "El beneficio neto después de intereses e impuestos",
+        "El flujo de caja disponible solo para los accionistas",
+        "El flujo de caja libre generado por la empresa para todos los inversores (accionistas y acreedores)",
+        "El resultado operativo antes de amortizaciones"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El FCFF es el efectivo disponible para todos los proveedores de capital después de inversiones y ajustes, independientemente de si es deuda o capital propio."
+    },
+    {
+      "id": "m3-20",
+      "block": "Capital Circulante y Flujo de Caja",
+      "question": "Según la fórmula correcta, ¿cómo se obtiene el EBITDA Cash?",
+      "options": [
+        "EBITDA P&L – (AR + Inventory – AP – Deferred Assets + Accrued Expenses)",
+        "EBITDA P&L – (AR + Inventory + Deferred Assets – AP – Accrued Expenses)",
+        "EBITDA P&L + (AR + Inventory – AP – Deferred Assets + Accrued Expenses)",
+        "EBITDA P&L – (Capex + Taxes + Depreciation)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Para pasar de EBITDA contable a EBITDA Cash se ajusta por variaciones de capital circulante: cuentas por cobrar, inventarios, activos diferidos, cuentas por pagar y gastos devengados."
+    },
+    {
+      "id": "m3-21",
+      "block": "Estructura de Capital",
+      "question": "¿Cuál es la fórmula correcta para calcular el total de financiación de una empresa?",
+      "options": [
+        "Total de financiación = Deuda neta + Patrimonio total",
+        "Total de financiación = Activos corrientes – Pasivos corrientes",
+        "Total de financiación = EBITDA – Capex – impuestos",
+        "Total de financiación = Ventas – Costes fijos"
+      ],
+      "correctAnswer": 0,
+      "explanation": "La financiación de una empresa proviene de la suma de deuda neta y patrimonio total, la base de cómo se financian sus activos."
+    },
+    {
+      "id": "m3-22",
+      "block": "Estructura de Capital",
+      "question": "¿Qué significa que el capital circulante sea inferior a cero?",
+      "options": [
+        "Que la empresa no tiene deudas a corto plazo",
+        "Que la empresa financia operaciones con recursos propios exclusivamente",
+        "Que la empresa tiene un excedente de activos fijos",
+        "Que la empresa financia sus operaciones a corto plazo con sus proveedores"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Un capital circulante negativo indica que los pasivos corrientes superan a los activos corrientes, es decir, los proveedores están financiando el ciclo operativo de la empresa."
+    },
+    {
+      "id": "m3-23",
+      "block": "Estructura de Capital",
+      "question": "¿Qué significa que el capital circulante sea mayor que cero?",
+      "options": [
+        "Que los proveedores financian todas las operaciones",
+        "Que la empresa ha invertido capital neto para financiar sus operaciones de corto plazo",
+        "Que la empresa no tiene inventarios ni cuentas por cobrar",
+        "Que la empresa no necesita gestionar pasivos corrientes"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Un capital circulante positivo indica que los activos corrientes son mayores que los pasivos corrientes y la empresa debe poner capital propio o deuda para sostener la operación a corto plazo."
+    },
+    {
+      "id": "m3-24",
+      "block": "Estructura de Capital",
+      "question": "¿Cuáles son algunas de las métricas principales para medir la solvencia dentro de la estructura de capital?",
+      "options": [
+        "Ratio Deuda/Patrimonio, Ratio Deuda/Activos, Cobertura de intereses, Cobertura del servicio de deuda y Deuda neta/EBITDA",
+        "Margen bruto, EBITDA, Retorno sobre activos, Ratio Deuda/Activos, Cobertura de intereses y Deuda neta/EBITDA",
+        "Rotación de inventarios y periodo medio de cobro",
+        "Capital circulante y CAPEX de mantenimiento"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Estas métricas permiten evaluar la capacidad de la empresa para sostener su deuda y cumplir con sus compromisos a largo plazo."
+    },
+    {
+      "id": "m3-25",
+      "block": "Negociación",
+      "question": "¿Cuál es la diferencia principal entre una estrategia push y una estrategia pull al llegar a la mesa de negociación?",
+      "options": [
+        "En la push el cliente siempre tiene el control y en la pull no",
+        "En la push tú buscas activamente al interlocutor y en la pull generas las condiciones para que él se acerque a ti",
+        "En la push no hace falta preparar nada y en la pull sí",
+        "En la push solo importa el precio y en la pull se ensalza la reputación"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En la estrategia push tomas la iniciativa y buscas a la otra parte, mientras que en la estrategia pull trabajas para que sea la otra parte quien se acerque, atraída por tu reputación, contenido o posicionamiento previo."
+    },
+    {
+      "id": "m3-26",
+      "block": "Fiscalidad Internacional",
+      "question": "¿Cuál es una diferencia fundamental entre un sistema de renta mundial y uno de renta territorial?",
+      "options": [
+        "En el sistema mundial se tributa por todos los ingresos, en el territorial solo por los obtenidos dentro del país",
+        "En el sistema territorial se tributa por ingresos mundiales y en el mundial solo por ingresos internos",
+        "Ambos sistemas solo gravan ingresos obtenidos fuera del país",
+        "Ambos sistemas solo gravan dividendos"
+      ],
+      "correctAnswer": 0,
+      "explanation": "En la renta mundial pagas impuestos por todo lo que ganas, aunque sea fuera. En la renta territorial solo pagas por lo que generes dentro del país."
+    },
+    {
+      "id": "m3-27",
+      "block": "Fiscalidad Internacional",
+      "question": "¿Qué ocurre si dos países te consideran residente fiscal el mismo año?",
+      "options": [
+        "No hay ningún problema, cada país aplica sus normas sin conflicto",
+        "Se produce una doble residencia y puede haber doble imposición, resuelta mediante convenios y cláusulas de desempate",
+        "Automáticamente pagas solo en el país de origen",
+        "El país con mayor PIB decide quién tributa"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Si dos países te consideran residente, se genera un conflicto de doble residencia. Para evitar pagar dos veces, se usan convenios bilaterales con criterios de desempate: vivienda, centro de intereses vitales, residencia habitual y nacionalidad."
+    },
+    {
+      "id": "m3-28",
+      "block": "Private Equity",
+      "question": "¿Cuál es una característica esencial del Private Equity frente a la inversión en bolsa?",
+      "options": [
+        "Permite comprar y vender en segundos",
+        "Exige una implicación activa en la gestión de la empresa",
+        "No requiere análisis previo",
+        "Solo se puede invertir en empresas tecnológicas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En el PE el inversor no es pasivo: aporta capital y participa activamente en la gestión y la estrategia, algo que en bolsa no puedes hacer."
+    },
+    {
+      "id": "m3-29",
+      "block": "Private Equity",
+      "question": "¿Cuál es una de las fases de inversión dentro del Private Equity?",
+      "options": [
+        "Growth Capital, centrado en empresas ya rentables que quieren escalar",
+        "Fondos indexados, centrados en replicar índices bursátiles",
+        "Bonos convertibles, centrados en renta fija pública",
+        "ETFs sectoriales"
+      ],
+      "correctAnswer": 0,
+      "explanation": "El Growth Capital es una modalidad dentro del PE destinada a empresas que ya validaron su modelo y buscan expandirse."
+    },
+    {
+      "id": "m3-30",
+      "block": "Private Equity",
+      "question": "¿Qué representa un fondo de fondos en Private Equity?",
+      "options": [
+        "Un fondo que solo invierte en activos cotizados",
+        "Un vehículo que invierte en múltiples fondos subyacentes para diversificar",
+        "Una estrategia de venture capital centrada en un único proyecto",
+        "Un fondo con liquidez diaria como un ETF"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Un fondo de fondos agrupa capital para invertir en varios fondos de PE, logrando una diversificación mucho mayor."
+    },
+    {
+      "id": "m3-31",
+      "block": "Private Equity",
+      "question": "¿Qué elemento define la estructura típica de liquidez en un fondo de Private Equity?",
+      "options": [
+        "Entrada y salida diaria sin restricciones",
+        "Liquidez inmediata tras cada distribución",
+        "Compromiso de capital a largo plazo con llamadas de capital progresivas",
+        "Pago de dividendos mensuales a los inversores"
+      ],
+      "correctAnswer": 2,
+      "explanation": "En un fondo de PE comprometes un capital y el gestor te va pidiendo (llamadas de capital) durante la fase de inversión, sin posibilidad de retirarlo hasta que se vendan las participadas."
+    },
+    {
+      "id": "m3-32",
+      "block": "Private Equity",
+      "question": "¿Cuál es uno de los beneficios estratégicos que ofrece el Private Equity a las empresas participadas?",
+      "options": [
+        "Mayor volatilidad y exposición pública",
+        "Apoyo operativo y acceso a redes de contactos",
+        "Solo financiación sin implicación en la gestión",
+        "Reducción inmediata de todos los costes fijos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Además de aportar capital, el PE ayuda con conocimiento sectorial, contactos y mejora de procesos, lo que acelera el crecimiento y la profesionalización."
+    },
+    {
+      "id": "m3-33",
+      "block": "Remuneración y Estructura de Fondos PE",
+      "question": "¿Qué significa el modelo \"2 and 20\" en la remuneración de un fondo de Private Equity?",
+      "options": [
+        "Un 2 % de comisión fija y un 20 % de participación en beneficios",
+        "Un 20 % fijo y un 2 % variable",
+        "Un 2 % anual de beneficios netos",
+        "Un 20 % de comisión inicial sin variable"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Es la estructura clásica: 2 % de comisión de gestión anual y 20 % de carried interest sobre los beneficios."
+    },
+    {
+      "id": "m3-34",
+      "block": "Remuneración y Estructura de Fondos PE",
+      "question": "¿Cuál es la función principal del Management Fee?",
+      "options": [
+        "Repartir beneficios entre LPs",
+        "Cubrir costes operativos y mantener la estructura del fondo",
+        "Aumentar la rentabilidad variable del GP",
+        "Financiar únicamente gastos legales puntuales"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El management fee es una comisión fija destinada a pagar salarios, oficinas, due diligence y todos los costes de mantener el fondo funcionando día a día."
+    },
+    {
+      "id": "m3-35",
+      "block": "Remuneración y Estructura de Fondos PE",
+      "question": "¿Qué mecanismo obliga al GP a devolver parte del carry si al final no se alcanzan los beneficios esperados?",
+      "options": [
+        "Preferred Return",
+        "GP Catchup",
+        "GP Clawback",
+        "Whole Fund Carry"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El GP Clawback es el mecanismo que protege a los LPs exigiendo al GP devolver el exceso de carried interest recibido si el fondo no llega al rendimiento pactado."
+    },
+    {
+      "id": "m3-36",
+      "block": "Remuneración y Estructura de Fondos PE",
+      "question": "¿Qué representa el capital comprometido en un fondo de Private Equity?",
+      "options": [
+        "El dinero efectivamente aportado por los LPs hasta la fecha",
+        "El total de dinero que los LPs se comprometen a aportar durante la vida del fondo",
+        "El beneficio neto obtenido tras cada inversión",
+        "El capital usado solo para comisiones de gestión"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Es el compromiso total de los inversores (LPs) de aportar fondos, aunque no todo se llame desde el principio."
+    },
+    {
+      "id": "m3-37",
+      "block": "Remuneración y Estructura de Fondos PE",
+      "question": "¿En qué fase de un fondo se concentran las desinversiones y la generación de retornos?",
+      "options": [
+        "Fase de formación",
+        "Fase de inversión",
+        "Fase de cosecha",
+        "Fase de extensión"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Durante la fase de cosecha (años 4 a 10) el fondo busca vender participadas y materializar beneficios."
+    },
+    {
+      "id": "m3-38",
+      "block": "Remuneración y Estructura de Fondos PE",
+      "question": "¿Qué caracteriza la fase de formación de un fondo de Private Equity?",
+      "options": [
+        "Es la fase en la que se materializan las ventas de participadas",
+        "Es la fase previa al lanzamiento, donde se define la estrategia y se capta capital",
+        "Es la fase final, cuando se extiende la vida del fondo",
+        "Es la fase en la que se distribuyen beneficios al GP"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Antes de invertir un euro, se diseña la tesis de inversión, se prepara la documentación legal y se captan compromisos de capital."
+    },
+    {
+      "id": "m3-39",
+      "block": "Curva J y Estrategias de Salida",
+      "question": "¿Qué representa la curva J en el Private Equity?",
+      "options": [
+        "La evolución de la cotización de una empresa pública",
+        "El patrón típico de flujos de caja de un fondo: primero salidas netas y después entradas netas",
+        "La relación entre deuda y patrimonio a lo largo del tiempo",
+        "El ritmo de crecimiento de las comisiones de gestión"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La curva J refleja cómo los primeros años son negativos (más llamadas de capital que retornos) y, a partir de la fase de cosecha, las distribuciones superan a las llamadas, generando flujos positivos."
+    },
+    {
+      "id": "m3-40",
+      "block": "Curva J y Estrategias de Salida",
+      "question": "¿Cuál de estas opciones es una estrategia de salida habitual en un fondo de Private Equity?",
+      "options": [
+        "La recompra de participaciones por parte de los fundadores (buy-back)",
+        "Mantener la participación indefinidamente sin vender",
+        "Congelar las participaciones hasta el vencimiento de la deuda",
+        "Invertir en más activos ilíquidos sin límite de tiempo"
+      ],
+      "correctAnswer": 0,
+      "explanation": "El buy-back es una estrategia de salida donde los socios fundadores recompran las acciones del fondo, permitiendo materializar el valor y liberar la inversión."
+    },
+    {
+      "id": "m3-41",
+      "block": "Valoración y DCF",
+      "question": "¿Qué representa el WACC en la valoración de una empresa?",
+      "options": [
+        "El coste medio ponderado del capital, integrando deuda y patrimonio",
+        "El beneficio neto después de impuestos",
+        "La suma de ingresos operativos y financieros",
+        "La tasa de crecimiento de los flujos futuros"
+      ],
+      "correctAnswer": 0,
+      "explanation": "El WACC es la tasa de descuento que refleja el coste global del capital usado para financiar la empresa."
+    },
+    {
+      "id": "m3-42",
+      "block": "Valoración y DCF",
+      "question": "¿Cuál es la fórmula correcta del WACC?",
+      "options": [
+        "WACC = Ke + Kd",
+        "WACC = (E/(E+D)) × Ke + (D/(E+D)) × Kd × (1–t)",
+        "WACC = (D/(E+D)) × Ke + (E/(E+D)) × Kd × (1+t)",
+        "WACC = (Ke × Kd) / (E+D)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Es la fórmula estándar que pondera el coste del patrimonio y de la deuda después de impuestos según su peso en la estructura."
+    },
+    {
+      "id": "m3-43",
+      "block": "Valoración y DCF",
+      "question": "¿Qué efecto tiene la deducibilidad fiscal de los intereses sobre el coste de la deuda?",
+      "options": [
+        "Lo aumenta respecto al coste bruto",
+        "Lo elimina por completo",
+        "Lo reduce, generando un ahorro fiscal",
+        "Lo convierte en igual al coste del patrimonio"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Los intereses son deducibles, por eso el coste efectivo de la deuda es menor: Kd* = Kd × (1–t)."
+    },
+    {
+      "id": "m3-44",
+      "block": "Valoración y DCF",
+      "question": "¿Qué describe mejor la arquitectura del modelo DCF?",
+      "options": [
+        "Proyectar dividendos y restar costes operativos",
+        "Proyectar flujos de caja futuros, descontarlos al WACC, sumar valor terminal y ajustar por deuda y activos",
+        "Valorar una empresa solo según el múltiplo EV/EBITDA del sector",
+        "Calcular beneficios netos sin tener en cuenta la estructura de capital"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El DCF parte de flujos de caja, los descuenta al WACC y ajusta hasta llegar al valor patrimonial."
+    },
+    {
+      "id": "m3-45",
+      "block": "Valoración y DCF",
+      "question": "¿Qué metodología alternativa se usa en etapas tempranas de empresas en Private Equity?",
+      "options": [
+        "Método de coste histórico",
+        "Método de caja simple, partiendo de un IRR objetivo y valor futuro",
+        "Método Venture Capital, partiendo de un IRR objetivo y valor futuro",
+        "Método de comparación contable"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El método VC calcula hacia atrás la participación necesaria para alcanzar un IRR objetivo dado un valor de salida."
+    }
+  ]
+}
