@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useQuiz } from '../hooks/useQuiz';
 import { useToast } from '../hooks/useToast';
@@ -36,10 +36,12 @@ export default function ReviewScreen() {
   const isSequentialMode = mode === 'sequential';
   const [questionsList, setQuestionsList] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const initializedRef = useRef(false);
 
   /**
-   * Load questions based on review mode
-   * Wrapped in useCallback with all dependencies
+   * Load questions based on review mode (runs only once on mount)
+   * Uses a ref to prevent re-running when stats/bookmarks change,
+   * which would cause the question list to shift mid-review.
    */
   const loadQuestions = useCallback(() => {
     let questionList;
@@ -87,7 +89,10 @@ export default function ReviewScreen() {
   ]);
 
   useEffect(() => {
-    loadQuestions();
+    if (!initializedRef.current) {
+      loadQuestions();
+      initializedRef.current = true;
+    }
   }, [loadQuestions]);
 
   const currentQuestion = questionsList[currentIndex];
