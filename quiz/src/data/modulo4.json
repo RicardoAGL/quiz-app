@@ -1,7 +1,7 @@
 {
   "module": "Módulo 4",
   "title": "Renta Variable",
-  "totalQuestions": 48,
+  "totalQuestions": 47,
   "questions": [
     {
       "id": "m4-1",
@@ -151,7 +151,7 @@
       "block": "Entender los números",
       "question": "¿Cuál es la diferencia clave entre EBIT y EBITDA?",
       "options": [
-        "El EBITDA excluye intereses y depreciaciones, el EBIT no",
+        "El EBITDA excluye amortizaciones y depreciaciones, el EBIT no",
         "El EBIT incluye los dividendos, el EBITDA no",
         "No hay diferencia: ambos son sinónimos",
         "El EBIT incluye impuestos, el EBITDA no"
@@ -192,7 +192,7 @@
       "options": [
         "El ROIC se basa solo en patrimonio neto y el ROCE descuenta la caja",
         "El ROIC resta la caja al capital invertido y descuenta impuestos; el ROCE no",
-        "El ROCE incluye solo los activos líquidos, el ROCE no",
+        "El ROCE incluye solo los activos líquidos, el ROIC no",
         "No hay diferencia práctica entre ambos"
       ],
       "correctAnswer": 1,
