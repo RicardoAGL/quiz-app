@@ -192,7 +192,7 @@ describe('questionService', () => {
       const answeredQuestions = mockQuestions.filter(q => mockStats[q.id]);
       const results = {};
 
-      for (let i = 0; i < 200; i++) {
+      for (let i = 0; i < 1000; i++) {
         const result = getWeightedRandomQuestion(answeredQuestions, mockStats, []);
         results[result.id] = (results[result.id] || 0) + 1;
       }
