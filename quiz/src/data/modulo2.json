@@ -375,7 +375,7 @@
         "La optimización de riesgo de colas anchas",
         "El modelo CAPM",
         "El enfoque mean-variance",
-        "La teoría de moderna de carteras"
+        "La teoría moderna de carteras"
       ],
       "correctAnswer": 3,
       "explanation": "El criterio de Kelly, aunque se ejemplifica con apuestas binarias, también es útil en la teoría moderna de carteras para determinar la asignación óptima de capital entre diferentes activos."
