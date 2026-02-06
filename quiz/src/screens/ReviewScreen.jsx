@@ -6,6 +6,20 @@ import { useQuestionInteraction } from '../hooks/useQuestionInteraction';
 import Toast from '../components/Toast';
 import './ReviewScreen.css';
 
+/**
+ * Safely decode a URI component, returning the raw string on failure.
+ * Prevents URIError crashes from malformed URL parameters.
+ * @param {string} value - The URI-encoded string to decode
+ * @returns {string} Decoded string or the original value if decoding fails
+ */
+function safeDecode(value) {
+  try {
+    return decodeURIComponent(value);
+  } catch {
+    return value;
+  }
+}
+
 export default function ReviewScreen() {
   const navigate = useNavigate();
   const { mode, blockName } = useParams();
@@ -46,7 +60,7 @@ export default function ReviewScreen() {
     if (isSequentialMode) {
       questionsRef.current = [...questions];
     } else if (isBlockMode) {
-      questionsRef.current = getQuestionsByBlock(decodeURIComponent(blockName));
+      questionsRef.current = getQuestionsByBlock(safeDecode(blockName));
     } else if (isBookmarkedMode) {
       questionsRef.current = getBookmarkedQuestions();
     } else {
@@ -128,7 +142,7 @@ export default function ReviewScreen() {
               {isSequentialMode
                 ? '📋 Modo Secuencial'
                 : isBlockMode
-                ? `📘 ${decodeURIComponent(blockName)}`
+                ? `📘 ${safeDecode(blockName)}`
                 : isBookmarkedMode
                 ? '⭐ Marcadas'
                 : '🔄 Repaso de Fallos'}
