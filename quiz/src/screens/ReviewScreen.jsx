@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useQuiz } from '../hooks/useQuiz';
 import { useToast } from '../hooks/useToast';
@@ -34,31 +34,30 @@ export default function ReviewScreen() {
   const isBookmarkedMode = mode === 'bookmarked';
   const isBlockMode = mode === 'block';
   const isSequentialMode = mode === 'sequential';
-  const [questionsList, setQuestionsList] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const initializedRef = useRef(false);
 
   /**
-   * Load questions based on review mode (runs only once on mount)
-   * Uses a ref to prevent re-running when stats/bookmarks change,
-   * which would cause the question list to shift mid-review.
+   * Snapshot the question list once during render using a ref.
+   * This is computed once when questions are available and never changes,
+   * preventing the list from shifting when stats/bookmarks update mid-review.
    */
-  const loadQuestions = useCallback(() => {
-    let questionList;
-
+  const questionsRef = useRef(null);
+  if (questionsRef.current === null && questions.length > 0) {
     if (isSequentialMode) {
-      // Get all questions in their original order
-      questionList = [...questions];
+      questionsRef.current = [...questions];
     } else if (isBlockMode) {
-      const decodedBlockName = decodeURIComponent(blockName);
-      questionList = getQuestionsByBlock(decodedBlockName);
+      questionsRef.current = getQuestionsByBlock(decodeURIComponent(blockName));
     } else if (isBookmarkedMode) {
-      questionList = getBookmarkedQuestions();
+      questionsRef.current = getBookmarkedQuestions();
     } else {
-      questionList = getIncorrectQuestions();
+      questionsRef.current = getIncorrectQuestions();
     }
+  }
+  const questionsList = questionsRef.current || [];
 
-    if (questionList.length === 0) {
+  // Handle empty question list - redirect to home
+  useEffect(() => {
+    if (questions.length > 0 && questionsList.length === 0) {
       let message;
       if (isSequentialMode) {
         message = 'No hay preguntas disponibles';
@@ -71,29 +70,9 @@ export default function ReviewScreen() {
       }
       showInfo(`${message}. Volviendo al inicio...`, 3000);
       setTimeout(() => navigate('/'), 1000);
-      return;
     }
-
-    setQuestionsList(questionList);
-  }, [
-    isSequentialMode,
-    isBlockMode,
-    isBookmarkedMode,
-    blockName,
-    questions,
-    getQuestionsByBlock,
-    getBookmarkedQuestions,
-    getIncorrectQuestions,
-    navigate,
-    showInfo
-  ]);
-
-  useEffect(() => {
-    if (!initializedRef.current) {
-      loadQuestions();
-      initializedRef.current = true;
-    }
-  }, [loadQuestions]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [questions.length]);
 
   const currentQuestion = questionsList[currentIndex];
 
