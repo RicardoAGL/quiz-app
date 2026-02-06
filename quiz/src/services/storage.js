@@ -56,20 +56,6 @@ export const removeItem = (key) => {
 };
 
 /**
- * Clear all storage
- * @returns {boolean} Success status
- */
-export const clear = () => {
-  try {
-    localStorage.clear();
-    return true;
-  } catch (error) {
-    console.error('Error clearing storage:', error);
-    return false;
-  }
-};
-
-/**
  * Get quiz statistics
  * @returns {Object} Statistics object
  */
@@ -117,7 +103,6 @@ export default {
   getItem,
   setItem,
   removeItem,
-  clear,
   getStats,
   saveStats,
   getBookmarks,
