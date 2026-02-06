@@ -1,0 +1,384 @@
+{
+  "module": "Módulo 2",
+  "title": "Introducción a la Gestión de Riesgos",
+  "totalQuestions": 29,
+  "questions": [
+    {
+      "id": "m2-1",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "Si, invierto mis dólares en bonos a 10 años de empresas de EEUU….",
+      "options": [
+        "Asumo riesgo de tipo de cambio",
+        "Asumo riesgo de crédito",
+        "Asumo riesgo de commodities",
+        "Todas las anteriores son ciertas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Al invertir dólares en bonos de empresas de EEUU, se asume riesgo de crédito, ya que existe la posibilidad de que la empresa emisora no pueda cumplir con sus obligaciones de pago."
+    },
+    {
+      "id": "m2-2",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "Si invierto mis euros en renta variable que cotiza en EEUU…",
+      "options": [
+        "Asumo riesgo de tipo de cambio",
+        "Asumo riesgo de crédito",
+        "Asumo riesgo de inflación",
+        "Ninguna de las anteriores"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Al invertir euros en activos denominados en dólares (renta variable de EEUU), se asume riesgo de tipo de cambio, ya que las fluctuaciones entre el euro y el dólar afectarán el valor de la inversión."
+    },
+    {
+      "id": "m2-3",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "Para medir la volatilidad de un activo de renta variable en un periodo determinado de tiempo, el indicador estadístico que debemos usar es…",
+      "options": [
+        "El rating",
+        "Máximo Drawdown",
+        "Varianza",
+        "El expected shortfall"
+      ],
+      "correctAnswer": 2,
+      "explanation": "La varianza (y su raíz cuadrada, la desviación estándar) es el indicador estadístico utilizado para medir la volatilidad de un activo, ya que cuantifica la dispersión de los retornos respecto a su media."
+    },
+    {
+      "id": "m2-4",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "El objetivo de la gestión de riesgos es….",
+      "options": [
+        "Eliminar completamente el riesgo",
+        "Diluir el impacto de riesgos específicos",
+        "Limitar el rendimiento de nuestra cartera, pero evitar periodos en negativo",
+        "Eliminar exclusivamente el riesgo sistémico"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El objetivo de la gestión de riesgos no es eliminar el riesgo por completo, sino diluir el impacto de riesgos específicos para proteger la cartera manteniendo un potencial de rendimiento adecuado."
+    },
+    {
+      "id": "m2-5",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "Con el Value At Risk (VaR) podemos conocer:",
+      "options": [
+        "Cómo reacciona una posición ante cambios en factores específicos de riesgo",
+        "El porcentaje de capital total sujeto a riesgo específico en nuestra cartera",
+        "Las respuestas A y B son correctas",
+        "Una estimación de la pérdida máxima que podría ocurrir en una inversión dado un nivel de confianza predefinido"
+      ],
+      "correctAnswer": 3,
+      "explanation": "El VaR proporciona una estimación de la pérdida máxima que podría ocurrir en una inversión durante un periodo determinado, dado un nivel de confianza predefinido (por ejemplo, 95% o 99%)."
+    },
+    {
+      "id": "m2-6",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "Si tengo dos acciones diferentes y quiero saber si reaccionan de forma similar u opuesta ante fluctuaciones del mercado, tengo que estimar su:",
+      "options": [
+        "Índice de independencia",
+        "Covariancia o Correlación",
+        "Estimador de media móvil",
+        "Desviación estándar"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La covarianza o correlación mide la relación entre los movimientos de dos activos, indicando si tienden a moverse en la misma dirección (correlación positiva) o en direcciones opuestas (correlación negativa)."
+    },
+    {
+      "id": "m2-7",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "Si tengo los datos históricos de retornos diarios de una acción, y quiero visualizar la frecuencia con la que cada retorno ocurre, tendré que observar:",
+      "options": [
+        "Su distribución de probabilidad",
+        "Su variable aleatoria",
+        "Su valor esperado",
+        "Su desviación estándar"
+      ],
+      "correctAnswer": 0,
+      "explanation": "La distribución de probabilidad muestra la frecuencia con la que cada valor de retorno ocurre, permitiendo visualizar cómo se distribuyen los retornos históricos del activo."
+    },
+    {
+      "id": "m2-8",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "Si quiero recoger datos de un activo financiero para analizarlo, la ley de los grandes números me enseña qué:",
+      "options": [
+        "Cuantos más datos recoja, siempre reflejarán mejor la realidad.",
+        "La media muestral se aproximará mejor a la media poblacional siempre que aumente el número de observaciones",
+        "A y B son correctas",
+        "Ninguna de las anteriores es correcta"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Ninguna de las anteriores es correcta. La ley de los grandes números establece que la media muestral converge a la media poblacional bajo ciertas condiciones, pero no garantiza que más datos siempre reflejen mejor la realidad ni que la aproximación sea automática con solo aumentar observaciones."
+    },
+    {
+      "id": "m2-9",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "He entrado en mi broker para ver a cuánto cotiza una acción de Kosmos Energy. El precio es de $1,98 USD. Eso significa que:",
+      "options": [
+        "Si quiero comprar una acción, tendré que pagar $1,98 a su vendedor.",
+        "Si quiero vender una acción, $1,98 es el precio que me pagará un comprador por ella.",
+        "La transacción más reciente se realizó a $1,98.",
+        "Todas las anteriores son correctas."
+      ],
+      "correctAnswer": 2,
+      "explanation": "El precio que se muestra en el broker corresponde al precio de la última transacción realizada, no necesariamente al precio al que se podrá comprar o vender en el siguiente momento, ya que existen el spread bid-ask."
+    },
+    {
+      "id": "m2-10",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "Si quiero analizar estadísticamente los datos de cotización de una acción para estudiar sus propiedades y compararla con otras acciones o mercados, lo más adecuado es trabajar con…",
+      "options": [
+        "Los datos de retornos",
+        "Los datos de precios",
+        "Los datos de spread entre bid y ask",
+        "Todas las anteriores son correctas."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Los datos de retornos son los más adecuados para el análisis estadístico porque son comparables entre activos independientemente de su precio absoluto y tienen mejores propiedades estadísticas que los datos de precios."
+    },
+    {
+      "id": "m2-11",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "En un escenario hipotético, cada día, una acción determinada ha tenido retornos del 1% constantes durante 10 días. ¿Cuál será el retorno acumulado desde el día 0 hasta el día 10?",
+      "options": [
+        "Menos de un 10%",
+        "Exactamente un 10%",
+        "Más de un 10%",
+        "Nos falta saber el precio de la acción para calcularlo"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Debido al efecto del interés compuesto, el retorno acumulado será más de un 10%. Concretamente: (1.01)^10 - 1 ≈ 10.46%. Los retornos simples se componen multiplicativamente, no aditivamente."
+    },
+    {
+      "id": "m2-12",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "En un escenario hipotético, cada día, una acción determinada (cuyos datos de retornos he transformado aplicando un logaritmo) ha tenido retornos logarítmicos del 1% constantes durante 10 días. ¿Cuál será el retorno logarítmico acumulado desde el día 0 hasta el día 10?",
+      "options": [
+        "Menos de un 10%",
+        "Exactamente un 10%",
+        "Más de un 10%",
+        "Nos falta saber el precio de la acción para calcularlo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los retornos logarítmicos son aditivos, por lo que el retorno logarítmico acumulado es exactamente 10 × 1% = 10%. Esta es una de las ventajas de trabajar con retornos logarítmicos frente a retornos simples."
+    },
+    {
+      "id": "m2-13",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "Siguiendo el análisis de la distribución de retornos del SP500 estudiados en las clases de Ricardo Parra…",
+      "options": [
+        "Los retornos extremos, tanto positivos como negativos, son menos habituales que en una distribución normal.",
+        "Los retornos extremos positivos suceden con más frecuencia que los negativos",
+        "La distribución del SP500 encaja en una distribución normal",
+        "Ninguna de las respuestas anteriores es correcta"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Ninguna de las respuestas anteriores es correcta. La distribución de retornos del SP500 presenta colas más anchas que una distribución normal (fat tails), los retornos extremos negativos tienden a ser más frecuentes que los positivos, y la distribución no encaja en una normal estándar."
+    },
+    {
+      "id": "m2-14",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "Si hoy el SP500 ha registrado un retorno extremo positivo del 12%, es probable es que mañana:",
+      "options": [
+        "El mercado corrija y se registre un retorno negativo",
+        "El mercado confirme la tendencia y se registre otro crecimiento positivo, aunque, eso sí, no tan extremo.",
+        "El mercado registre otro retorno moderado o extremo que podría ser tanto positivo como negativo.",
+        "No existe relación estadística alguna entre el retorno de un día y del siguiente. Cada retorno diario es completamente independiente al que haya sucedido el día anterior."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Tras un retorno extremo, existe clustering de volatilidad: es probable que el siguiente día también registre un retorno de magnitud significativa, pero puede ser tanto positivo como negativo. No se puede predecir la dirección, pero sí que la volatilidad tiende a persistir."
+    },
+    {
+      "id": "m2-15",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "A pesar de la utilidad del VaR en la industria financiera, este indicador no está libre de limitaciones. Una de ellas es que:",
+      "options": [
+        "Depende de la desviación estándar, por lo que solo mide la volatilidad media, sin tener en cuenta la distribución de los extremos.",
+        "Depende de un umbral de confianza determinado que no contempla pérdidas más allá del mismo.",
+        "Supone que todas las pérdidas tienen la misma probabilidad de ocurrir, por lo que ignora la asimetría de las distribuciones de retornos.",
+        "Es incapaz de calcular riesgos si la cartera contiene más de un activo financiero."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Una limitación clave del VaR es que depende de un umbral de confianza determinado y no contempla las pérdidas que puedan ocurrir más allá de dicho umbral, es decir, no informa sobre la magnitud de las pérdidas en la cola de la distribución."
+    },
+    {
+      "id": "m2-16",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "Si quiero reducir casi al completo la volatilidad derivada de los riesgos sistémicos en mi cartera, lo podré conseguir asegurándome de que:",
+      "options": [
+        "Mi cartera contenga activos con una correlación o covarianza no positiva.",
+        "Incluyo activos que, aún teniendo rentabilidad media ligeramente negativa, estén inversamente correlacionados (covarianza menor que 0) con el resto. De esta forma se reduce significativamente la volatilidad afectando poco la rentabilidad.",
+        "Las respuestas A y B son válidas y se pueden complementar en función de mi tolerancia al riesgo.",
+        "Ninguna de las anteriores respuestas es correcta."
+      ],
+      "correctAnswer": 3,
+      "explanation": "Ninguna de las anteriores es correcta. El riesgo sistémico (o sistemático) no se puede eliminar mediante diversificación, ya que afecta a todo el mercado. La diversificación solo puede reducir el riesgo específico (no sistemático)."
+    },
+    {
+      "id": "m2-17",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "Si quiero reducir el riesgo en mi cartera, lo podré conseguir asegurándome de que:",
+      "options": [
+        "Mi cartera contenga activos con una correlación o covarianza no positiva.",
+        "Incluyo activos que, aún teniendo rentabilidad media ligeramente negativa, estén inversamente correlacionados (covarianza menor que 0) con el resto. De esta forma se reduce significativamente la volatilidad afectando poco la rentabilidad.",
+        "Las respuestas A y B son válidas y se pueden complementar en función de mi tolerancia al riesgo.",
+        "Ninguna de las anteriores respuestas es correcta."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Para reducir el riesgo en una cartera, tanto incluir activos con correlación no positiva como incluir activos inversamente correlacionados son estrategias válidas que se pueden complementar según la tolerancia al riesgo del inversor."
+    },
+    {
+      "id": "m2-18",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "En los informes de inversión de Capital Faktory se analizan sectores y mercados con potencial de crecimiento derivado de las tendencias económicas, geopolíticas o sociales; también se analizan varias oportunidades de inversión concretas. Si quiero invertir en uno de esos sectores moderando mi riesgo…",
+      "options": [
+        "Tendré que invertir en diferentes empresas razonablemente posicionadas del mismo sector.",
+        "Tendré que invertir todo el capital que quiera dedicar a ese mercado en el activo que considere mejor posicionado según el análisis value.",
+        "Tendré que invertir todo en la empresa líder de mercado, para minimizar las fluctuaciones.",
+        "Tendré que invertir todo en la empresa con una volatilidad media histórica, medida por la desviación estándar, más reducida."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Para moderar el riesgo al invertir en un sector, es recomendable diversificar invirtiendo en diferentes empresas razonablemente posicionadas dentro del mismo sector, en lugar de concentrar todo el capital en un único activo."
+    },
+    {
+      "id": "m2-19",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "He invertido en un activo y quiero invertir en otro correlacionado inversamente para compensar el riesgo específico. ¿Cómo puedo saber si ese activo está efectivamente correlacionado inversamente?",
+      "options": [
+        "Puedo calcular la covarianza",
+        "Puedo calcular el Garch",
+        "Puedo descargar los datos de relaciones de independencia matriciales",
+        "Cualquiera de las tres alternativas anteriores puede cumplir la función"
+      ],
+      "correctAnswer": 0,
+      "explanation": "La covarianza (y por extensión la correlación) es la herramienta estadística adecuada para determinar si dos activos están correlacionados inversamente. Un valor negativo indica correlación inversa."
+    },
+    {
+      "id": "m2-20",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "Si quiero construir una cartera con multitud de activos, y, matemáticamente, quiero saber qué peso asignarle a cada activo para tener una combinación óptima de volatilidad y retorno esperado…",
+      "options": [
+        "Tendré que dar un peso equitativo a todos los activos, es el grado óptimo de diversificación",
+        "Tendré que calcular la frontera eficiente de la teoría moderna de carteras",
+        "Tendré que distribuir los pesos aleatoriamente siguiendo una distribución normal",
+        "Tendré que calcular la media ponderada de varianzas (volatilidad) y asignar el peso en la cartera en función de ello"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La frontera eficiente de la teoría moderna de carteras (Markowitz) permite encontrar la combinación óptima de pesos para cada activo que maximiza el retorno esperado para un nivel dado de riesgo."
+    },
+    {
+      "id": "m2-21",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "La teoría moderna de carteras tiene algunas limitaciones:",
+      "options": [
+        "No es posible predecir matemáticamente los retornos esperados",
+        "Los estimadores son solo consistentes bajo ciertas condiciones estadísticas como estacionariedad",
+        "Dentro de las diferentes carteras óptimas, a priori no se puede elegir ninguna sobre otra",
+        "Todas las anteriores son correctas"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Todas las limitaciones mencionadas son correctas: no se pueden predecir retornos esperados con certeza, los estimadores requieren condiciones como estacionariedad, y la frontera eficiente ofrece múltiples carteras óptimas sin criterio claro para elegir entre ellas."
+    },
+    {
+      "id": "m2-22",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "He calculado la frontera eficiente de mi cartera, pero ahora quiero elegir un reparto de pesos concreto ¿Cómo puedo guiar mi decisión?",
+      "options": [
+        "Puedo usar el modelo Garch",
+        "Puedo usar el ratio Sharpe",
+        "Puedo usar el ratio Markowitz",
+        "B y C son correctas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El ratio Sharpe permite comparar las diferentes carteras de la frontera eficiente evaluando el exceso de retorno por unidad de riesgo, ayudando a elegir el reparto de pesos más eficiente."
+    },
+    {
+      "id": "m2-23",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "He calculado la frontera eficiente de mi cartera, pero ahora quiero elegir un reparto de pesos entre sus activos concreto ¿Qué puedo usar para guiar mi decisión?",
+      "options": [
+        "Puedo usar el Kelly Criterion",
+        "Puedo usar el ratio Sharpe",
+        "Puedo usar el ratio Markowitz",
+        "A y B son correctas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El ratio Sharpe es la herramienta adecuada para guiar la elección de un reparto de pesos específico dentro de la frontera eficiente, ya que mide la relación riesgo-retorno de cada combinación posible."
+    },
+    {
+      "id": "m2-24",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "Tengo pocos datos sobre los activos de mi cartera, pero quiero estimar qué reparto de pesos en la frontera eficiente de mi cartera puede ser mejor ¿Qué ratio no sería recomendable usar?",
+      "options": [
+        "Ratio Sharpe",
+        "Ratio Calmar",
+        "Ratio Sortino",
+        "A y B son correctas"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El Ratio Sortino no sería recomendable con pocos datos porque se basa en la semi-desviación (solo retornos negativos), lo que requiere suficientes observaciones negativas para ser estadísticamente significativo."
+    },
+    {
+      "id": "m2-25",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "Tengo una cartera muy apalancada y muy sensible retornos negativos extremos, quiero estimar qué reparto de pesos en la frontera eficiente de mi cartera puede ser más seguro en este escenario ¿Qué ratio sería recomendable usar?",
+      "options": [
+        "Ratio Sharpe",
+        "Ratio Sortino",
+        "Ratio Markowitz",
+        "Ratio de Calmar"
+      ],
+      "correctAnswer": 3,
+      "explanation": "El Ratio de Calmar es el más recomendable para carteras apalancadas y sensibles a retornos negativos extremos, ya que relaciona el retorno con el máximo drawdown, capturando específicamente el riesgo de caídas extremas."
+    },
+    {
+      "id": "m2-26",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "Tengo una cartera muy volátil por naturaleza, pero con retornos esperados asimétricos y mayormente positivos, quiero estimar qué reparto de pesos en la frontera eficiente de mi cartera puede ser más seguro en este escenario ¿Qué ratio sería recomendable usar?",
+      "options": [
+        "Ratio Sortino",
+        "Ratio Sharpe",
+        "Ratio Markowitz",
+        "Ratio de Calmar"
+      ],
+      "correctAnswer": 0,
+      "explanation": "El Ratio Sortino es el más adecuado para carteras con retornos asimétricos y mayormente positivos, ya que solo penaliza la volatilidad a la baja (retornos negativos), a diferencia del Sharpe que penaliza toda la volatilidad incluyendo la positiva."
+    },
+    {
+      "id": "m2-27",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "El coeficiente \"beta\" de una acción o una cartera, representa:",
+      "options": [
+        "La rentabilidad media histórica de la acción o cartera durante un período dado.",
+        "El riesgo total de la acción o cartera, incluyendo tanto el sistemático como el no sistemático.",
+        "La sensibilidad del rendimiento de la acción o cartera frente a los movimientos del mercado en general.",
+        "La probabilidad de que la acción o cartera obtenga un rendimiento superior al del mercado."
+      ],
+      "correctAnswer": 2,
+      "explanation": "El coeficiente beta mide la sensibilidad del rendimiento de una acción o cartera frente a los movimientos del mercado en general. Una beta mayor que 1 indica mayor sensibilidad que el mercado, y una beta menor que 1 indica menor sensibilidad."
+    },
+    {
+      "id": "m2-28",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "Si quiero saber qué porcentaje de capital arriesgar en cada periodo, una herramienta útil es…",
+      "options": [
+        "El criterio de Kelly",
+        "El modelo CAPM",
+        "El enfoque mean-variance",
+        "El R2 del modelo lineal"
+      ],
+      "correctAnswer": 0,
+      "explanation": "El criterio de Kelly es una fórmula que determina el porcentaje óptimo de capital a arriesgar en cada operación o periodo, maximizando el crecimiento a largo plazo del capital."
+    },
+    {
+      "id": "m2-29",
+      "block": "Introducción a la Gestión de Riesgos",
+      "question": "El criterio de Kelly se ejemplifica con modelos de apuestas binarias, pero también es útil en:",
+      "options": [
+        "La optimización de riesgo de colas anchas",
+        "El modelo CAPM",
+        "El enfoque mean-variance",
+        "La teoría de moderna de carteras"
+      ],
+      "correctAnswer": 3,
+      "explanation": "El criterio de Kelly, aunque se ejemplifica con apuestas binarias, también es útil en la teoría moderna de carteras para determinar la asignación óptima de capital entre diferentes activos."
+    }
+  ]
+}

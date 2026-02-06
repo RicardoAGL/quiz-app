@@ -1,6 +1,21 @@
 {
   "modules": [
     {
+      "id": "modulo1",
+      "name": "Módulo 1: Medidores de Rendimiento y Tipos de Inversión",
+      "file": "modulo1.json"
+    },
+    {
+      "id": "modulo2",
+      "name": "Módulo 2: Introducción a la Gestión de Riesgos",
+      "file": "modulo2.json"
+    },
+    {
+      "id": "modulo3",
+      "name": "Módulo 3: Análisis Empresarial y Private Equity",
+      "file": "modulo3.json"
+    },
+    {
       "id": "modulo4",
       "name": "Módulo 4: Renta Variable",
       "file": "modulo4.json"

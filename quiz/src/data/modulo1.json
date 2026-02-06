@@ -1,0 +1,1151 @@
+{
+  "module": "Módulo 1",
+  "title": "Medidores de Rendimiento y Tipos de Inversión",
+  "totalQuestions": 88,
+  "questions": [
+    {
+      "id": "m1-1",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Qué es la TIN (Tasa de Interés Nominal)?",
+      "options": [
+        "Es el interés total que pagarás al final del préstamo, incluyendo comisiones.",
+        "Es el interés anual simple, sin tener en cuenta gastos ni frecuencia de pagos.",
+        "Es el coste efectivo total del préstamo.",
+        "Es el interés ajustado por inflación."
+      ],
+      "correctAnswer": 1,
+      "explanation": "La TIN es el interés anual simple, sin tener en cuenta gastos ni frecuencia de pagos."
+    },
+    {
+      "id": "m1-2",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Qué diferencia principal hay entre TIN y TAE?",
+      "options": [
+        "La TAE incluye la inflación y la TIN no.",
+        "La TIN se paga al inicio y la TAE al final del préstamo.",
+        "La TAE incluye la frecuencia de pagos y comisiones, la TIN no.",
+        "No hay diferencia, son lo mismo."
+      ],
+      "correctAnswer": 2,
+      "explanation": "La TAE incluye la frecuencia de pagos y comisiones, mientras que la TIN no los tiene en cuenta."
+    },
+    {
+      "id": "m1-3",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Qué significa que un préstamo esté amortizado con sistema francés?",
+      "options": [
+        "Que las cuotas son variables a lo largo del tiempo.",
+        "Que solo se pagan intereses hasta el final, y luego se devuelve todo el capital.",
+        "Que cada cuota es constante y contiene una parte de capital y otra de intereses.",
+        "Que se paga primero todo el capital y luego los intereses."
+      ],
+      "correctAnswer": 2,
+      "explanation": "En el sistema francés, cada cuota es constante y contiene una parte de capital y otra de intereses."
+    },
+    {
+      "id": "m1-4",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Cómo funciona el sistema de amortización americano?",
+      "options": [
+        "Se pagan cuotas crecientes cada año.",
+        "Se devuelve todo el capital al final del préstamo, pagando solo intereses durante el periodo.",
+        "Se pagan cuotas constantes de capital más intereses decrecientes.",
+        "El capital se devuelve en dos pagos: uno al inicio y otro al final."
+      ],
+      "correctAnswer": 1,
+      "explanation": "En el sistema americano se devuelve todo el capital al final del préstamo, pagando solo intereses durante el periodo."
+    },
+    {
+      "id": "m1-5",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Qué es la capitalización compuesta?",
+      "options": [
+        "Cuando los intereses se cobran una sola vez al final del periodo.",
+        "Cuando los intereses se reinvierten y generan nuevos intereses.",
+        "Cuando los intereses se pagan por adelantado.",
+        "Cuando se descuenta la inflación de la rentabilidad."
+      ],
+      "correctAnswer": 1,
+      "explanation": "La capitalización compuesta ocurre cuando los intereses se reinvierten y generan nuevos intereses."
+    },
+    {
+      "id": "m1-6",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Qué implica una inflación del 3% anual?",
+      "options": [
+        "Que los salarios subirán un 3%.",
+        "Que el dinero depositado en el banco genera un 3% más al año.",
+        "Que el poder adquisitivo baja un 3% anual si no se invierte.",
+        "Que los productos bajan de precio un 3% cada año."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Una inflación del 3% anual significa que el poder adquisitivo baja un 3% anual si no se invierte."
+    },
+    {
+      "id": "m1-7",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Qué es el \"impuesto silencioso\" al que se refiere la inflación?",
+      "options": [
+        "Un nuevo impuesto que se aplica en países con deuda alta.",
+        "Una pérdida invisible de poder adquisitivo si no se invierte el dinero.",
+        "El IRPF aplicado sobre los intereses del banco.",
+        "El IVA oculto en las compras online."
+      ],
+      "correctAnswer": 1,
+      "explanation": "El \"impuesto silencioso\" de la inflación se refiere a una pérdida invisible de poder adquisitivo si no se invierte el dinero."
+    },
+    {
+      "id": "m1-8",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Qué fórmula se utiliza para calcular la rentabilidad mínima que necesitamos para batir inflación e impuestos?",
+      "options": [
+        "Rentabilidad mínima = Inflación × (1 - Impuestos)",
+        "Rentabilidad mínima = %Inflación / (1 - %Impuestos)",
+        "Rentabilidad mínima = (1 + Inflación) / (1 + Impuestos) - 1",
+        "Rentabilidad mínima = Inflación + Impuestos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La fórmula correcta es: Rentabilidad mínima = %Inflación / (1 - %Impuestos)."
+    },
+    {
+      "id": "m1-9",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Cuál de las siguientes afirmaciones es verdadera respecto a la TAE?",
+      "options": [
+        "Siempre es igual a la TIN.",
+        "Solo se usa en hipotecas.",
+        "Es útil para comparar préstamos con distintas condiciones.",
+        "La fija el gobierno y es útil para comparar préstamos."
+      ],
+      "correctAnswer": 2,
+      "explanation": "La TAE es útil para comparar préstamos con distintas condiciones, ya que refleja el coste efectivo real."
+    },
+    {
+      "id": "m1-10",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Por qué una TAE puede ser mayor que la TIN incluso si no hay comisiones?",
+      "options": [
+        "Porque incluye la inflación esperada.",
+        "Porque se calcula usando interés compuesto si los pagos son más de una vez al año.",
+        "Porque siempre se suma un 1% a la TIN por defecto.",
+        "Porque refleja los gastos de apertura del préstamo."
+      ],
+      "correctAnswer": 1,
+      "explanation": "La TAE puede ser mayor que la TIN porque se calcula usando interés compuesto si los pagos son más de una vez al año."
+    },
+    {
+      "id": "m1-11",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Qué sucede con la proporción de intereses y capital en el sistema francés a lo largo del préstamo?",
+      "options": [
+        "Los intereses aumentan con el tiempo y el capital disminuye.",
+        "El capital amortizado es constante en cada cuota.",
+        "Los intereses disminuyen y el capital amortizado aumenta progresivamente.",
+        "Ambos, intereses y capital, se mantienen constantes durante todo el préstamo."
+      ],
+      "correctAnswer": 2,
+      "explanation": "En el sistema francés, los intereses disminuyen y el capital amortizado aumenta progresivamente a lo largo de la vida del préstamo."
+    },
+    {
+      "id": "m1-12",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "Si contratas un préstamo con TAE del 4,1% y TIN del 4%, ¿qué indica esta diferencia?",
+      "options": [
+        "Que pagarás menos intereses que en otro préstamo con TAE mayor.",
+        "Que el préstamo tiene pagos anuales.",
+        "Que hay un gasto adicional o una frecuencia de pago mayor a la anual.",
+        "Que el préstamo está bonificado."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Una TAE superior a la TIN indica que hay un gasto adicional o una frecuencia de pago mayor a la anual."
+    },
+    {
+      "id": "m1-13",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "En un préstamo con sistema americano, ¿cuál es el impacto sobre el riesgo de reinversión respecto a uno francés?",
+      "options": [
+        "Menor riesgo de reinversión, ya que se amortiza más rápido.",
+        "Mayor riesgo, porque no se amortiza capital hasta el final.",
+        "No hay diferencias.",
+        "El riesgo de reinversión depende solo de la inflación."
+      ],
+      "correctAnswer": 1,
+      "explanation": "El sistema americano tiene mayor riesgo de reinversión porque no se amortiza capital hasta el final del préstamo."
+    },
+    {
+      "id": "m1-14",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Qué factor no influye directamente en el cálculo de la TAE?",
+      "options": [
+        "El tipo de interés nominal.",
+        "La frecuencia de los pagos.",
+        "Los gastos asociados al préstamo.",
+        "La evolución futura de la inflación."
+      ],
+      "correctAnswer": 3,
+      "explanation": "La evolución futura de la inflación no influye directamente en el cálculo de la TAE."
+    },
+    {
+      "id": "m1-15",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Por qué puede ser engañoso fijarse únicamente en la TIN al comparar dos préstamos?",
+      "options": [
+        "Porque la TIN no refleja ni el plazo ni los gastos reales del préstamo.",
+        "Porque la TIN solo se aplica si cancelas anticipadamente.",
+        "Porque la TIN no incluye los impuestos sobre los intereses.",
+        "Porque la TIN varía según la inflación."
+      ],
+      "correctAnswer": 0,
+      "explanation": "La TIN no refleja ni el plazo ni los gastos reales del préstamo, por lo que puede ser engañoso usarla como único criterio de comparación."
+    },
+    {
+      "id": "m1-16",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Qué significa que un préstamo tenga un sistema de amortización con cuotas constantes?",
+      "options": [
+        "Que el importe del capital amortizado es siempre el mismo.",
+        "Que el tipo de interés no cambia nunca.",
+        "Que el importe total a pagar cada mes no varía durante el préstamo.",
+        "Que los intereses son mayores al principio y menores al final."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Un sistema con cuotas constantes significa que el importe total a pagar cada mes no varía durante la vida del préstamo."
+    },
+    {
+      "id": "m1-17",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Cuál es el efecto directo de una inflación constante del 3% anual sobre tu dinero si no lo inviertes durante 10 años?",
+      "options": [
+        "Tu dinero ganará poder adquisitivo.",
+        "Tu dinero valdrá exactamente lo mismo, pero solo en términos nominales.",
+        "Tu dinero perderá aproximadamente un 25% de su poder adquisitivo.",
+        "Tu dinero perderá exactamente un 3% al final del periodo."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Con una inflación del 3% constante durante 10 años, tu dinero valdrá aproximadamente el 74,4% de lo que valía al principio. O lo que es lo mismo, habrá perdido un 25,6% de su poder adquisitivo."
+    },
+    {
+      "id": "m1-18",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "Si el capital de una inversión crece a razón del 7% anual compuesto, ¿en cuánto tiempo aproximado se duplicará?",
+      "options": [
+        "En unos 10 años.",
+        "En 14 años.",
+        "En 7 años.",
+        "En 5 años."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Usando la regla del 72: 72 / 7 ≈ 10. TIP: La regla del 72 es útil para el rango entre el 5% al 12% donde es bastante precisa, fuera de ese rango ya no se cumple. Es un truco mental para estimar cuánto tiempo tarda tu inversión en duplicarse, si sabes la rentabilidad anual aproximada. Solo tienes que dividir 72 entre la rentabilidad anual (%)."
+    },
+    {
+      "id": "m1-19",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Qué afirmación es correcta sobre el impacto de los impuestos en tu rentabilidad real?",
+      "options": [
+        "Los impuestos reducen el capital inicial de inversión.",
+        "Los impuestos no afectan si inviertes a largo plazo.",
+        "Los impuestos reducen la rentabilidad neta que recibes sobre el beneficio bruto.",
+        "Los impuestos solo afectan si hay inflación."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Los impuestos reducen la rentabilidad neta que recibes sobre el beneficio bruto."
+    },
+    {
+      "id": "m1-20",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Cuál es la razón por la que se necesita una rentabilidad mínima superior a la inflación cuando hay impuestos?",
+      "options": [
+        "Porque la inflación y los impuestos se suman entre sí.",
+        "Porque la rentabilidad tributa y se pierde una parte, por lo que necesitas más para conservar tu poder adquisitivo.",
+        "Porque el IRPF siempre sube con la inflación.",
+        "Porque los impuestos se aplican antes de la inflación."
+      ],
+      "correctAnswer": 1,
+      "explanation": "La rentabilidad tributa y se pierde una parte, por lo que necesitas más rentabilidad bruta para conservar tu poder adquisitivo tras inflación e impuestos."
+    },
+    {
+      "id": "m1-21",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Cuál de las siguientes afirmaciones es verdadera sobre la TAE?",
+      "options": [
+        "Solo se calcula en préstamos hipotecarios.",
+        "Es el tipo de interés que incluye los impuestos.",
+        "Siempre es igual a la TIN si no hay gastos ni comisiones.",
+        "Refleja el coste o rentabilidad efectiva de una operación financiera en términos anuales."
+      ],
+      "correctAnswer": 3,
+      "explanation": "La TAE refleja el coste o rentabilidad efectiva de una operación financiera en términos anuales."
+    },
+    {
+      "id": "m1-22",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Qué ocurre en un sistema de amortización francés durante la vida del préstamo?",
+      "options": [
+        "El capital amortizado es constante.",
+        "Los intereses se pagan solo al final.",
+        "La cuota disminuye progresivamente.",
+        "Se pagan más intereses al principio y más capital al final."
+      ],
+      "correctAnswer": 3,
+      "explanation": "En el sistema francés se pagan más intereses al principio y más capital al final de la vida del préstamo."
+    },
+    {
+      "id": "m1-23",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Cuál es el efecto real de la inflación sobre una inversión con una rentabilidad nominal del 5% anual si la inflación es del 2%?",
+      "options": [
+        "La rentabilidad real será del 3%.",
+        "La inversión pierde valor.",
+        "La rentabilidad real será inferior al 3%.",
+        "No hay diferencia entre rentabilidad real y nominal."
+      ],
+      "correctAnswer": 2,
+      "explanation": "La rentabilidad real será inferior al 3%. Cálculo: (1.05 / 1.02) - 1 = 2.94%, ligeramente inferior al 3%."
+    },
+    {
+      "id": "m1-24",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "Si un fondo ofrece un 4% anual con TIN y te cobran una comisión de apertura del 1%, ¿cuál será la TAE aproximadamente?",
+      "options": [
+        "4%",
+        "Menor al 4%",
+        "Mayor al 4%",
+        "Depende de la inflación"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cuando hay una comisión de apertura que se descuenta al inicio, en realidad no inviertes el total de tu dinero, sino el total menos esa comisión. Eso hace que, aunque el TIN del fondo sea del 4%, la rentabilidad efectiva sobre lo que realmente aportaste (TAE) sea menor."
+    },
+    {
+      "id": "m1-25",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Qué tipo de interés se usa para calcular los pagos de un préstamo con pagos mensuales?",
+      "options": [
+        "El interés anual nominal",
+        "El interés anual efectivo",
+        "El tipo mensual equivalente al TIN",
+        "El tipo mensual de la TAE"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Para calcular los pagos mensuales de un préstamo se usa el tipo mensual equivalente al TIN."
+    },
+    {
+      "id": "m1-26",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Cuál es la principal diferencia entre el método de amortización francés y el americano?",
+      "options": [
+        "El francés tiene intereses variables y el americano no.",
+        "En el francés se paga el capital al final, en el americano se amortiza desde el inicio.",
+        "En el francés se pagan cuotas iguales y en el americano se paga todo el capital al final.",
+        "El americano no genera intereses."
+      ],
+      "correctAnswer": 2,
+      "explanation": "En el sistema francés se pagan cuotas iguales a lo largo del préstamo, mientras que en el americano se paga todo el capital al final."
+    },
+    {
+      "id": "m1-27",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "Si pagas impuestos del 20% sobre los beneficios de tu inversión, ¿qué rentabilidad mínima necesitas para igualar una inflación del 3%?",
+      "options": [
+        "3%",
+        "3.75%",
+        "3.5%",
+        "2.4%"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Rentabilidad mínima = Inflación / (1 - Impuestos) = 3 / (1 - 0.2) = 3.75%."
+    },
+    {
+      "id": "m1-28",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "Si un banco te ofrece un préstamo con TIN del 3% y TAE del 3.5%, ¿qué puedes deducir?",
+      "options": [
+        "El préstamo es gratuito.",
+        "Hay comisiones o gastos asociados.",
+        "El banco no cobra nada adicional.",
+        "El préstamo se amortiza de forma americana."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Una TAE superior a la TIN indica que hay comisiones o gastos asociados al préstamo."
+    },
+    {
+      "id": "m1-29",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Qué afirmación es correcta sobre el interés compuesto?",
+      "options": [
+        "Solo se aplica si se reinvierten los intereses.",
+        "Siempre genera rentabilidades más bajas que el interés simple.",
+        "Tiene en cuenta impuestos e inflación.",
+        "Es un sistema exclusivo para deudas, no para inversiones."
+      ],
+      "correctAnswer": 0,
+      "explanation": "El interés compuesto solo se aplica si se reinvierten los intereses, generando intereses sobre intereses."
+    },
+    {
+      "id": "m1-30",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Cuál es la principal utilidad del concepto de rentabilidad mínima ajustada por inflación e impuestos?",
+      "options": [
+        "Calcular la TAE exacta.",
+        "Determinar la inflación real.",
+        "Saber si una inversión está realmente generando valor.",
+        "Fijar el tipo de interés de un préstamo."
+      ],
+      "correctAnswer": 2,
+      "explanation": "La rentabilidad mínima ajustada por inflación e impuestos sirve para saber si una inversión está realmente generando valor."
+    },
+    {
+      "id": "m1-31",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "Si contratas un préstamo de 12.000 € al 4% TIN durante 1 año y sin comisiones, ¿cuál será la TAE si se paga en 12 cuotas mensuales? (Nota: Es un préstamo con amortización francesa sin comisiones)",
+      "options": [
+        "4.00%",
+        "4.07%",
+        "3.98%",
+        "6.10%"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Con pagos mensuales y sin comisiones, la TAE será ligeramente superior al TIN por el efecto de la capitalización mensual, resultando en aproximadamente 4.07%."
+    },
+    {
+      "id": "m1-32",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "Una inversión de 10.000 € al 5% anual compuesto durante 5 años. ¿Cuál será el capital final?",
+      "options": [
+        "12.562 €",
+        "12.762 €",
+        "11.000 €",
+        "12.000 €"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Capital final = 10.000 × (1.05)^5 = 12.762,8 €."
+    },
+    {
+      "id": "m1-33",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "Si compras un bono de 1.000 € que paga un 6% anual durante 3 años, ¿cuánto recibirás en total solo por cupones (sin contar el principal)?",
+      "options": [
+        "60 €",
+        "180 €",
+        "160 €",
+        "200 €"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cupones totales = 1.000 × 0.06 × 3 = 180 €."
+    },
+    {
+      "id": "m1-34",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "Si reinviertes todos los intereses de una inversión al 8% anual durante 10 años, ¿qué tipo de interés estás aplicando?",
+      "options": [
+        "Interés simple",
+        "TIN",
+        "TAE",
+        "Interés compuesto"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Al reinvertir todos los intereses estás aplicando interés compuesto, ya que los intereses generan nuevos intereses."
+    },
+    {
+      "id": "m1-35",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "Una inversión ofrece 4% anual durante 3 años. ¿Cuál es su rentabilidad total compuesta al final del tercer año?",
+      "options": [
+        "12%",
+        "12.79%",
+        "12.49%",
+        "12.19%"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Rentabilidad total compuesta = (1.04)^3 - 1 = 12.49%."
+    },
+    {
+      "id": "m1-36",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "¿Qué capital final tendrías si inviertes 5.000 € a un 2.5% anual compuesto durante 8 años?",
+      "options": [
+        "5.884 €",
+        "6.092 €",
+        "5.500 €",
+        "6.250 €"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Capital final = 5.000 × (1.025)^8 = 6.092 €."
+    },
+    {
+      "id": "m1-37",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "Si inviertes 10.000 € durante 4 años y cada año obtienes un 7%, ¿cuál es el capital acumulado?",
+      "options": [
+        "13.000 €",
+        "13.108 €",
+        "12.808 €",
+        "13.500 €"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Capital acumulado = 10.000 × (1.07)^4 = 13.108 €."
+    },
+    {
+      "id": "m1-38",
+      "block": "TIN, TAE, Sistema de Amortización Francés y Americano, Inflación y Capitalización Compuesta",
+      "question": "Si la inflación es del 2% y los impuestos sobre beneficios son del 25%, ¿qué rentabilidad mínima necesitas para mantener poder adquisitivo?",
+      "options": [
+        "2.50%",
+        "2.00%",
+        "2.67%",
+        "2.10%"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Rentabilidad mínima = Inflación / (1 - Impuestos) = 2 / (1 - 0.25) = 2.67%."
+    },
+    {
+      "id": "m1-39",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "¿Qué mide el ROI?",
+      "options": [
+        "El tiempo que tarda una inversión en duplicarse.",
+        "La rentabilidad de una inversión respecto a los beneficios netos.",
+        "La rentabilidad obtenida sobre la inversión.",
+        "El beneficio antes de intereses e impuestos."
+      ],
+      "correctAnswer": 2,
+      "explanation": "El ROI mide cuánto beneficio genera una inversión respecto a la inversión. Es una medida general de rentabilidad."
+    },
+    {
+      "id": "m1-40",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "¿Qué mide el ROE?",
+      "options": [
+        "La rentabilidad sobre los activos",
+        "La rentabilidad que obtienen los acreedores",
+        "La rentabilidad que obtienen los accionistas sobre su capital",
+        "El crecimiento anual medio de una inversión"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El ROE indica cuánto beneficio obtiene la empresa por cada euro de patrimonio neto aportado por los accionistas."
+    },
+    {
+      "id": "m1-41",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "El ROA mide la rentabilidad…",
+      "options": [
+        "Sobre el total de ingresos",
+        "Sobre los activos totales",
+        "Sobre el capital aportado por los socios",
+        "Después de impuestos y amortizaciones"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El ROA mide cuánta rentabilidad genera una empresa por cada euro de activos que controla, independientemente de cómo los financia."
+    },
+    {
+      "id": "m1-42",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "Si una inversión inicial es de 10.000 € y genera un beneficio neto de 1.500 € al año durante 5 años, ¿cuál es su ROI total? (Sin tener en cuenta el valor del dinero en el tiempo)",
+      "options": [
+        "5%",
+        "15%",
+        "50%",
+        "75%"
+      ],
+      "correctAnswer": 3,
+      "explanation": "ROI = (Beneficio total - Inversión) / Inversión. Beneficio total neto (implica que ya está restado el valor de la inversión por lo que no hay que restarlo de nuevo) = 1.500 × 5 = 7.500. ERROR COMÚN: ROI = (7.500 - 10.000) / 10.000 = -25% (incorrecto). CORRECTO: ROI = 7.500 / 10.000 = 0,75 = 75%."
+    },
+    {
+      "id": "m1-43",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "¿Qué mide el CAGR?",
+      "options": [
+        "El beneficio neto medio anual",
+        "El retorno acumulado total",
+        "El crecimiento medio anual ajustado por capitalización compuesta",
+        "La inflación ajustada de un activo"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El CAGR calcula cuál sería el crecimiento anual constante que llevaría un valor inicial hasta el valor final en un número de años, considerando el efecto compuesto."
+    },
+    {
+      "id": "m1-44",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "Si el valor de una inversión pasa de 10.000 € a 16.105 € en 5 años, ¿cuál es el CAGR aproximado?",
+      "options": [
+        "10%",
+        "8%",
+        "12%",
+        "15%"
+      ],
+      "correctAnswer": 0,
+      "explanation": "CAGR = (Valor final / Valor inicial)^(1/n) - 1 = (16.105 / 10.000)^(1/5) - 1 = 1,6105^(0,2) - 1 ≈ 10%."
+    },
+    {
+      "id": "m1-45",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "¿Cuál de los siguientes indicadores considera el valor temporal del dinero?",
+      "options": [
+        "ROI",
+        "ROE",
+        "VAN",
+        "ROA"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El VAN descuenta los flujos de caja futuros a una tasa determinada para calcular cuánto valen hoy, lo que tiene en cuenta el valor temporal del dinero."
+    },
+    {
+      "id": "m1-46",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "Si el VAN de un proyecto es negativo…",
+      "options": [
+        "El proyecto no genera beneficios",
+        "El valor actual de los flujos futuros es inferior al coste de la inversión",
+        "El proyecto tiene una TIR igual al coste de capital",
+        "El ROI es mayor que cero"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Un VAN negativo significa que, descontando los flujos al coste de capital, no se recupera la inversión. El valor actual de los flujos es menor que la inversión inicial."
+    },
+    {
+      "id": "m1-47",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "¿Qué es la TIR (Tasa Interna de Retorno)?",
+      "options": [
+        "El valor descontado de los flujos de caja",
+        "La rentabilidad obtenida por los accionistas",
+        "La tasa de descuento que hace que el VAN sea cero",
+        "El tipo de interés de los bonos emitidos"
+      ],
+      "correctAnswer": 2,
+      "explanation": "La TIR es la tasa de descuento que iguala el valor presente de los flujos de caja futuros con el valor de la inversión inicial, es decir, hace que el VAN = 0."
+    },
+    {
+      "id": "m1-48",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "¿Cuál de estos indicadores permite comparar la rentabilidad de distintos proyectos en términos relativos y considerando el tiempo?",
+      "options": [
+        "ROI",
+        "VAN",
+        "ROE",
+        "TIR"
+      ],
+      "correctAnswer": 3,
+      "explanation": "La TIR permite comparar la rentabilidad de diferentes proyectos, ya que se expresa como un porcentaje anualizado y considera el tiempo."
+    },
+    {
+      "id": "m1-49",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "Si una empresa tiene un ROE del 15% y un ROA del 5%, ¿qué indica eso sobre su apalancamiento financiero?",
+      "options": [
+        "Que la empresa no tiene deuda",
+        "Que la empresa está muy poco apalancada",
+        "Que la empresa está usando deuda para mejorar la rentabilidad del accionista",
+        "Que el beneficio neto es negativo"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Un ROE superior al ROA indica que se está utilizando apalancamiento financiero (deuda) para mejorar el retorno sobre el capital propio."
+    },
+    {
+      "id": "m1-50",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "¿Cuál de estas afirmaciones es cierta sobre la TIR?",
+      "options": [
+        "Si la TIR es menor que el coste de capital, el proyecto es rentable",
+        "La TIR solo sirve si los flujos de caja son constantes",
+        "La TIR puede tener múltiples soluciones si los flujos de caja cambian de signo más de una vez",
+        "La TIR se usa exclusivamente para inversiones financieras"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Cuando los flujos de caja cambian de signo varias veces, puede haber más de una TIR, lo que complica su interpretación."
+    },
+    {
+      "id": "m1-51",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "¿Cuál de las siguientes NO es una limitación del ROI?",
+      "options": [
+        "No tiene en cuenta el tiempo",
+        "No diferencia entre proyectos con distinto capital inicial",
+        "Es sensible al valor temporal del dinero",
+        "No tiene en cuenta la duración de la inversión"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El ROI no tiene en cuenta el tiempo ni el valor temporal del dinero, por eso no es útil para comparar inversiones de distinta duración. La opción C afirma falsamente que el ROI tiene en cuenta el valor del dinero en el tiempo. Como esa afirmación es incorrecta, no describe una limitación real del ROI, y por tanto, es la respuesta correcta."
+    },
+    {
+      "id": "m1-52",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "Si un proyecto tiene un VAN positivo y una TIR mayor al coste de capital, ¿qué decisión se debería tomar?",
+      "options": [
+        "Rechazar el proyecto",
+        "Aceptarlo, es financieramente viable",
+        "Esperar a que la TIR sea inferior al coste de capital",
+        "Esperar a que el ROI mejore"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Un VAN positivo y una TIR superior al coste de capital indican que el proyecto crea valor y debe aceptarse."
+    },
+    {
+      "id": "m1-53",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "¿Qué se necesita conocer para calcular el ROA de una empresa?",
+      "options": [
+        "Solo el patrimonio neto y el EBIT",
+        "El beneficio neto y los activos totales",
+        "Los flujos de caja y el capital invertido",
+        "La deuda neta y los pasivos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ROA = Beneficio neto / Activos totales."
+    },
+    {
+      "id": "m1-54",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "Una inversión inicial de 20.000 € genera 5.000 € anuales durante 5 años. ¿Cuál es el VAN si la tasa de descuento es del 8%? (aprox)",
+      "options": [
+        "42 €",
+        "- 42 €",
+        "102 €",
+        "-102 €"
+      ],
+      "correctAnswer": 1,
+      "explanation": "VAN = -Inversión inicial + Σ [Flujo de caja / (1 + r)^t]. Año 1: 5.000 / (1.08)^1 ≈ 4.629,63 €. Año 2: 5.000 / (1.08)^2 ≈ 4.287,62 €. Año 3: 5.000 / (1.08)^3 ≈ 3.969,10 €. Año 4: 5.000 / (1.08)^4 ≈ 3.672,31 €. Año 5: 5.000 / (1.08)^5 ≈ 3.398,45 €. Suma = 19.957,11 €. VAN ≈ 19.957,11 - 20.000 = -42,89 €."
+    },
+    {
+      "id": "m1-55",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "¿Cuál de estas afirmaciones es FALSA respecto al ROE?",
+      "options": [
+        "Un ROE muy alto puede deberse a una baja base de patrimonio neto",
+        "Un ROE negativo implica siempre quiebra",
+        "El ROE puede verse afectado por una alta deuda",
+        "ROE mide la rentabilidad para los accionistas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Un ROE negativo indica pérdidas, pero no necesariamente quiebra. Podría ser una empresa con resultados negativos ese año, sin que implique insolvencia inmediata. También puede ser negativo porque la empresa, aunque genere beneficios, cuente con un patrimonio neto negativo por el efecto de las recompras de acciones."
+    },
+    {
+      "id": "m1-56",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "Si el valor de una inversión se duplica en 6 años, ¿cuál es su CAGR aproximado?",
+      "options": [
+        "10%",
+        "12%",
+        "15%",
+        "8%"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Usando la Regla del 72: 72 / CAGR ≈ años → 72 / 6 = 12. Con cálculo exacto: CAGR = (2)^(1/6) - 1 ≈ 12.24%."
+    },
+    {
+      "id": "m1-57",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "¿Qué ocurre si el VAN es cero?",
+      "options": [
+        "El proyecto no devuelve el capital",
+        "La TIR es menor al coste de capital",
+        "El valor presente de los flujos es igual al coste de la inversión",
+        "El proyecto no genera beneficio neto"
+      ],
+      "correctAnswer": 2,
+      "explanation": "VAN = 0 indica que el valor presente de los flujos de caja futuros equivale al desembolso inicial, ni se gana ni se pierde valor."
+    },
+    {
+      "id": "m1-58",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "¿Cuál es una posible desventaja del CAGR?",
+      "options": [
+        "Tiene en cuenta los flujos intermedios",
+        "No refleja la volatilidad ni los altibajos en el camino",
+        "Es inútil para comparar periodos largos",
+        "No se puede usar en activos financieros"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El CAGR asume un crecimiento constante, por lo que no muestra la volatilidad real del activo o inversión."
+    },
+    {
+      "id": "m1-59",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "Una empresa tiene un beneficio neto de 1 millón de euros, activos por 20 millones y patrimonio neto por 4 millones. ¿Qué indican estos datos?",
+      "options": [
+        "Alta eficiencia operativa y bajo apalancamiento",
+        "ROE muy inferior al ROA",
+        "ROE excesivamente alto, probablemente por alta deuda",
+        "Que la empresa no genera valor"
+      ],
+      "correctAnswer": 2,
+      "explanation": "ROA = 1/20 = 5%. ROE = 1/4 = 25%. Una diferencia tan amplia entre ROA y ROE suele indicar un uso intensivo de deuda (alto apalancamiento)."
+    },
+    {
+      "id": "m1-60",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "Un proyecto genera flujos irregulares, incluyendo salidas de capital en años intermedios. ¿Qué problema puede generar esto al usar la TIR?",
+      "options": [
+        "El cálculo del VAN será imposible",
+        "El ROI será más confiable",
+        "Puede haber múltiples TIR o ninguna",
+        "La TIR será igual al coste de capital"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Cuando los flujos cambian de signo más de una vez, pueden existir múltiples TIR (o ninguna), dificultando su interpretación."
+    },
+    {
+      "id": "m1-61",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "Si una empresa tiene activos totales de 10 millones, deuda de 8 millones y obtiene un beneficio neto de 100.000 €, ¿cuál es su ROA y qué implica?",
+      "options": [
+        "1% – Baja rentabilidad general",
+        "10% – Rentabilidad moderada",
+        "12.5% – Rentabilidad alta",
+        "0.8% – Rentabilidad deficiente"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ROA = 0,1 millones / 10 millones = 1%. Es una rentabilidad muy baja sobre los activos gestionados."
+    },
+    {
+      "id": "m1-62",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "Una inversión inicial de 50.000 € da retornos de 15.000 € anuales durante 4 años. Si la tasa de descuento es del 12%, ¿cuál es el VAN aproximado?",
+      "options": [
+        "-4.440€",
+        "12.000 €",
+        "3.000 €",
+        "-2.000 €"
+      ],
+      "correctAnswer": 0,
+      "explanation": "VAN = -50.000 + Σ [15.000 / (1.12)^t] para t=1 a 4. El valor presente de los flujos descontados al 12% es inferior a la inversión inicial, resultando en un VAN aproximado de -4.440 €."
+    },
+    {
+      "id": "m1-63",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "¿Qué puede indicar un ROE alto con un ROA bajo y un capital negativo?",
+      "options": [
+        "Alta rentabilidad real",
+        "Apalancamiento extremo que distorsiona el ROE",
+        "Falta de deuda",
+        "Sólida eficiencia operativa"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Un patrimonio bajo o negativo distorsiona el ROE y puede hacer parecer rentable a una empresa que no lo es operativamente."
+    },
+    {
+      "id": "m1-64",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "El ROI de una campaña de marketing fue del 40%. ¿Qué significa esto en términos financieros?",
+      "options": [
+        "Que se recuperó el 40% de la inversión",
+        "Que se obtuvo un beneficio equivalente al 40% de lo invertido",
+        "Que la rentabilidad fue del 40% compuesta",
+        "Que el VAN fue positivo en un 40%"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ROI = (Beneficio - Inversión) / Inversión. Un 40% significa que se obtuvo un 40% adicional sobre lo invertido."
+    },
+    {
+      "id": "m1-65",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "Una inversión da un CAGR del 7% anual durante 10 años. ¿Cuál es el multiplicador del capital?",
+      "options": [
+        "2",
+        "1.7",
+        "1.5",
+        "2.1"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Capital final = Capital inicial × (1+0.07)^10 ≈ ×2. Se ha duplicado."
+    },
+    {
+      "id": "m1-66",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "Si el VAN de una inversión es negativo pero la TIR es del 9%, ¿qué puede estar pasando?",
+      "options": [
+        "La inversión es viable si se alarga el plazo",
+        "El coste de capital es mayor al 9%",
+        "El ROI supera el ROA",
+        "Hay un error en los flujos intermedios"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Un VAN negativo indica que la TIR es inferior al coste de capital usado. Por tanto, no se crea valor."
+    },
+    {
+      "id": "m1-67",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "¿Cuál de estas decisiones sería más sensata al comparar dos proyectos mutuamente excluyentes?",
+      "options": [
+        "Elegir el de TIR más alta siempre",
+        "Elegir el de ROI más alto",
+        "Elegir el de VAN más alto, si los costes de capital son iguales",
+        "Elegir el de menor coste"
+      ],
+      "correctAnswer": 2,
+      "explanation": "En decisiones de exclusión mutua, el VAN es más confiable que la TIR porque mide creación neta de valor en euros."
+    },
+    {
+      "id": "m1-68",
+      "block": "VAN, TIR, CAGR, ROI, ROE y ROA",
+      "question": "¿Cuál es una limitación de usar el ROA para comparar empresas de diferentes sectores?",
+      "options": [
+        "No considera la deuda",
+        "Es muy sensible al margen neto",
+        "Sectores intensivos en capital tendrán ROAs más bajos",
+        "No sirve para empresas con beneficios positivos"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El ROA penaliza a las empresas intensivas en activos (como energía, infraestructura…), por lo que no es fiable para comparar sectores distintos."
+    },
+    {
+      "id": "m1-69",
+      "block": "Tipos de Inversión",
+      "question": "¿Qué representa una acción ordinaria?",
+      "options": [
+        "Una obligación de deuda que la empresa debe devolver",
+        "Una participación en el capital social de la empresa",
+        "Un derecho prioritario sobre los activos de la empresa",
+        "Un seguro de rentabilidad fija garantizada"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las acciones ordinarias representan una parte proporcional del capital social de una empresa. Quien compra una acción se convierte en propietario de una parte de esa empresa."
+    },
+    {
+      "id": "m1-70",
+      "block": "Tipos de Inversión",
+      "question": "¿Cuál es una característica típica de la renta variable?",
+      "options": [
+        "Rentabilidad garantizada",
+        "Menor riesgo que la renta fija",
+        "Alta volatilidad y riesgo de mercado",
+        "Flujo de intereses fijo semestral"
+      ],
+      "correctAnswer": 2,
+      "explanation": "La renta variable no garantiza rentabilidad y está expuesta a alta volatilidad y riesgo de mercado, a diferencia de la renta fija."
+    },
+    {
+      "id": "m1-71",
+      "block": "Tipos de Inversión",
+      "question": "¿Qué mide la volatilidad en un activo financiero?",
+      "options": [
+        "Su coste de oportunidad",
+        "La variación de precios respecto a su promedio",
+        "Su duración financiera",
+        "Su vencimiento"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La volatilidad mide cuánto se desvía el precio de un activo respecto a su media. Es una medida de riesgo."
+    },
+    {
+      "id": "m1-72",
+      "block": "Tipos de Inversión",
+      "question": "¿Qué tipo de riesgo no puede eliminarse con diversificación?",
+      "options": [
+        "Riesgo de divisa",
+        "Riesgo específico",
+        "Riesgo sistemático",
+        "Riesgo de liquidez"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El riesgo sistemático es el riesgo que afecta a todo el mercado y no se puede diversificar."
+    },
+    {
+      "id": "m1-73",
+      "block": "Tipos de Inversión",
+      "question": "¿Qué diferencia principal hay entre un ETF y un fondo de inversión?",
+      "options": [
+        "El ETF se compra en el mercado como una acción",
+        "El fondo siempre reparte dividendos",
+        "El ETF tiene comisiones más altas",
+        "Los fondos no invierten en renta variable"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Un ETF (Exchange Traded Fund) se negocia en bolsa como una acción, mientras que un fondo tradicional no."
+    },
+    {
+      "id": "m1-74",
+      "block": "Tipos de Inversión",
+      "question": "¿Qué tipo de inversor debería priorizar la renta variable?",
+      "options": [
+        "Quien busca proteger su capital sin asumir riesgo",
+        "Quien necesita liquidez inmediata",
+        "Quien tiene alta tolerancia y capacidad para asumir riesgo",
+        "Quien busca rendimientos fijos trimestrales"
+      ],
+      "correctAnswer": 2,
+      "explanation": "La renta variable está recomendada para perfiles con alta tolerancia y capacidad de asumir riesgo, debido a su volatilidad."
+    },
+    {
+      "id": "m1-75",
+      "block": "Tipos de Inversión",
+      "question": "¿A qué se refiere el término \"beta\" en finanzas?",
+      "options": [
+        "A la rentabilidad garantizada del activo",
+        "A la proporción de deuda frente a patrimonio",
+        "A la volatilidad del activo frente al mercado",
+        "A la proporción de acciones preferentes"
+      ],
+      "correctAnswer": 2,
+      "explanation": "La beta mide cómo se mueve un activo respecto al mercado. Beta > 1 indica que se mueve más que el mercado; Beta < 1, menos."
+    },
+    {
+      "id": "m1-76",
+      "block": "Tipos de Inversión",
+      "question": "¿Qué derecho tiene un tenedor de acción ordinaria que no tiene uno de preferente?",
+      "options": [
+        "Derecho a dividendos fijos",
+        "Derecho a voto en la junta de accionistas",
+        "Derecho prioritario en caso de quiebra",
+        "Derecho a recibir intereses"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las acciones ordinarias confieren derecho a voto, a diferencia de las preferentes."
+    },
+    {
+      "id": "m1-77",
+      "block": "Tipos de Inversión",
+      "question": "¿Cuál es un sector típicamente defensivo o contracíclico?",
+      "options": [
+        "Automoción",
+        "Tecnología",
+        "Utilities",
+        "Construcción"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Sectores como el de utilities (agua, luz, gas) son considerados defensivos, ya que su demanda es estable incluso en crisis."
+    },
+    {
+      "id": "m1-78",
+      "block": "Tipos de Inversión",
+      "question": "¿Qué significa una correlación negativa entre dos activos?",
+      "options": [
+        "Que se mueven juntos al alza",
+        "Que uno sube cuando el otro también lo hace",
+        "Que se mueven en sentidos opuestos",
+        "Que no hay relación entre sus movimientos"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Una correlación negativa implica que cuando uno sube, el otro tiende a bajar, y viceversa. Es útil para diversificar."
+    },
+    {
+      "id": "m1-79",
+      "block": "Tipos de Inversión",
+      "question": "¿Qué significa que una acción tenga una beta de 1,5?",
+      "options": [
+        "Su rentabilidad media es del 15%",
+        "Tiene menor riesgo que el mercado",
+        "Se mueve un 50% más que el mercado, en la misma dirección",
+        "No tiene correlación con el mercado"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Una beta de 1,5 indica que el activo es un 50% más volátil que el mercado. Si el mercado sube un 1%, se espera que suba un 1,5%."
+    },
+    {
+      "id": "m1-80",
+      "block": "Tipos de Inversión",
+      "question": "¿Cuál de las siguientes afirmaciones sobre los dividendos es cierta?",
+      "options": [
+        "Si una empresa reparte dividendos, su acción siempre sube",
+        "El dividendo siempre se paga trimestralmente",
+        "Un dividendo del 5% implica un 5% sobre tu inversión actual",
+        "El pago de dividendos reduce el precio de la acción en la misma proporción"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Al pagar dividendos, el precio de la acción baja proporcionalmente, ya que ese dinero sale del patrimonio de la empresa."
+    },
+    {
+      "id": "m1-81",
+      "block": "Tipos de Inversión",
+      "question": "En el modelo CAPM, ¿qué representa la beta?",
+      "options": [
+        "El retorno libre de riesgo",
+        "El rendimiento del mercado total",
+        "El riesgo sistemático del activo respecto al mercado",
+        "La rentabilidad esperada"
+      ],
+      "correctAnswer": 2,
+      "explanation": "En el CAPM, la beta representa el riesgo sistemático del activo comparado con el mercado. No incluye riesgos específicos."
+    },
+    {
+      "id": "m1-82",
+      "block": "Tipos de Inversión",
+      "question": "¿Cuál de estos estilos de inversión suele centrarse en empresas con beneficios estables, bajo endeudamiento y alto retorno sobre el capital?",
+      "options": [
+        "Momentum",
+        "Growth",
+        "Value",
+        "Quality"
+      ],
+      "correctAnswer": 3,
+      "explanation": "El estilo quality investing busca empresas con balances sólidos, beneficios recurrentes y elevada rentabilidad sobre el capital."
+    },
+    {
+      "id": "m1-83",
+      "block": "Tipos de Inversión",
+      "question": "¿Qué significa que un activo tenga una correlación cercana a cero con otro?",
+      "options": [
+        "Que sus movimientos son idénticos",
+        "Que se mueven en direcciones opuestas",
+        "Que sus movimientos no están relacionados",
+        "Que uno es más volátil que otro"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Una correlación cercana a cero indica que no hay relación predecible entre los movimientos de ambos activos."
+    },
+    {
+      "id": "m1-84",
+      "block": "Tipos de Inversión",
+      "question": "¿Qué representa el riesgo específico o no sistemático?",
+      "options": [
+        "El riesgo derivado de los tipos de interés",
+        "El riesgo propio de un activo o empresa concreta",
+        "El riesgo de mercado global",
+        "El riesgo de inflación"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El riesgo específico es aquel que afecta solo a una empresa o sector y puede eliminarse mediante diversificación."
+    },
+    {
+      "id": "m1-85",
+      "block": "Tipos de Inversión",
+      "question": "¿Qué tipo de empresa tiende a repartir dividendos regulares a sus accionistas?",
+      "options": [
+        "Empresas tecnológicas emergentes",
+        "Empresas industriales cíclicas",
+        "Empresas maduras y estables, como utilities",
+        "Startups en fase de crecimiento"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Las empresas maduras y estables, como las del sector energético o servicios públicos, suelen repartir dividendos constantes."
+    },
+    {
+      "id": "m1-86",
+      "block": "Tipos de Inversión",
+      "question": "¿Qué es el stock picking?",
+      "options": [
+        "Invertir únicamente en bonos a largo plazo",
+        "Elegir acciones específicas en lugar de invertir en índices",
+        "Seleccionar valores con baja volatilidad",
+        "Vender acciones de forma masiva"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El stock picking es una estrategia activa que consiste en seleccionar acciones concretas tras un análisis individual."
+    },
+    {
+      "id": "m1-87",
+      "block": "Tipos de Inversión",
+      "question": "Durante una fase de expansión económica, ¿cuál suele ser el comportamiento general del mercado de acciones?",
+      "options": [
+        "Aumenta la volatilidad y caen los precios",
+        "Tiende a subir debido al aumento de beneficios empresariales",
+        "Se refugia en renta fija",
+        "Disminuyen los beneficios y cae la inversión"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En una fase de expansión, la economía crece, los beneficios aumentan y las acciones suelen subir."
+    },
+    {
+      "id": "m1-88",
+      "block": "Tipos de Inversión",
+      "question": "¿Qué organismo regula los mercados financieros en España?",
+      "options": [
+        "CNMC",
+        "CNMV",
+        "BCE",
+        "ESMA"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La CNMV (Comisión Nacional del Mercado de Valores) es el organismo regulador de los mercados en España."
+    }
+  ]
+}
