@@ -84,13 +84,13 @@ export default function HamburgerMenu() {
               className="breadcrumb-module-btn"
               onClick={() => setDropdownOpen((prev) => !prev)}
               aria-expanded={dropdownOpen}
-              aria-haspopup="listbox"
+              aria-haspopup="true"
             >
               {currentLabel} ▾
             </button>
 
             {dropdownOpen && (
-              <div className="breadcrumb-dropdown" role="listbox">
+              <div className="breadcrumb-dropdown" role="menu">
                 {topicModules.map((mod) => {
                   const isActive = mod.id === selectedModule;
                   return (
@@ -98,8 +98,8 @@ export default function HamburgerMenu() {
                       key={mod.id}
                       className={`breadcrumb-dropdown-item ${isActive ? 'active' : ''}`}
                       onClick={() => handleModuleSwitch(mod.id)}
-                      role="option"
-                      aria-selected={isActive}
+                      role="menuitem"
+                      aria-current={isActive ? 'true' : undefined}
                     >
                       {getShortLabel(mod)}
                     </button>
@@ -108,6 +108,7 @@ export default function HamburgerMenu() {
                 <div className="breadcrumb-dropdown-divider" />
                 <button
                   className="breadcrumb-dropdown-item breadcrumb-dropdown-footer"
+                  role="menuitem"
                   onClick={() => {
                     setDropdownOpen(false);
                     navigate('/topics');

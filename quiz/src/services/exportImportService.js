@@ -165,15 +165,14 @@ export const sanitizeImportData = (data) => {
     (b) => typeof b === 'string' && b.length > 0
   );
 
-  // Sanitize streak — construct a clean object from known fields only
+  // Sanitize streak — construct a clean object with only the fields gamificationService uses
   let streak = null;
   if (data.streak && typeof data.streak === 'object' && !Array.isArray(data.streak)) {
     const s = data.streak;
     streak = {
       currentStreak: isNonNegInt(s.currentStreak) ? s.currentStreak : 0,
-      longestStreak: isNonNegInt(s.longestStreak) ? s.longestStreak : 0,
-      lastPracticeDate: isValidPastDate(s.lastPracticeDate)
-        ? s.lastPracticeDate
+      lastActiveDate: isValidPastDate(s.lastActiveDate)
+        ? s.lastActiveDate
         : null,
     };
   }

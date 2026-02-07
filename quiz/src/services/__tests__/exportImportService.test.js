@@ -98,7 +98,7 @@ describe('exportImportService', () => {
       const data = {
         stats: { q1: { correct: 5, incorrect: 2 } },
         bookmarks: ['q1', 'q3'],
-        streak: { currentStreak: 3, longestStreak: 7, lastPracticeDate: '2025-06-15T12:00:00.000Z' },
+        streak: { currentStreak: 3, lastActiveDate: '2025-06-15' },
       };
 
       const result = applyImportData(data);
@@ -107,8 +107,7 @@ describe('exportImportService', () => {
       expect(storage.saveBookmarks).toHaveBeenCalledWith(['q1', 'q3']);
       expect(storage.setItem).toHaveBeenCalledWith('quizStreak', {
         currentStreak: 3,
-        longestStreak: 7,
-        lastPracticeDate: '2025-06-15T12:00:00.000Z',
+        lastActiveDate: '2025-06-15',
       });
       expect(result.stats).toEqual({ q1: { correct: 5, incorrect: 2 } });
       expect(result.bookmarks).toEqual(['q1', 'q3']);
@@ -135,14 +134,11 @@ describe('exportImportService', () => {
     });
 
     it('should strip dangerous keys and invalid entries during sanitization', () => {
+      // Use JSON.parse so __proto__ is a real enumerable key (object literals silently set prototype)
       const data = {
-        stats: {
-          q1: { correct: 3, incorrect: 1 },
-          __proto__: { correct: 99, incorrect: 0 },
-          q2: 'bad-entry',
-        },
+        stats: JSON.parse('{"q1":{"correct":3,"incorrect":1},"__proto__":{"correct":99,"incorrect":0},"q2":"bad-entry"}'),
         bookmarks: ['q1', '', 42, 'q3'],
-        streak: { currentStreak: -5, longestStreak: 'bad' },
+        streak: { currentStreak: -5, lastActiveDate: 'not-a-date' },
       };
 
       const result = applyImportData(data);
@@ -151,11 +147,10 @@ describe('exportImportService', () => {
       expect(result.stats).toEqual({ q1: { correct: 3, incorrect: 1 } });
       // empty string and non-string filtered out
       expect(result.bookmarks).toEqual(['q1', 'q3']);
-      // negative currentStreak defaults to 0, invalid longestStreak defaults to 0
+      // negative currentStreak defaults to 0, invalid date defaults to null
       expect(result.streak).toEqual({
         currentStreak: 0,
-        longestStreak: 0,
-        lastPracticeDate: null,
+        lastActiveDate: null,
       });
     });
   });
