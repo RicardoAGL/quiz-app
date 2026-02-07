@@ -41,8 +41,6 @@ export const recordActivity = () => {
   if (saved.lastActiveDate && daysBetween(saved.lastActiveDate, today) === 1) {
     // Consecutive day
     newStreak = saved.currentStreak + 1;
-  } else if (saved.lastActiveDate === today) {
-    newStreak = saved.currentStreak;
   } else {
     // Streak broken or first activity
     newStreak = 1;

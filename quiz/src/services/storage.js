@@ -93,10 +93,6 @@ export const saveBookmarks = (bookmarks) => {
 };
 
 /**
- * Reset all quiz data
- * @returns {boolean} Success status
- */
-/**
  * Get whether user has seen splash screen
  * @returns {boolean}
  */
@@ -130,16 +126,16 @@ export const saveSelectedTopic = (topicId) => {
 };
 
 /**
- * Reset all quiz data
+ * Reset quiz progress data (stats, bookmarks, streak).
+ * Preserves UX preferences (hasSeenSplash, selectedTopic) so the user
+ * is not forced through onboarding again after a stats reset.
  * @returns {boolean} Success status
  */
 export const resetAllData = () => {
   const statsRemoved = removeItem(STORAGE_KEYS.QUIZ_STATS);
   const bookmarksRemoved = removeItem(STORAGE_KEYS.BOOKMARKS);
-  const splashRemoved = removeItem(STORAGE_KEYS.HAS_SEEN_SPLASH);
-  const topicRemoved = removeItem(STORAGE_KEYS.SELECTED_TOPIC);
   const streakRemoved = removeItem(STORAGE_KEYS.STREAK);
-  return statsRemoved && bookmarksRemoved && splashRemoved && topicRemoved && streakRemoved;
+  return statsRemoved && bookmarksRemoved && streakRemoved;
 };
 
 export default {
