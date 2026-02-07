@@ -275,6 +275,79 @@
   margin: 0;
 }
 
+/* Data Management Section */
+.data-management-section {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e8eaed;
+}
+
+.data-management-label {
+  font-size: clamp(11px, 1.8vw, 13px);
+  color: #95a5a6;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+.data-management-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.data-btn {
+  flex: 1;
+  max-width: 140px;
+  padding: 10px 16px;
+  border: 2px solid #667eea;
+  background: transparent;
+  color: #667eea;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-height: 42px;
+}
+
+.data-btn:hover {
+  background: rgba(102, 126, 234, 0.08);
+}
+
+.data-btn:active {
+  background: rgba(102, 126, 234, 0.15);
+}
+
+.data-help-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #bdc3c7;
+  background: transparent;
+  color: #95a5a6;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+.data-help-btn:hover {
+  border-color: #667eea;
+  color: #667eea;
+  background: rgba(102, 126, 234, 0.05);
+}
+
 /* Responsive breakpoints following 2025 best practices */
 /* Mobile: base styles above (mobile-first approach) */
 

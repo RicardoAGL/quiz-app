@@ -3,13 +3,14 @@
 .breadcrumb-nav {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   padding: 12px 16px;
   background-color: #f5f6fa;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
-.breadcrumb-link {
+/* ← Temas back button */
+.breadcrumb-back {
   background: none;
   border: none;
   cursor: pointer;
@@ -22,21 +23,123 @@
   min-height: 36px;
   display: flex;
   align-items: center;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
-.breadcrumb-link:hover {
+.breadcrumb-back:hover {
   background-color: rgba(102, 126, 234, 0.1);
 }
 
-.breadcrumb-link:active {
+.breadcrumb-back:active {
   background-color: rgba(102, 126, 234, 0.15);
 }
 
-.breadcrumb-separator {
-  color: #95a5a6;
+/* Divider */
+.breadcrumb-divider {
+  color: #bdc3c7;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   user-select: none;
+  flex-shrink: 0;
+}
+
+/* Dropdown wrapper */
+.breadcrumb-dropdown-wrapper {
+  position: relative;
+  min-width: 0;
+}
+
+/* Module selector button */
+.breadcrumb-module-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: clamp(13px, 2.5vw, 15px);
+  font-weight: 600;
+  color: #2c3e50;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.breadcrumb-module-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.breadcrumb-module-btn:active {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Dropdown panel */
+.breadcrumb-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 220px;
+  max-width: 320px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.16);
+  z-index: 100;
+  padding: 6px;
+  animation: dropdown-in 0.15s ease-out;
+}
+
+@keyframes dropdown-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dropdown items */
+.breadcrumb-dropdown-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c3e50;
+  border-radius: 8px;
+  transition: background-color 0.15s;
+}
+
+.breadcrumb-dropdown-item:hover {
+  background-color: #f0f2f5;
+}
+
+.breadcrumb-dropdown-item.active {
+  background-color: rgba(102, 126, 234, 0.12);
+  color: #667eea;
+  font-weight: 700;
+}
+
+/* Divider line in dropdown */
+.breadcrumb-dropdown-divider {
+  height: 1px;
+  background-color: #e8eaed;
+  margin: 4px 8px;
+}
+
+/* Footer item */
+.breadcrumb-dropdown-footer {
+  color: #667eea;
+  font-weight: 600;
 }
 
 /* Responsive */

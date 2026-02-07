@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useQuiz } from '../hooks/useQuiz';
 import { useToast } from '../hooks/useToast';
@@ -39,6 +39,14 @@ export default function QuizScreen() {
   const [askedQuestions, setAskedQuestions] = useState([]);
   const [sessionStats, setSessionStats] = useState({ correct: 0, incorrect: 0 });
   const [lastAnswerCorrect, setLastAnswerCorrect] = useState(false);
+  const actionsRef = useRef(null);
+
+  // Auto-scroll to actions button after explanation appears
+  useEffect(() => {
+    if (showResult && actionsRef.current) {
+      actionsRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }, [showResult]);
 
   /**
    * Load next weighted random question
@@ -185,7 +193,7 @@ export default function QuizScreen() {
         )}
 
         {/* Actions */}
-        <div className="actions-container">
+        <div className="actions-container" ref={actionsRef}>
           {!showResult ? (
             <button className="submit-button" onClick={handleSubmit}>
               Validar Respuesta

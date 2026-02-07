@@ -1,0 +1,113 @@
+/* Help Modal */
+
+.help-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 20px;
+  animation: help-overlay-in 0.2s ease-out;
+}
+
+@keyframes help-overlay-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.help-modal {
+  background: #fff;
+  border-radius: 20px;
+  padding: 28px 24px;
+  max-width: 420px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+  animation: help-modal-in 0.25s ease-out;
+}
+
+@keyframes help-modal-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.help-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #95a5a6;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  line-height: 1;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.help-modal-close:hover {
+  color: #2c3e50;
+  background-color: #f0f2f5;
+}
+
+.help-modal-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 16px 0;
+  padding-right: 32px;
+}
+
+.help-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.help-modal-body p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+  margin: 0;
+}
+
+.help-modal-tip {
+  background-color: #f0f7ff;
+  border-left: 3px solid #3498db;
+  padding: 10px 12px;
+  border-radius: 0 8px 8px 0;
+  color: #2c3e50 !important;
+  font-size: 13px !important;
+}
+
+.help-modal-action {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #667eea;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.help-modal-action:hover {
+  background: #5a6fd6;
+}
+
+.help-modal-action:active {
+  background: #4f62c2;
+}

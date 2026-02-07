@@ -6,6 +6,9 @@
 import * as storage from './storage';
 
 const EXPORT_VERSION = 1;
+const MAX_IMPORT_SIZE = 1 * 1024 * 1024; // 1 MB
+const DANGEROUS_KEYS = new Set(['__proto__', 'constructor', 'prototype']);
+const ALLOWED_STAT_KEYS = new Set(['correct', 'incorrect', 'lastAttempt']);
 
 /**
  * Gather all user progress data for export.
@@ -82,6 +85,16 @@ export const validateImportData = (data) => {
  */
 export const readJsonFile = (file) => {
   return new Promise((resolve, reject) => {
+    if (file.size > MAX_IMPORT_SIZE) {
+      reject(new Error('El archivo es demasiado grande (máximo 1 MB)'));
+      return;
+    }
+    // Check MIME type when available, and always check extension
+    const validTypes = ['application/json', 'text/json', ''];
+    if (!validTypes.includes(file.type) || !file.name.toLowerCase().endsWith('.json')) {
+      reject(new Error('Solo se permiten archivos .json'));
+      return;
+    }
     const reader = new FileReader();
     reader.onload = (e) => {
       try {
@@ -97,15 +110,86 @@ export const readJsonFile = (file) => {
 };
 
 /**
+ * Check if a string is a valid ISO 8601 date that is not in the future.
+ */
+const isValidPastDate = (str) => {
+  if (typeof str !== 'string') return false;
+  const d = new Date(str);
+  if (isNaN(d.getTime())) return false;
+  return d.getTime() <= Date.now();
+};
+
+/**
+ * Check if a value is a non-negative integer.
+ */
+const isNonNegInt = (v) => Number.isInteger(v) && v >= 0;
+
+/**
+ * Sanitize and harden imported data before applying.
+ * - Strips prototype-pollution keys from stats
+ * - Validates each stat entry shape (correct, incorrect, lastAttempt)
+ * - Whitelists only allowed keys per stat entry
+ * - Validates streak shape and rejects future dates
+ * - Filters bookmarks to non-empty strings only
+ * @param {Object} data - Validated import data envelope
+ * @returns {Object} Sanitized { stats, bookmarks, streak }
+ */
+export const sanitizeImportData = (data) => {
+  // Sanitize stats
+  const rawStats = data.stats || {};
+  const stats = {};
+  for (const key of Object.keys(rawStats)) {
+    if (DANGEROUS_KEYS.has(key)) continue;
+    const entry = rawStats[key];
+    if (!entry || typeof entry !== 'object') continue;
+    const correct = isNonNegInt(entry.correct) ? entry.correct : 0;
+    const incorrect = isNonNegInt(entry.incorrect) ? entry.incorrect : 0;
+    // Skip entries with no data
+    if (correct === 0 && incorrect === 0 && !entry.lastAttempt) continue;
+    const sanitized = { correct, incorrect };
+    if (entry.lastAttempt !== undefined && entry.lastAttempt !== null) {
+      sanitized.lastAttempt = isValidPastDate(entry.lastAttempt)
+        ? entry.lastAttempt
+        : null;
+    }
+    // Only keep allowed keys
+    for (const k of Object.keys(sanitized)) {
+      if (!ALLOWED_STAT_KEYS.has(k)) delete sanitized[k];
+    }
+    stats[key] = sanitized;
+  }
+
+  // Sanitize bookmarks — non-empty strings only
+  const rawBookmarks = Array.isArray(data.bookmarks) ? data.bookmarks : [];
+  const bookmarks = rawBookmarks.filter(
+    (b) => typeof b === 'string' && b.length > 0
+  );
+
+  // Sanitize streak — construct a clean object from known fields only
+  let streak = null;
+  if (data.streak && typeof data.streak === 'object' && !Array.isArray(data.streak)) {
+    const s = data.streak;
+    streak = {
+      currentStreak: isNonNegInt(s.currentStreak) ? s.currentStreak : 0,
+      longestStreak: isNonNegInt(s.longestStreak) ? s.longestStreak : 0,
+      lastPracticeDate: isValidPastDate(s.lastPracticeDate)
+        ? s.lastPracticeDate
+        : null,
+    };
+  }
+
+  return { stats, bookmarks, streak };
+};
+
+/**
  * Apply imported data to storage.
+ * Runs sanitization before writing to storage.
  * Returns the imported stats and bookmarks for in-memory state update.
  * @param {Object} data - Validated import data
  * @returns {{ stats: Object, bookmarks: Array, streak: Object|null }}
  */
 export const applyImportData = (data) => {
-  const stats = data.stats || {};
-  const bookmarks = data.bookmarks || [];
-  const streak = data.streak || null;
+  const { stats, bookmarks, streak } = sanitizeImportData(data);
 
   storage.saveStats(stats);
   storage.saveBookmarks(bookmarks);
@@ -124,5 +208,6 @@ export default {
   downloadExport,
   validateImportData,
   readJsonFile,
+  sanitizeImportData,
   applyImportData,
 };

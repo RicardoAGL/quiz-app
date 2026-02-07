@@ -56,7 +56,7 @@ export default function ModuleGridScreen() {
             onClick={() => navigate('/topics')}
             aria-label="Volver a temas"
           >
-            ←
+            ← Temas
           </button>
           <h1 className="module-grid-title">{topic.name}</h1>
           <button

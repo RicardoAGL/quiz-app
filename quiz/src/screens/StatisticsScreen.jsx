@@ -1,9 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useQuiz } from '../hooks/useQuiz';
 import { useToast } from '../hooks/useToast';
 import { calculateAccuracyString } from '../utils/calculations';
 import Toast from '../components/Toast';
+import HelpModal from '../components/HelpModal';
 import './StatisticsScreen.css';
 
 export default function StatisticsScreen() {
@@ -11,6 +12,7 @@ export default function StatisticsScreen() {
   const { questions, stats, resetStats, getGlobalStats, exportProgress, importProgress } = useQuiz();
   const { toast, showWarning, showInfo, hideToast } = useToast();
   const fileInputRef = useRef(null);
+  const [helpOpen, setHelpOpen] = useState(false);
 
   const globalStats = getGlobalStats();
 
@@ -77,6 +79,7 @@ export default function StatisticsScreen() {
   return (
     <div className="container stats-container">
       {toast && <Toast {...toast} onClose={hideToast} />}
+      <HelpModal isOpen={helpOpen} onClose={() => setHelpOpen(false)} />
       <div className="content">
         <h1 className="stats-title">Estadísticas</h1>
 
@@ -135,6 +138,13 @@ export default function StatisticsScreen() {
               </button>
               <button className="import-btn" onClick={() => fileInputRef.current?.click()}>
                 Importar progreso
+              </button>
+              <button
+                className="data-help-btn"
+                onClick={() => setHelpOpen(true)}
+                aria-label="Ayuda sobre exportar e importar"
+              >
+                ?
               </button>
               <input
                 ref={fileInputRef}
