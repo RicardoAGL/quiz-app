@@ -219,6 +219,10 @@
   background-color: #9b59b6;
 }
 
+.time-attack-button {
+  background-color: #e74c3c;
+}
+
 .button-text {
   font-size: clamp(16px, 3vw, 18px);
   font-weight: bold;
@@ -227,7 +231,8 @@
 }
 
 .button-text.primary,
-.button-text.stats {
+.button-text.stats,
+.button-text.time-attack {
   color: #fff;
 }
 
@@ -243,7 +248,8 @@
 }
 
 .button-subtext.primary,
-.button-subtext.stats {
+.button-subtext.stats,
+.button-subtext.time-attack {
   color: #fff;
   opacity: 0.9;
 }

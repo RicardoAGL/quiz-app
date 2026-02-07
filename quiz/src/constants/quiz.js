@@ -39,6 +39,7 @@ export const ROUTES = {
   REVIEW_MODE: '/review/:mode',
   REVIEW_BLOCK: '/review/:mode/:blockName',
   STATISTICS: '/statistics',
+  TIME_ATTACK: '/time-attack',
 };
 
 /**
