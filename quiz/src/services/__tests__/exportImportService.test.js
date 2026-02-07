@@ -13,6 +13,7 @@ vi.mock('../storage', () => ({
   saveStats: vi.fn(() => true),
   saveBookmarks: vi.fn(() => true),
   setItem: vi.fn(() => true),
+  removeItem: vi.fn(() => true),
   STORAGE_KEYS: {
     QUIZ_STATS: 'quizStats',
     BOOKMARKS: 'bookmarks',
@@ -118,6 +119,15 @@ describe('exportImportService', () => {
       expect(storage.saveBookmarks).toHaveBeenCalledWith([]);
       expect(result.stats).toEqual({});
       expect(result.bookmarks).toEqual([]);
+    });
+
+    it('should clear existing streak when imported data has no streak', () => {
+      const data = { stats: { q1: { correct: 1, incorrect: 0 } }, bookmarks: [] };
+
+      applyImportData(data);
+
+      expect(storage.removeItem).toHaveBeenCalledWith('quizStreak');
+      expect(storage.setItem).not.toHaveBeenCalled();
     });
   });
 });

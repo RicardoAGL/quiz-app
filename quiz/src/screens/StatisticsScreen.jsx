@@ -44,6 +44,13 @@ export default function StatisticsScreen() {
   const handleImport = async (e) => {
     const file = e.target.files?.[0];
     if (!file) return;
+    const confirmed = window.confirm(
+      'Importar reemplazará todo tu progreso actual. ¿Deseas continuar?'
+    );
+    if (!confirmed) {
+      if (fileInputRef.current) fileInputRef.current.value = '';
+      return;
+    }
     try {
       await importProgress(file);
       showInfo('Progreso importado correctamente', 2000);

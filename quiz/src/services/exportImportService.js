@@ -112,6 +112,8 @@ export const applyImportData = (data) => {
 
   if (streak) {
     storage.setItem(storage.STORAGE_KEYS.STREAK, streak);
+  } else {
+    storage.removeItem(storage.STORAGE_KEYS.STREAK);
   }
 
   return { stats, bookmarks, streak };
