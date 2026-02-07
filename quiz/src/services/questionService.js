@@ -16,7 +16,8 @@ import {
  */
 const hoursSince = (isoDate) => {
   if (!isoDate) return Infinity;
-  return (Date.now() - new Date(isoDate).getTime()) / (1000 * 60 * 60);
+  const ms = Date.now() - new Date(isoDate).getTime();
+  return Number.isNaN(ms) ? Infinity : ms / (1000 * 60 * 60);
 };
 
 /**
@@ -58,6 +59,7 @@ export const getQuestionsByBlock = (questions, blockName) => {
  * 1. Unanswered questions (highest priority)
  * 2. Questions with high failure rate
  * 3. Questions seen less frequently
+ * 4. Spaced repetition (time decay for mostly-correct, boost for mostly-incorrect)
  *
  * @param {Array} questions - Available questions
  * @param {Object} stats - Statistics object
@@ -100,15 +102,15 @@ export const getWeightedRandomQuestion = (questions, stats, excludeIds = []) => 
     weight = weight * (1 + frequencyBonus);
 
     // Spaced repetition: adjust weight based on time since last attempt.
-    // Recently-correct questions get suppressed; old ones regain weight.
-    // Recently-incorrect questions get a small boost for reinforcement.
+    // Uses aggregate correct/incorrect ratio as a proxy for mastery:
+    // mostly-correct questions get suppressed; mostly-incorrect get boosted.
     const hours = hoursSince(questionStats.lastAttempt);
-    const wasLastCorrect = questionStats.correct > questionStats.incorrect;
+    const isMostlyCorrect = questionStats.correct > questionStats.incorrect;
 
-    if (wasLastCorrect && hours < Infinity) {
+    if (isMostlyCorrect && hours < Infinity) {
       const decayFactor = 1 - Math.pow(0.5, hours / SPACED_REPETITION_HALF_LIFE_HOURS);
       weight = weight * (0.2 + 0.8 * decayFactor);
-    } else if (!wasLastCorrect && hours < 24) {
+    } else if (!isMostlyCorrect && hours < 24) {
       weight = weight * 1.3;
     }
 
