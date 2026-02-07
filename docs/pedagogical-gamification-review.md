@@ -188,30 +188,39 @@
 | # | Recommendation | Domain | Effort |
 |---|---------------|--------|--------|
 | 1 | Add `lastAttemptDate` to stats + basic temporal spacing | Algorithm | Medium |
-| 2 | Cross-module interleaved quiz mode | Study modes | Medium |
+| 2 | Multi-module quiz mode (select modules for combined practice) | Study modes | Medium |
 | 3 | Improvement tracking / personal bests | Gamification | Medium |
 | 4 | Module mastery milestones | Gamification | Low |
+| 5 | Export/import progress (backup & restore stats, bookmarks, streaks) | Data | Low |
 
 ### Important (Medium impact, improves learning quality)
 
 | # | Recommendation | Domain | Effort |
 |---|---------------|--------|--------|
-| 5 | "Study card" mode for chronically failed questions | Study modes | Medium |
-| 6 | "Try again" option before showing answer | Feedback | Medium |
-| 7 | Confidence rating before answer reveal | Feedback | Low |
-| 8 | "Weak spot" highlight on dashboard | Gamification | Low |
-| 9 | Session goal setting | Gamification | Medium |
-| 10 | Accuracy emphasis rebalancing (add "coverage" metric) | Gamification | Low |
+| 6 | Time attack mode (3 or 5 min timed sessions, track score) | Study modes | Medium |
+| 7 | "Study card" mode for chronically failed questions | Study modes | Medium |
+| 8 | "Try again" option before showing answer | Feedback | Medium |
+| 9 | Confidence rating before answer reveal | Feedback | Low |
+| 10 | "Weak spot" highlight on dashboard | Gamification | Low |
+| 11 | Session goal setting | Gamification | Medium |
+| 12 | Accuracy emphasis rebalancing (add "coverage" metric) | Gamification | Low |
+
+### Infrastructure / Architecture
+
+| # | Recommendation | Domain | Effort |
+|---|---------------|--------|--------|
+| 13 | DuckDB storage backend (structured queries for dynamic dashboards) | Infrastructure | High |
 
 ### Nice-to-have (Lower impact, polish)
 
 | # | Recommendation | Domain | Effort |
 |---|---------------|--------|--------|
-| 11 | Expanding interval model (Leitner/SM-2) | Algorithm | High |
-| 12 | Exam simulation mode | Study modes | Medium |
-| 13 | Streak freeze mechanic | Gamification | Low |
-| 14 | Response latency tracking | Algorithm | Low |
-| 15 | Weekly summary notification | Gamification | Medium |
+| 14 | Expanding interval model (Leitner/SM-2) | Algorithm | High |
+| 15 | Exam simulation mode | Study modes | Medium |
+| 16 | Cross-module interleaving in adaptive algorithm | Algorithm | Medium |
+| 17 | Streak freeze mechanic | Gamification | Low |
+| 18 | Response latency tracking | Algorithm | Low |
+| 19 | Weekly summary notification | Gamification | Medium |
 
 ---
 
