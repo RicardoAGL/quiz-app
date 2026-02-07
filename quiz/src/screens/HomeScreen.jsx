@@ -92,6 +92,14 @@ export default function HomeScreen() {
               </button>
 
               <button
+                className="button time-attack-button"
+                onClick={() => navigate('/time-attack')}
+              >
+                <span className="button-text time-attack">Contrarreloj</span>
+                <span className="button-subtext time-attack">3 o 5 min, mejora tu velocidad</span>
+              </button>
+
+              <button
                 className="button secondary-button"
                 onClick={() => navigate('/review')}
                 disabled={incorrectCount === 0}

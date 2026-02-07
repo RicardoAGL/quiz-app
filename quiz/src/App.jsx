@@ -12,6 +12,7 @@ import ReviewScreen from './screens/ReviewScreen';
 import StatisticsScreen from './screens/StatisticsScreen';
 import SequentialModeScreen from './screens/SequentialModeScreen';
 import ScoreDashboardScreen from './screens/ScoreDashboardScreen';
+import TimeAttackScreen from './screens/TimeAttackScreen';
 import MultiModuleSelectScreen from './screens/MultiModuleSelectScreen';
 import * as storage from './services/storage';
 import './App.css';
@@ -46,6 +47,7 @@ function App() {
             {/* Module-scoped screens */}
             <Route path="/home" element={<HomeScreen />} />
             <Route path="/quiz" element={<QuizScreen />} />
+            <Route path="/time-attack" element={<TimeAttackScreen />} />
             <Route path="/sequential-mode" element={<SequentialModeScreen />} />
             <Route path="/review/:mode/:blockName" element={<ReviewScreen />} />
             <Route path="/review/:mode" element={<ReviewScreen />} />
