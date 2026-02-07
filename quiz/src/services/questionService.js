@@ -7,7 +7,18 @@ import {
   UNANSWERED_QUESTION_WEIGHT,
   FAILURE_RATE_MULTIPLIER,
   BASE_WEIGHT,
+  SPACED_REPETITION_HALF_LIFE_HOURS,
 } from '../constants/quiz';
+
+/**
+ * Calculate hours elapsed since a given ISO date string.
+ * Returns Infinity if date is null/undefined.
+ */
+const hoursSince = (isoDate) => {
+  if (!isoDate) return Infinity;
+  const ms = Date.now() - new Date(isoDate).getTime();
+  return Number.isNaN(ms) ? Infinity : ms / (1000 * 60 * 60);
+};
 
 /**
  * Get questions that have been answered incorrectly more than correctly
@@ -48,6 +59,7 @@ export const getQuestionsByBlock = (questions, blockName) => {
  * 1. Unanswered questions (highest priority)
  * 2. Questions with high failure rate
  * 3. Questions seen less frequently
+ * 4. Spaced repetition (time decay for mostly-correct, boost for mostly-incorrect)
  *
  * @param {Array} questions - Available questions
  * @param {Object} stats - Statistics object
@@ -88,6 +100,19 @@ export const getWeightedRandomQuestion = (questions, stats, excludeIds = []) => 
     // Less frequently seen questions get higher priority
     const frequencyBonus = 1 / (totalAttempts - minFrequency + 1);
     weight = weight * (1 + frequencyBonus);
+
+    // Spaced repetition: adjust weight based on time since last attempt.
+    // Uses aggregate correct/incorrect ratio as a proxy for mastery:
+    // mostly-correct questions get suppressed; mostly-incorrect get boosted.
+    const hours = hoursSince(questionStats.lastAttempt);
+    const isMostlyCorrect = questionStats.correct > questionStats.incorrect;
+
+    if (isMostlyCorrect && hours < Infinity) {
+      const decayFactor = 1 - Math.pow(0.5, hours / SPACED_REPETITION_HALF_LIFE_HOURS);
+      weight = weight * (0.2 + 0.8 * decayFactor);
+    } else if (!isMostlyCorrect && hours < 24) {
+      weight = weight * 1.3;
+    }
 
     return { question: q, weight };
   });

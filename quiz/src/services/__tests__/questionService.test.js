@@ -296,4 +296,81 @@ describe('questionService', () => {
       expect(priorityCount.q1).toBeLessThan(priorityCount.q2);
     });
   });
+
+  describe('getWeightedRandomQuestion - Spaced Repetition', () => {
+    it('should deprioritize recently-correct questions', () => {
+      const now = Date.now();
+      // Both questions have identical stats, but q1 was answered correctly just now
+      // and q2 was answered correctly 5 days ago
+      const spacedStats = {
+        q1: { correct: 5, incorrect: 1, lastAttempt: new Date(now).toISOString() },
+        q2: { correct: 5, incorrect: 1, lastAttempt: new Date(now - 5 * 24 * 60 * 60 * 1000).toISOString() },
+      };
+
+      const questionsSubset = [mockQuestions[0], mockQuestions[1]]; // q1, q2
+      const results = { q1: 0, q2: 0 };
+
+      for (let i = 0; i < 500; i++) {
+        const result = getWeightedRandomQuestion(questionsSubset, spacedStats, []);
+        results[result.id]++;
+      }
+
+      // q2 (old) should appear more than q1 (recent) due to time decay
+      expect(results.q2).toBeGreaterThan(results.q1);
+    });
+
+    it('should not suppress recently-incorrect questions', () => {
+      const now = Date.now();
+      // q1: recently incorrect — should still appear frequently
+      // q2: recently correct — should be suppressed
+      const spacedStats = {
+        q1: { correct: 2, incorrect: 5, lastAttempt: new Date(now).toISOString() },
+        q2: { correct: 5, incorrect: 2, lastAttempt: new Date(now).toISOString() },
+      };
+
+      const questionsSubset = [mockQuestions[0], mockQuestions[1]];
+      const results = { q1: 0, q2: 0 };
+
+      for (let i = 0; i < 500; i++) {
+        const result = getWeightedRandomQuestion(questionsSubset, spacedStats, []);
+        results[result.id]++;
+      }
+
+      // q1 (recently incorrect) should appear more than q2 (recently correct & suppressed)
+      expect(results.q1).toBeGreaterThan(results.q2);
+    });
+
+    it('should handle stats without lastAttempt field gracefully', () => {
+      // Old stats format without lastAttempt
+      const oldStats = {
+        q1: { correct: 3, incorrect: 1 },
+        q2: { correct: 1, incorrect: 3 },
+      };
+
+      const questionsSubset = [mockQuestions[0], mockQuestions[1]];
+      const result = getWeightedRandomQuestion(questionsSubset, oldStats, []);
+      expect(result).toBeDefined();
+    });
+
+    it('should fully restore weight after enough time passes', () => {
+      const now = Date.now();
+      // q1: answered 30 days ago (well past half-life) — should be almost fully restored
+      // q2: identical stats, answered just now — should be suppressed
+      const spacedStats = {
+        q1: { correct: 8, incorrect: 2, lastAttempt: new Date(now - 30 * 24 * 60 * 60 * 1000).toISOString() },
+        q2: { correct: 8, incorrect: 2, lastAttempt: new Date(now).toISOString() },
+      };
+
+      const questionsSubset = [mockQuestions[0], mockQuestions[1]];
+      const results = { q1: 0, q2: 0 };
+
+      for (let i = 0; i < 500; i++) {
+        const result = getWeightedRandomQuestion(questionsSubset, spacedStats, []);
+        results[result.id]++;
+      }
+
+      // q1 (30 days old) should significantly outweigh q2 (just answered)
+      expect(results.q1).toBeGreaterThan(results.q2 * 2);
+    });
+  });
 });

@@ -24,6 +24,13 @@ export const FAILURE_RATE_MULTIPLIER = 3;
 export const BASE_WEIGHT = 0.5;
 
 /**
+ * Spaced repetition half-life in hours.
+ * Controls how quickly correctly-answered questions regain selection weight.
+ * At this many hours, a recently-correct question has regained 50% of its weight.
+ */
+export const SPACED_REPETITION_HALF_LIFE_HOURS = 48;
+
+/**
  * Route paths used throughout the application
  */
 export const ROUTES = {
@@ -57,6 +64,7 @@ export default {
   UNANSWERED_QUESTION_WEIGHT,
   FAILURE_RATE_MULTIPLIER,
   BASE_WEIGHT,
+  SPACED_REPETITION_HALF_LIFE_HOURS,
   ROUTES,
   REVIEW_MODES,
 };
