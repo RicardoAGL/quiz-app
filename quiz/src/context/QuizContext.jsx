@@ -79,6 +79,7 @@ export const QuizProvider = ({ children }) => {
   const [selectedTopic, setSelectedTopicState] = useState(null);
   const [availableModules, setAvailableModules] = useState([]);
   const [selectedModule, setSelectedModule] = useState(null);
+  const [multiModuleIds, setMultiModuleIds] = useState(null);
   const [questions, setQuestions] = useState([]);
   const [stats, setStats] = useState({});
   const [bookmarks, setBookmarks] = useState([]);
@@ -107,15 +108,20 @@ export const QuizProvider = ({ children }) => {
     loadData();
   }, []);
 
-  // Update questions when module changes
+  // Update questions when module changes or multi-module mode toggles
   useEffect(() => {
-    if (selectedModule && availableModules.length > 0) {
+    if (multiModuleIds && multiModuleIds.length > 0) {
+      const merged = availableModules
+        .filter((m) => multiModuleIds.includes(m.id))
+        .flatMap((m) => m.data.questions);
+      setQuestions(merged);
+    } else if (selectedModule && availableModules.length > 0) {
       const module = availableModules.find((m) => m.id === selectedModule);
       if (module) {
         setQuestions(module.data.questions);
       }
     }
-  }, [selectedModule, availableModules]);
+  }, [multiModuleIds, selectedModule, availableModules]);
 
   const loadData = () => {
     try {
@@ -225,6 +231,14 @@ export const QuizProvider = ({ children }) => {
     }
   };
 
+  const startMultiModuleQuiz = (moduleIds) => {
+    setMultiModuleIds(moduleIds);
+  };
+
+  const stopMultiModuleQuiz = () => {
+    setMultiModuleIds(null);
+  };
+
   const value = {
     questions,
     stats,
@@ -246,6 +260,9 @@ export const QuizProvider = ({ children }) => {
     getQuestionsByBlock,
     getGlobalStats,
     resetStats,
+    multiModuleIds,
+    startMultiModuleQuiz,
+    stopMultiModuleQuiz,
   };
 
   return <QuizContext.Provider value={value}>{children}</QuizContext.Provider>;

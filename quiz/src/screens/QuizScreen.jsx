@@ -16,7 +16,13 @@ export default function QuizScreen() {
     toggleBookmark,
     bookmarks,
     stats,
+    multiModuleIds,
+    stopMultiModuleQuiz,
+    availableModules,
+    selectedTopic,
   } = useQuiz();
+
+  const isMultiModule = multiModuleIds && multiModuleIds.length > 0;
 
   const { toast, showInfo, showWarning, hideToast } = useToast();
 
@@ -38,19 +44,28 @@ export default function QuizScreen() {
    * Load next weighted random question
    * Uses functional state updates to avoid dependency on askedQuestions
    */
+  const handleGoBack = useCallback(() => {
+    if (isMultiModule) {
+      stopMultiModuleQuiz();
+      navigate(`/topics/${selectedTopic}`);
+    } else {
+      navigate('/home');
+    }
+  }, [isMultiModule, stopMultiModuleQuiz, navigate, selectedTopic]);
+
   const loadNextQuestion = useCallback(() => {
     setAskedQuestions(prevAsked => {
       const question = getWeightedRandomQuestion(prevAsked);
       if (!question) {
         showInfo('¡Has practicado todas las preguntas disponibles! Volviendo al inicio...', 4000);
-        setTimeout(() => navigate('/home'), 1000);
+        setTimeout(() => handleGoBack(), 1000);
         return prevAsked;
       }
       setCurrentQuestion(question);
       resetInteraction(question);
       return [...prevAsked, question.id];
     });
-  }, [getWeightedRandomQuestion, navigate, showInfo, resetInteraction]);
+  }, [getWeightedRandomQuestion, handleGoBack, showInfo, resetInteraction]);
 
   // Load first question on mount only
   useEffect(() => {
@@ -92,10 +107,27 @@ export default function QuizScreen() {
   const displayOptions = shuffledOptions || currentQuestion.options;
   const questionStats = stats[currentQuestion.id] || { correct: 0, incorrect: 0 };
 
+  const multiModuleLabel = isMultiModule
+    ? multiModuleIds
+        .map((id) => {
+          const mod = availableModules.find((m) => m.id === id);
+          const match = mod?.name.match(/\d+/);
+          return match ? match[0] : id;
+        })
+        .join(', ')
+    : null;
+
   return (
     <div className="container quiz-container">
       {toast && <Toast {...toast} onClose={hideToast} />}
       <div className="content">
+        {/* Multi-module indicator */}
+        {isMultiModule && (
+          <div className="multi-module-indicator">
+            Modulos {multiModuleLabel}
+          </div>
+        )}
+
         {/* Header */}
         <div className="header">
           <div className="block-tag">
@@ -186,8 +218,8 @@ export default function QuizScreen() {
         </div>
 
         {/* Back button */}
-        <button className="back-button" onClick={() => navigate('/home')}>
-          ← Volver al inicio
+        <button className="back-button" onClick={handleGoBack}>
+          ← {isMultiModule ? 'Volver a modulos' : 'Volver al inicio'}
         </button>
       </div>
     </div>

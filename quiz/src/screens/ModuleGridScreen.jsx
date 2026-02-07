@@ -67,6 +67,17 @@ export default function ModuleGridScreen() {
           </button>
         </div>
 
+        {/* Multi-module practice button */}
+        {topic.modules.length >= 2 && (
+          <button
+            className="multi-module-btn"
+            onClick={() => navigate(`/topics/${topicId}/multi-quiz`)}
+          >
+            <span className="multi-module-btn-text">Practica Multi-Modulo</span>
+            <span className="multi-module-btn-sub">Combina modulos para practicar</span>
+          </button>
+        )}
+
         {/* Module grid */}
         <div className="module-cards-grid">
           {topic.modules.map((mod, index) => {
