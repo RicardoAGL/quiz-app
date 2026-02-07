@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useQuiz } from '../hooks/useQuiz';
 import { getModuleProgress } from '../services/progressService';
+import { getModuleMastery } from '../services/masteryService';
 import ProgressRing from '../components/ProgressRing';
 import './ModuleGridScreen.css';
 
@@ -82,6 +83,7 @@ export default function ModuleGridScreen() {
         <div className="module-cards-grid">
           {topic.modules.map((mod, index) => {
             const progress = getModuleProgress(mod.data.questions, stats);
+            const mastery = getModuleMastery(mod.data.questions, stats);
             const number = getModuleNumber(mod.name);
             const accuracyNum = parseFloat(progress.accuracy);
 
@@ -99,6 +101,14 @@ export default function ModuleGridScreen() {
                   {number}
                 </div>
                 <p className="module-card-name">{mod.name.replace(/^Modulo \d+:\s*/, '')}</p>
+                {mastery.level.key !== 'none' && (
+                  <span
+                    className="module-card-mastery"
+                    style={{ backgroundColor: mastery.level.color }}
+                  >
+                    {mastery.level.icon} {mastery.level.label}
+                  </span>
+                )}
                 <div className="module-card-footer">
                   <span className="module-card-count">
                     {mod.data.questions.length} preguntas

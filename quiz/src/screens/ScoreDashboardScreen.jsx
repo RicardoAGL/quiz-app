@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useQuiz } from '../hooks/useQuiz';
 import { getModuleProgress, getTopicProgress } from '../services/progressService';
 import { getStreak, recordActivity, getAccuracyTier, TIER_COLORS } from '../services/gamificationService';
+import { getModuleMastery } from '../services/masteryService';
 import ProgressRing from '../components/ProgressRing';
 import AccuracyBadge from '../components/AccuracyBadge';
 import './ScoreDashboardScreen.css';
@@ -96,6 +97,7 @@ export default function ScoreDashboardScreen() {
             <div className="dashboard-module-grid">
               {topic.modules.map((mod) => {
                 const progress = getModuleProgress(mod.data.questions, stats);
+                const mastery = getModuleMastery(mod.data.questions, stats);
                 const modAccuracy = parseFloat(progress.accuracy);
                 const modTier = getAccuracyTier(modAccuracy);
 
@@ -118,6 +120,14 @@ export default function ScoreDashboardScreen() {
                     <p className="dashboard-module-progress">
                       {progress.answered}/{progress.total} preguntas
                     </p>
+                    {mastery.level.key !== 'none' && (
+                      <span
+                        className="dashboard-mastery-badge"
+                        style={{ backgroundColor: mastery.level.color }}
+                      >
+                        {mastery.level.icon} {mastery.level.label}
+                      </span>
+                    )}
                   </button>
                 );
               })}
