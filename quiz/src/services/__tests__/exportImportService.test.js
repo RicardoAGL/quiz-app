@@ -94,20 +94,23 @@ describe('exportImportService', () => {
   });
 
   describe('applyImportData', () => {
-    it('should save stats and bookmarks to storage', () => {
+    it('should sanitize and save stats, bookmarks, and streak to storage', () => {
       const data = {
         stats: { q1: { correct: 5, incorrect: 2 } },
         bookmarks: ['q1', 'q3'],
-        streak: { currentStreak: 3, lastActiveDate: '2026-01-20' },
+        streak: { currentStreak: 3, lastActiveDate: '2025-06-15' },
       };
 
       const result = applyImportData(data);
 
-      expect(storage.saveStats).toHaveBeenCalledWith(data.stats);
-      expect(storage.saveBookmarks).toHaveBeenCalledWith(data.bookmarks);
-      expect(storage.setItem).toHaveBeenCalledWith('quizStreak', data.streak);
-      expect(result.stats).toEqual(data.stats);
-      expect(result.bookmarks).toEqual(data.bookmarks);
+      expect(storage.saveStats).toHaveBeenCalledWith({ q1: { correct: 5, incorrect: 2 } });
+      expect(storage.saveBookmarks).toHaveBeenCalledWith(['q1', 'q3']);
+      expect(storage.setItem).toHaveBeenCalledWith('quizStreak', {
+        currentStreak: 3,
+        lastActiveDate: '2025-06-15',
+      });
+      expect(result.stats).toEqual({ q1: { correct: 5, incorrect: 2 } });
+      expect(result.bookmarks).toEqual(['q1', 'q3']);
     });
 
     it('should handle missing fields gracefully', () => {
@@ -128,6 +131,27 @@ describe('exportImportService', () => {
 
       expect(storage.removeItem).toHaveBeenCalledWith('quizStreak');
       expect(storage.setItem).not.toHaveBeenCalled();
+    });
+
+    it('should strip dangerous keys and invalid entries during sanitization', () => {
+      // Use JSON.parse so __proto__ is a real enumerable key (object literals silently set prototype)
+      const data = {
+        stats: JSON.parse('{"q1":{"correct":3,"incorrect":1},"__proto__":{"correct":99,"incorrect":0},"q2":"bad-entry"}'),
+        bookmarks: ['q1', '', 42, 'q3'],
+        streak: { currentStreak: -5, lastActiveDate: 'not-a-date' },
+      };
+
+      const result = applyImportData(data);
+
+      // __proto__ stripped, q2 skipped (not an object)
+      expect(result.stats).toEqual({ q1: { correct: 3, incorrect: 1 } });
+      // empty string and non-string filtered out
+      expect(result.bookmarks).toEqual(['q1', 'q3']);
+      // negative currentStreak defaults to 0, invalid date defaults to null
+      expect(result.streak).toEqual({
+        currentStreak: 0,
+        lastActiveDate: null,
+      });
     });
   });
 });

@@ -51,6 +51,14 @@ export default function ReviewScreen() {
   const isSequentialMode = mode === 'sequential';
   const [currentIndex, setCurrentIndex] = useState(0);
   const [lastAnswerCorrect, setLastAnswerCorrect] = useState(false);
+  const actionsRef = useRef(null);
+
+  // Auto-scroll to actions button after explanation appears
+  useEffect(() => {
+    if (showResult && actionsRef.current) {
+      actionsRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }, [showResult]);
 
   /**
    * Snapshot the question list once during render using a ref.
@@ -216,7 +224,7 @@ export default function ReviewScreen() {
         )}
 
         {/* Actions */}
-        <div className="actions-container">
+        <div className="actions-container" ref={actionsRef}>
           {!showResult ? (
             <button className="submit-button" onClick={handleSubmit}>
               Validar Respuesta

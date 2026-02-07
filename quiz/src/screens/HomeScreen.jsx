@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useQuiz } from '../hooks/useQuiz';
+import { useToast } from '../hooks/useToast';
+import Toast from '../components/Toast';
+import HelpModal from '../components/HelpModal';
 import './HomeScreen.css';
 
 export default function HomeScreen() {
@@ -10,7 +13,13 @@ export default function HomeScreen() {
     loading,
     bookmarks,
     getIncorrectQuestions,
+    exportProgress,
+    importProgress,
   } = useQuiz();
+
+  const { toast, showInfo, showWarning, hideToast } = useToast();
+  const fileInputRef = useRef(null);
+  const [helpOpen, setHelpOpen] = useState(false);
 
   if (loading) {
     return (
@@ -23,8 +32,34 @@ export default function HomeScreen() {
   const globalStats = getGlobalStats();
   const incorrectCount = getIncorrectQuestions().length;
 
+  const handleExport = () => {
+    exportProgress();
+    showInfo('Progreso exportado correctamente', 2000);
+  };
+
+  const handleImport = async (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const confirmed = window.confirm(
+      'Importar reemplazará todo tu progreso actual. ¿Deseas continuar?'
+    );
+    if (!confirmed) {
+      if (fileInputRef.current) fileInputRef.current.value = '';
+      return;
+    }
+    try {
+      await importProgress(file);
+      showInfo('Progreso importado correctamente', 2000);
+    } catch (err) {
+      showWarning(err.message || 'Error al importar el archivo', 3000);
+    }
+    if (fileInputRef.current) fileInputRef.current.value = '';
+  };
+
   return (
     <div className="container">
+      {toast && <Toast {...toast} onClose={hideToast} />}
+      <HelpModal isOpen={helpOpen} onClose={() => setHelpOpen(false)} />
       <div className="content">
         {/* Header */}
         <div className="header-container">
@@ -69,6 +104,33 @@ export default function HomeScreen() {
               <p className="info-text">
                 💡 El sistema prioriza automáticamente las preguntas que has fallado más veces
               </p>
+            </div>
+
+            {/* Data Management Section */}
+            <div className="data-management-section">
+              <p className="data-management-label">Tu progreso: seguridad y respaldo</p>
+              <div className="data-management-row">
+                <button className="data-btn" onClick={handleExport}>
+                  Exportar
+                </button>
+                <button className="data-btn" onClick={() => fileInputRef.current?.click()}>
+                  Importar
+                </button>
+                <button
+                  className="data-help-btn"
+                  onClick={() => setHelpOpen(true)}
+                  aria-label="Ayuda sobre exportar e importar"
+                >
+                  ?
+                </button>
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept=".json"
+                  onChange={handleImport}
+                  style={{ display: 'none' }}
+                />
+              </div>
             </div>
           </div>
 
