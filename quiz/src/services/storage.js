@@ -4,9 +4,12 @@
  * Makes it easy to swap storage mechanisms (LocalStorage, SessionStorage, IndexedDB, etc.)
  */
 
-const STORAGE_KEYS = {
+export const STORAGE_KEYS = {
   QUIZ_STATS: 'quizStats',
   BOOKMARKS: 'bookmarks',
+  HAS_SEEN_SPLASH: 'hasSeenSplash',
+  SELECTED_TOPIC: 'selectedTopic',
+  STREAK: 'quizStreak',
 };
 
 /**
@@ -93,10 +96,50 @@ export const saveBookmarks = (bookmarks) => {
  * Reset all quiz data
  * @returns {boolean} Success status
  */
+/**
+ * Get whether user has seen splash screen
+ * @returns {boolean}
+ */
+export const getHasSeenSplash = () => {
+  return getItem(STORAGE_KEYS.HAS_SEEN_SPLASH) === true;
+};
+
+/**
+ * Set splash screen as seen
+ * @returns {boolean} Success status
+ */
+export const setHasSeenSplash = () => {
+  return setItem(STORAGE_KEYS.HAS_SEEN_SPLASH, true);
+};
+
+/**
+ * Get selected topic ID
+ * @returns {string|null}
+ */
+export const getSelectedTopic = () => {
+  return getItem(STORAGE_KEYS.SELECTED_TOPIC);
+};
+
+/**
+ * Save selected topic ID
+ * @param {string} topicId
+ * @returns {boolean} Success status
+ */
+export const saveSelectedTopic = (topicId) => {
+  return setItem(STORAGE_KEYS.SELECTED_TOPIC, topicId);
+};
+
+/**
+ * Reset all quiz data
+ * @returns {boolean} Success status
+ */
 export const resetAllData = () => {
   const statsRemoved = removeItem(STORAGE_KEYS.QUIZ_STATS);
   const bookmarksRemoved = removeItem(STORAGE_KEYS.BOOKMARKS);
-  return statsRemoved && bookmarksRemoved;
+  const splashRemoved = removeItem(STORAGE_KEYS.HAS_SEEN_SPLASH);
+  const topicRemoved = removeItem(STORAGE_KEYS.SELECTED_TOPIC);
+  const streakRemoved = removeItem(STORAGE_KEYS.STREAK);
+  return statsRemoved && bookmarksRemoved && splashRemoved && topicRemoved && streakRemoved;
 };
 
 export default {
@@ -107,6 +150,10 @@ export default {
   saveStats,
   getBookmarks,
   saveBookmarks,
+  getHasSeenSplash,
+  setHasSeenSplash,
+  getSelectedTopic,
+  saveSelectedTopic,
   resetAllData,
   STORAGE_KEYS,
 };

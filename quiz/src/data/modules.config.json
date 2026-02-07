@@ -1,49 +1,58 @@
 {
-  "modules": [
+  "topics": [
     {
-      "id": "modulo1",
-      "name": "Módulo 1: Medidores de Rendimiento y Tipos de Inversión",
-      "file": "modulo1.json"
-    },
-    {
-      "id": "modulo2",
-      "name": "Módulo 2: Introducción a la Gestión de Riesgos",
-      "file": "modulo2.json"
-    },
-    {
-      "id": "modulo3",
-      "name": "Módulo 3: Análisis Empresarial y Private Equity",
-      "file": "modulo3.json"
-    },
-    {
-      "id": "modulo4",
-      "name": "Módulo 4: Renta Variable",
-      "file": "modulo4.json"
-    },
-    {
-      "id": "modulo5",
-      "name": "Módulo 5: Renta Fija",
-      "file": "modulo5.json"
-    },
-    {
-      "id": "modulo6",
-      "name": "Módulo 6: Materias Primas",
-      "file": "modulo6.json"
-    },
-    {
-      "id": "modulo7",
-      "name": "Módulo 7: Derivados Financieros",
-      "file": "modulo7.json"
-    },
-    {
-      "id": "modulo8",
-      "name": "Módulo 8: Bitcoin y Criptomonedas",
-      "file": "modulo8.json"
-    },
-    {
-      "id": "modulo9",
-      "name": "Módulo 9: Inversión Inmobiliaria",
-      "file": "modulo9.json"
+      "id": "economia",
+      "name": "Economia e Inversion",
+      "description": "Modulos del curso de inversion",
+      "icon": "chart-line",
+      "color": "#667eea",
+      "modules": [
+        {
+          "id": "modulo1",
+          "name": "Modulo 1: Medidores de Rendimiento y Tipos de Inversion",
+          "file": "modulo1.json"
+        },
+        {
+          "id": "modulo2",
+          "name": "Modulo 2: Introduccion a la Gestion de Riesgos",
+          "file": "modulo2.json"
+        },
+        {
+          "id": "modulo3",
+          "name": "Modulo 3: Analisis Empresarial y Private Equity",
+          "file": "modulo3.json"
+        },
+        {
+          "id": "modulo4",
+          "name": "Modulo 4: Renta Variable",
+          "file": "modulo4.json"
+        },
+        {
+          "id": "modulo5",
+          "name": "Modulo 5: Renta Fija",
+          "file": "modulo5.json"
+        },
+        {
+          "id": "modulo6",
+          "name": "Modulo 6: Materias Primas",
+          "file": "modulo6.json"
+        },
+        {
+          "id": "modulo7",
+          "name": "Modulo 7: Derivados Financieros",
+          "file": "modulo7.json"
+        },
+        {
+          "id": "modulo8",
+          "name": "Modulo 8: Bitcoin y Criptomonedas",
+          "file": "modulo8.json"
+        },
+        {
+          "id": "modulo9",
+          "name": "Modulo 9: Inversion Inmobiliaria",
+          "file": "modulo9.json"
+        }
+      ]
     }
   ]
 }

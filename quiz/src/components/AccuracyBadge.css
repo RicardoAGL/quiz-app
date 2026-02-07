@@ -1,0 +1,36 @@
+.accuracy-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: clamp(11px, 2vw, 13px);
+  font-weight: 700;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+.accuracy-badge--none {
+  background-color: #ecf0f1;
+  color: #95a5a6;
+}
+
+.accuracy-badge--red {
+  background-color: #fdecea;
+  color: #e74c3c;
+}
+
+.accuracy-badge--amber {
+  background-color: #fef5e7;
+  color: #f39c12;
+}
+
+.accuracy-badge--blue {
+  background-color: #ebf5fb;
+  color: #3498db;
+}
+
+.accuracy-badge--green {
+  background-color: #eafaf1;
+  color: #27ae60;
+}

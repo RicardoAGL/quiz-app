@@ -27,7 +27,12 @@ export const BASE_WEIGHT = 0.5;
  * Route paths used throughout the application
  */
 export const ROUTES = {
-  HOME: '/',
+  ROOT: '/',
+  SPLASH: '/splash',
+  TOPICS: '/topics',
+  MODULE_GRID: '/topics/:topicId',
+  HOME: '/home',
+  DASHBOARD: '/topics/:topicId/dashboard',
   QUIZ: '/quiz',
   SEQUENTIAL_MODE: '/sequential-mode',
   REVIEW: '/review',

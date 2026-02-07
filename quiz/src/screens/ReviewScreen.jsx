@@ -4,6 +4,7 @@ import { useQuiz } from '../hooks/useQuiz';
 import { useToast } from '../hooks/useToast';
 import { useQuestionInteraction } from '../hooks/useQuestionInteraction';
 import Toast from '../components/Toast';
+import QuestionRenderer from '../components/QuestionRenderer';
 import './ReviewScreen.css';
 
 /**
@@ -37,8 +38,8 @@ export default function ReviewScreen() {
   const { toast, showInfo, showWarning, showSuccess, hideToast } = useToast();
 
   const {
-    selectedAnswer,
     showResult,
+    shuffledOptions,
     handleAnswerSelect,
     handleSubmit: submitAnswer,
     resetInteraction,
@@ -49,6 +50,7 @@ export default function ReviewScreen() {
   const isBlockMode = mode === 'block';
   const isSequentialMode = mode === 'sequential';
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [lastAnswerCorrect, setLastAnswerCorrect] = useState(false);
 
   /**
    * Snapshot the question list once during render using a ref.
@@ -69,6 +71,16 @@ export default function ReviewScreen() {
   }
   const questionsList = questionsRef.current || [];
 
+  // Shuffle options for the first question once available
+  const initialShuffleRef = useRef(false);
+  useEffect(() => {
+    if (!initialShuffleRef.current && questionsList.length > 0) {
+      initialShuffleRef.current = true;
+      resetInteraction(questionsList[0]);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [questionsList.length]);
+
   // Handle empty question list - redirect to home
   useEffect(() => {
     if (questions.length > 0 && questionsList.length === 0) {
@@ -83,7 +95,7 @@ export default function ReviewScreen() {
         message = 'No tienes preguntas falladas para repasar';
       }
       showInfo(`${message}. Volviendo al inicio...`, 3000);
-      setTimeout(() => navigate('/'), 1000);
+      setTimeout(() => navigate('/home'), 1000);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [questions.length]);
@@ -91,7 +103,9 @@ export default function ReviewScreen() {
   const currentQuestion = questionsList[currentIndex];
 
   const handleSubmit = () => {
-    const result = submitAnswer(currentQuestion);
+    const result = submitAnswer(currentQuestion, (isCorrect) => {
+      setLastAnswerCorrect(isCorrect);
+    });
 
     if (result === null) {
       showWarning('Por favor selecciona una respuesta');
@@ -100,18 +114,20 @@ export default function ReviewScreen() {
 
   const handleNext = () => {
     if (currentIndex < questionsList.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-      resetInteraction();
+      const nextIndex = currentIndex + 1;
+      setCurrentIndex(nextIndex);
+      resetInteraction(questionsList[nextIndex]);
     } else {
       showSuccess(`¡Has completado la revisión de ${questionsList.length} preguntas!`, 3000);
-      setTimeout(() => navigate('/'), 1500);
+      setTimeout(() => navigate('/home'), 1500);
     }
   };
 
   const handlePrevious = () => {
     if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-      resetInteraction();
+      const prevIndex = currentIndex - 1;
+      setCurrentIndex(prevIndex);
+      resetInteraction(questionsList[prevIndex]);
     }
   };
 
@@ -128,7 +144,7 @@ export default function ReviewScreen() {
   }
 
   const isBookmarked = bookmarks.includes(currentQuestion.id);
-  const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
+  const displayOptions = shuffledOptions || currentQuestion.options;
   const questionStats = stats[currentQuestion.id] || { correct: 0, incorrect: 0 };
 
   return (
@@ -172,12 +188,12 @@ export default function ReviewScreen() {
 
         {/* Question */}
         <div className="question-card">
-          <p className="question-text">{currentQuestion.question}</p>
+          <QuestionRenderer question={currentQuestion} />
         </div>
 
         {/* Options */}
         <div className="options-container">
-          {currentQuestion.options.map((option, index) => (
+          {displayOptions.map((option, index) => (
             <button
               key={index}
               className={getOptionClass(index, currentQuestion.correctAnswer)}
@@ -191,9 +207,9 @@ export default function ReviewScreen() {
 
         {/* Explanation */}
         {showResult && (
-          <div className={`explanation-card ${isCorrect ? 'correct-card' : 'incorrect-card'}`}>
+          <div className={`explanation-card ${lastAnswerCorrect ? 'correct-card' : 'incorrect-card'}`}>
             <p className="result-title">
-              {isCorrect ? '✅ ¡Correcto!' : '❌ Incorrecto'}
+              {lastAnswerCorrect ? '✅ ¡Correcto!' : '❌ Incorrecto'}
             </p>
             <p className="explanation-text">{currentQuestion.explanation}</p>
           </div>
@@ -223,7 +239,7 @@ export default function ReviewScreen() {
         </div>
 
         {/* Back button */}
-        <button className="back-button" onClick={() => navigate('/')}>
+        <button className="back-button" onClick={() => navigate('/home')}>
           ← Volver al inicio
         </button>
       </div>

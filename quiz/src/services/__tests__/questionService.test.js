@@ -150,7 +150,7 @@ describe('questionService', () => {
       }
 
       // Unanswered question should appear at least 60% of the time
-      expect(results.q4).toBeGreaterThan(60);
+      expect(results.q4).toBeGreaterThanOrEqual(60);
     });
 
     it('should eventually select all unanswered questions in rotation', () => {

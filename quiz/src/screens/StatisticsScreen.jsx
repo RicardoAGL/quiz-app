@@ -106,7 +106,7 @@ export default function StatisticsScreen() {
             <button className="reset-button" onClick={handleReset}>
               🔄 Resetear Estadísticas
             </button>
-            <button className="back-button" onClick={() => navigate('/')}>
+            <button className="back-button" onClick={() => navigate('/home')}>
               ← Volver al inicio
             </button>
           </div>
