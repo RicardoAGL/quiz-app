@@ -302,12 +302,16 @@ describe('storage', () => {
   });
 
   describe('resetAllData', () => {
-    it('should remove both quizStats and bookmarks', () => {
+    it('should remove quiz progress keys but preserve UX preferences', () => {
       const result = resetAllData();
 
       expect(localStorageMock.removeItem).toHaveBeenCalledWith('quizStats');
       expect(localStorageMock.removeItem).toHaveBeenCalledWith('bookmarks');
-      expect(localStorageMock.removeItem).toHaveBeenCalledTimes(2);
+      expect(localStorageMock.removeItem).toHaveBeenCalledWith('quizStreak');
+      expect(localStorageMock.removeItem).toHaveBeenCalledTimes(3);
+      // Should NOT remove UX preferences
+      expect(localStorageMock.removeItem).not.toHaveBeenCalledWith('hasSeenSplash');
+      expect(localStorageMock.removeItem).not.toHaveBeenCalledWith('selectedTopic');
       expect(result).toBe(true);
     });
 
@@ -348,14 +352,14 @@ describe('storage', () => {
       expect(result).toBe(false);
     });
 
-    it('should only remove quiz-specific keys', () => {
-      // This test verifies we're not calling clear() or removing other keys
+    it('should only remove progress keys, not UX preferences', () => {
       resetAllData();
 
       expect(localStorageMock.clear).not.toHaveBeenCalled();
-      expect(localStorageMock.removeItem).toHaveBeenCalledTimes(2);
+      expect(localStorageMock.removeItem).toHaveBeenCalledTimes(3);
       expect(localStorageMock.removeItem).toHaveBeenCalledWith('quizStats');
       expect(localStorageMock.removeItem).toHaveBeenCalledWith('bookmarks');
+      expect(localStorageMock.removeItem).toHaveBeenCalledWith('quizStreak');
     });
   });
 });

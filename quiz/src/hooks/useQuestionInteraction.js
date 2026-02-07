@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
+import { shuffleOptions } from '../services/shuffleService';
 
 /**
  * Custom hook for question interaction logic
  * Shared between QuizScreen and ReviewScreen
- * Handles answer selection, submission, and result display
+ * Handles answer selection, submission, result display, and option shuffling
  *
  * @param {Function} onAnswerSubmit - Callback when answer is submitted (questionId, isCorrect)
  * @returns {Object} Question interaction state and handlers
@@ -11,37 +12,41 @@ import { useState } from 'react';
 export const useQuestionInteraction = (onAnswerSubmit) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showResult, setShowResult] = useState(false);
+  const [shuffleState, setShuffleState] = useState(null);
 
   /**
-   * Handle answer selection
-   * @param {number} index - Selected answer index
+   * Handle answer selection (in shuffled space)
+   * @param {number} index - Selected answer index in shuffled order
    */
   const handleAnswerSelect = (index) => {
-    if (showResult) return; // Prevent selection after submission
+    if (showResult) return;
     setSelectedAnswer(index);
   };
 
   /**
-   * Submit the selected answer
+   * Submit the selected answer.
+   * Translates shuffled selection back to original index for stats recording.
    * @param {Object} currentQuestion - Current question object
    * @param {Function} onSuccess - Optional callback on successful submission
    * @returns {boolean|null} True if correct, false if incorrect, null if no answer selected
    */
   const handleSubmit = (currentQuestion, onSuccess) => {
     if (selectedAnswer === null) {
-      return null; // No answer selected
+      return null;
     }
 
-    const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
+    const correctAnswer = shuffleState
+      ? shuffleState.shuffledCorrectAnswer
+      : currentQuestion.correctAnswer;
 
-    // Call the submission callback
+    const isCorrect = selectedAnswer === correctAnswer;
+
     if (onAnswerSubmit) {
       onAnswerSubmit(currentQuestion.id, isCorrect);
     }
 
     setShowResult(true);
 
-    // Call optional success callback
     if (onSuccess) {
       onSuccess(isCorrect);
     }
@@ -50,26 +55,38 @@ export const useQuestionInteraction = (onAnswerSubmit) => {
   };
 
   /**
-   * Reset state for next question
+   * Reset state for next question and shuffle its options.
+   * @param {Object} [question] - The new question to shuffle options for. If omitted, just resets state.
    */
-  const resetInteraction = () => {
+  const resetInteraction = useCallback((question) => {
     setSelectedAnswer(null);
     setShowResult(false);
-  };
+
+    if (question && question.options) {
+      const result = shuffleOptions(question.options, question.correctAnswer);
+      setShuffleState(result);
+    } else {
+      setShuffleState(null);
+    }
+  }, []);
 
   /**
-   * Get CSS class for option button
-   * @param {number} index - Option index
-   * @param {number} correctAnswer - Correct answer index
+   * Get CSS class for option button (works in shuffled space)
+   * @param {number} index - Option index (in shuffled order)
+   * @param {number} correctAnswer - Correct answer index (original, from question data)
    * @returns {string} CSS class name
    */
   const getOptionClass = (index, correctAnswer) => {
+    const effectiveCorrect = shuffleState
+      ? shuffleState.shuffledCorrectAnswer
+      : correctAnswer;
+
     let className = 'option-button';
 
     if (showResult) {
-      if (index === correctAnswer) {
+      if (index === effectiveCorrect) {
         className += ' correct-option';
-      } else if (index === selectedAnswer && selectedAnswer !== correctAnswer) {
+      } else if (index === selectedAnswer && selectedAnswer !== effectiveCorrect) {
         className += ' incorrect-option';
       }
     } else if (selectedAnswer === index) {
@@ -82,6 +99,8 @@ export const useQuestionInteraction = (onAnswerSubmit) => {
   return {
     selectedAnswer,
     showResult,
+    shuffledOptions: shuffleState ? shuffleState.shuffledOptions : null,
+    shuffledCorrectAnswer: shuffleState ? shuffleState.shuffledCorrectAnswer : null,
     handleAnswerSelect,
     handleSubmit,
     resetInteraction,

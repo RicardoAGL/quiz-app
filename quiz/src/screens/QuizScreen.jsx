@@ -5,6 +5,7 @@ import { useToast } from '../hooks/useToast';
 import { useQuestionInteraction } from '../hooks/useQuestionInteraction';
 import { calculateSessionAccuracy } from '../utils/calculations';
 import Toast from '../components/Toast';
+import QuestionRenderer from '../components/QuestionRenderer';
 import './QuizScreen.css';
 
 export default function QuizScreen() {
@@ -20,8 +21,8 @@ export default function QuizScreen() {
   const { toast, showInfo, showWarning, hideToast } = useToast();
 
   const {
-    selectedAnswer,
     showResult,
+    shuffledOptions,
     handleAnswerSelect,
     handleSubmit: submitAnswer,
     resetInteraction,
@@ -31,6 +32,7 @@ export default function QuizScreen() {
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [askedQuestions, setAskedQuestions] = useState([]);
   const [sessionStats, setSessionStats] = useState({ correct: 0, incorrect: 0 });
+  const [lastAnswerCorrect, setLastAnswerCorrect] = useState(false);
 
   /**
    * Load next weighted random question
@@ -41,11 +43,11 @@ export default function QuizScreen() {
       const question = getWeightedRandomQuestion(prevAsked);
       if (!question) {
         showInfo('¡Has practicado todas las preguntas disponibles! Volviendo al inicio...', 4000);
-        setTimeout(() => navigate('/'), 1000);
+        setTimeout(() => navigate('/home'), 1000);
         return prevAsked;
       }
       setCurrentQuestion(question);
-      resetInteraction();
+      resetInteraction(question);
       return [...prevAsked, question.id];
     });
   }, [getWeightedRandomQuestion, navigate, showInfo, resetInteraction]);
@@ -58,7 +60,7 @@ export default function QuizScreen() {
 
   const handleSubmit = () => {
     const result = submitAnswer(currentQuestion, (isCorrect) => {
-      // Update session stats
+      setLastAnswerCorrect(isCorrect);
       setSessionStats(prev => ({
         correct: prev.correct + (isCorrect ? 1 : 0),
         incorrect: prev.incorrect + (isCorrect ? 0 : 1)
@@ -87,7 +89,7 @@ export default function QuizScreen() {
   }
 
   const isBookmarked = bookmarks.includes(currentQuestion.id);
-  const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
+  const displayOptions = shuffledOptions || currentQuestion.options;
   const questionStats = stats[currentQuestion.id] || { correct: 0, incorrect: 0 };
 
   return (
@@ -115,12 +117,12 @@ export default function QuizScreen() {
 
         {/* Question */}
         <div className="question-card">
-          <p className="question-text">{currentQuestion.question}</p>
+          <QuestionRenderer question={currentQuestion} />
         </div>
 
         {/* Options */}
         <div className="options-container">
-          {currentQuestion.options.map((option, index) => (
+          {displayOptions.map((option, index) => (
             <button
               key={index}
               className={getOptionClass(index, currentQuestion.correctAnswer)}
@@ -134,9 +136,9 @@ export default function QuizScreen() {
 
         {/* Explanation */}
         {showResult && (
-          <div className={`explanation-card ${isCorrect ? 'correct-card' : 'incorrect-card'}`}>
+          <div className={`explanation-card ${lastAnswerCorrect ? 'correct-card' : 'incorrect-card'}`}>
             <p className="result-title">
-              {isCorrect ? '✅ ¡Correcto!' : '❌ Incorrecto'}
+              {lastAnswerCorrect ? '✅ ¡Correcto!' : '❌ Incorrecto'}
             </p>
             <p className="explanation-text">{currentQuestion.explanation}</p>
           </div>
@@ -184,7 +186,7 @@ export default function QuizScreen() {
         </div>
 
         {/* Back button */}
-        <button className="back-button" onClick={() => navigate('/')}>
+        <button className="back-button" onClick={() => navigate('/home')}>
           ← Volver al inicio
         </button>
       </div>

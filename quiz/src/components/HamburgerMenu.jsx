@@ -1,105 +1,51 @@
-import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import React from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useQuiz } from '../hooks/useQuiz';
 import './HamburgerMenu.css';
 
 /**
- * HamburgerMenu Component
- * Provides a hamburger menu for module selection
- * Hidden on question/quiz screens to avoid distractions
+ * Breadcrumb Navigation Bar
+ * Shows "Topic > Module" on module-scoped screens (home, statistics, sequential-mode).
+ * Hidden on topic selection, module grid, quiz, review, and splash screens.
  */
 export default function HamburgerMenu() {
-  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const { availableModules, selectedModule, setSelectedModule } = useQuiz();
+  const navigate = useNavigate();
+  const { availableTopics, selectedTopic, availableModules, selectedModule } = useQuiz();
 
-  // Close menu when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (isOpen && !event.target.closest('.hamburger-menu')) {
-        setIsOpen(false);
-      }
-    };
+  // Only show on module-scoped screens
+  const visiblePaths = ['/home', '/statistics', '/sequential-mode'];
+  const isVisible = visiblePaths.some((p) => location.pathname === p);
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [isOpen]);
-
-  // Close menu on escape key
-  useEffect(() => {
-    const handleEscape = (event) => {
-      if (event.key === 'Escape' && isOpen) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener('keydown', handleEscape);
-    return () => document.removeEventListener('keydown', handleEscape);
-  }, [isOpen]);
-
-  const handleModuleSelect = (moduleId) => {
-    setSelectedModule(moduleId);
-    setIsOpen(false);
-  };
-
-  // Hide menu on question/quiz screens
-  const isQuestionScreen = ['/quiz', '/sequential-mode', '/review'].some(
-    path => location.pathname.startsWith(path)
-  );
-
-  // Don't render on question screens
-  if (isQuestionScreen) {
+  if (!isVisible) {
     return null;
   }
 
+  const topic = availableTopics.find((t) => t.id === selectedTopic);
+  const module = availableModules.find((m) => m.id === selectedModule);
+
+  const topicName = topic ? topic.name : 'Temas';
+  const moduleName = module ? module.name : '';
+
   return (
-    <div className="hamburger-menu">
-      {/* Hamburger Button */}
+    <nav className="breadcrumb-nav" aria-label="Navegacion">
       <button
-        className={`hamburger-button ${isOpen ? 'open' : ''}`}
-        onClick={() => setIsOpen(!isOpen)}
-        aria-label="Toggle module menu"
-        aria-expanded={isOpen}
+        className="breadcrumb-link"
+        onClick={() => navigate('/topics')}
       >
-        <span className="hamburger-line"></span>
-        <span className="hamburger-line"></span>
-        <span className="hamburger-line"></span>
+        {topicName}
       </button>
-
-      {/* Overlay */}
-      {isOpen && <div className="hamburger-overlay" onClick={() => setIsOpen(false)}></div>}
-
-      {/* Menu Panel */}
-      <div className={`hamburger-panel ${isOpen ? 'open' : ''}`}>
-        <div className="hamburger-header">
-          <h2 className="hamburger-title">Módulos</h2>
+      {moduleName && (
+        <>
+          <span className="breadcrumb-separator">›</span>
           <button
-            className="hamburger-close"
-            onClick={() => setIsOpen(false)}
-            aria-label="Close menu"
+            className="breadcrumb-link"
+            onClick={() => navigate(`/topics/${selectedTopic}`)}
           >
-            ✕
+            {moduleName.replace(/^Modulo \d+:\s*/, 'M' + (moduleName.match(/\d+/) || [''])[0] + ': ')}
           </button>
-        </div>
-
-        <div className="hamburger-modules">
-          {availableModules.map((module) => (
-            <button
-              key={module.id}
-              className={`hamburger-module-item ${
-                selectedModule === module.id ? 'active' : ''
-              }`}
-              onClick={() => handleModuleSelect(module.id)}
-            >
-              <span className="module-icon">📚</span>
-              <span className="module-name">{module.name}</span>
-              {selectedModule === module.id && (
-                <span className="module-check">✓</span>
-              )}
-            </button>
-          ))}
-        </div>
-      </div>
-    </div>
+        </>
+      )}
+    </nav>
   );
 }

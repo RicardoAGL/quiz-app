@@ -1,0 +1,23 @@
+.progress-ring {
+  transform: rotate(-90deg);
+  flex-shrink: 0;
+}
+
+.progress-ring__bg {
+  fill: none;
+  stroke: #e8ecf1;
+}
+
+.progress-ring__fg {
+  fill: none;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.8s ease-out;
+}
+
+.progress-ring__text {
+  fill: #2c3e50;
+  font-weight: 700;
+  /* Reset rotation so text is upright */
+  transform-origin: center;
+  transform: rotate(90deg);
+}

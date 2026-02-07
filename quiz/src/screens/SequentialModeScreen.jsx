@@ -60,7 +60,7 @@ export default function SequentialModeScreen() {
         </div>
 
         {/* Back button */}
-        <button className="back-button" onClick={() => navigate('/')}>
+        <button className="back-button" onClick={() => navigate('/home')}>
           ← Volver al inicio
         </button>
       </div>
