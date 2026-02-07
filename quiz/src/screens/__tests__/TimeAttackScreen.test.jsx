@@ -160,7 +160,7 @@ describe('TimeAttackScreen', () => {
         vi.advanceTimersByTime(180000);
       });
 
-      expect(screen.getByText('Precision')).toBeInTheDocument();
+      expect(screen.getByText('Precisión')).toBeInTheDocument();
       vi.useRealTimers();
     });
 

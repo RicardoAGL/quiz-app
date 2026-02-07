@@ -176,9 +176,7 @@ export default function TimeAttackScreen() {
   // --- RESULTS PHASE ---
   if (phase === 'results') {
     const total = sessionStats.correct + sessionStats.incorrect;
-    const accuracy = total > 0
-      ? ((sessionStats.correct / total) * 100).toFixed(1)
-      : '0.0';
+    const accuracy = calculateSessionAccuracy(sessionStats, 1);
 
     return (
       <div className="ta-container">
@@ -202,7 +200,7 @@ export default function TimeAttackScreen() {
               </div>
               <div className="ta-results-stat ta-results-stat--accuracy">
                 <span className="ta-results-stat-value">{accuracy}%</span>
-                <span className="ta-results-stat-label">Precision</span>
+                <span className="ta-results-stat-label">Precisión</span>
               </div>
             </div>
 
