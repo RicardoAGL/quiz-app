@@ -7,7 +7,17 @@ import {
   UNANSWERED_QUESTION_WEIGHT,
   FAILURE_RATE_MULTIPLIER,
   BASE_WEIGHT,
+  SPACED_REPETITION_HALF_LIFE_HOURS,
 } from '../constants/quiz';
+
+/**
+ * Calculate hours elapsed since a given ISO date string.
+ * Returns Infinity if date is null/undefined.
+ */
+const hoursSince = (isoDate) => {
+  if (!isoDate) return Infinity;
+  return (Date.now() - new Date(isoDate).getTime()) / (1000 * 60 * 60);
+};
 
 /**
  * Get questions that have been answered incorrectly more than correctly
@@ -88,6 +98,19 @@ export const getWeightedRandomQuestion = (questions, stats, excludeIds = []) => 
     // Less frequently seen questions get higher priority
     const frequencyBonus = 1 / (totalAttempts - minFrequency + 1);
     weight = weight * (1 + frequencyBonus);
+
+    // Spaced repetition: adjust weight based on time since last attempt.
+    // Recently-correct questions get suppressed; old ones regain weight.
+    // Recently-incorrect questions get a small boost for reinforcement.
+    const hours = hoursSince(questionStats.lastAttempt);
+    const wasLastCorrect = questionStats.correct > questionStats.incorrect;
+
+    if (wasLastCorrect && hours < Infinity) {
+      const decayFactor = 1 - Math.pow(0.5, hours / SPACED_REPETITION_HALF_LIFE_HOURS);
+      weight = weight * (0.2 + 0.8 * decayFactor);
+    } else if (!wasLastCorrect && hours < 24) {
+      weight = weight * 1.3;
+    }
 
     return { question: q, weight };
   });
