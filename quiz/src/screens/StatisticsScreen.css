@@ -269,6 +269,43 @@
   transition: width 0.3s ease;
 }
 
+.export-import-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.export-btn,
+.import-btn {
+  flex: 1;
+  border-radius: 12px;
+  padding: 14px 8px;
+  min-height: 48px;
+  border: 2px solid #3498db;
+  cursor: pointer;
+  font-size: clamp(13px, 2.5vw, 14px);
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.export-btn {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.export-btn:hover {
+  background-color: #2980b9;
+}
+
+.import-btn {
+  background-color: #fff;
+  color: #3498db;
+}
+
+.import-btn:hover {
+  background-color: #ebf5fb;
+}
+
 .reset-button {
   background-color: #e74c3c;
   border-radius: 12px;
