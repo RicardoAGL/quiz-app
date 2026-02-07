@@ -228,6 +228,7 @@ export const QuizProvider = ({ children }) => {
     if (success) {
       setStats({});
       setBookmarks([]);
+      setMultiModuleIds(null);
     }
   };
 

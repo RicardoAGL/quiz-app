@@ -73,6 +73,14 @@ export default function QuizScreen() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Clean up multi-module state when leaving QuizScreen
+  useEffect(() => {
+    return () => {
+      stopMultiModuleQuiz();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const handleSubmit = () => {
     const result = submitAnswer(currentQuestion, (isCorrect) => {
       setLastAnswerCorrect(isCorrect);
