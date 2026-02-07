@@ -69,6 +69,40 @@
   transform: scale(1.05);
 }
 
+/* Multi-module button */
+.multi-module-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  border-radius: 16px;
+  padding: 16px 20px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+  min-height: 48px;
+}
+
+.multi-module-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+}
+
+.multi-module-btn-text {
+  color: #fff;
+  font-size: clamp(15px, 2.5vw, 17px);
+  font-weight: 700;
+}
+
+.multi-module-btn-sub {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: clamp(12px, 2vw, 13px);
+  margin-top: 4px;
+}
+
 /* Grid */
 .module-cards-grid {
   display: grid;

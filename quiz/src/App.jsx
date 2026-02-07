@@ -13,6 +13,7 @@ import StatisticsScreen from './screens/StatisticsScreen';
 import SequentialModeScreen from './screens/SequentialModeScreen';
 import ScoreDashboardScreen from './screens/ScoreDashboardScreen';
 import TimeAttackScreen from './screens/TimeAttackScreen';
+import MultiModuleSelectScreen from './screens/MultiModuleSelectScreen';
 import * as storage from './services/storage';
 import './App.css';
 
@@ -41,6 +42,7 @@ function App() {
             <Route path="/topics" element={<TopicSelectionScreen />} />
             <Route path="/topics/:topicId" element={<ModuleGridScreen />} />
             <Route path="/topics/:topicId/dashboard" element={<ScoreDashboardScreen />} />
+            <Route path="/topics/:topicId/multi-quiz" element={<MultiModuleSelectScreen />} />
 
             {/* Module-scoped screens */}
             <Route path="/home" element={<HomeScreen />} />

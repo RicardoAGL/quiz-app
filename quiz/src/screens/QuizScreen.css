@@ -10,6 +10,18 @@
   margin: 0 auto;
 }
 
+/* Multi-module indicator */
+.multi-module-indicator {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  font-size: clamp(12px, 2vw, 14px);
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;

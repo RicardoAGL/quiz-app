@@ -40,6 +40,7 @@ export const ROUTES = {
   REVIEW_BLOCK: '/review/:mode/:blockName',
   STATISTICS: '/statistics',
   TIME_ATTACK: '/time-attack',
+  MULTI_QUIZ_SELECT: '/topics/:topicId/multi-quiz',
 };
 
 /**
