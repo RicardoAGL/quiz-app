@@ -3,6 +3,7 @@ import modulesConfig from '../data/modules.config.json';
 import * as storage from '../services/storage';
 import * as questionService from '../services/questionService';
 import * as statsService from '../services/statsService';
+import * as exportImportService from '../services/exportImportService';
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const QuizContext = createContext();
@@ -232,6 +233,22 @@ export const QuizProvider = ({ children }) => {
     }
   };
 
+  const exportProgress = () => {
+    const data = exportImportService.gatherExportData();
+    exportImportService.downloadExport(data);
+  };
+
+  const importProgress = async (file) => {
+    const data = await exportImportService.readJsonFile(file);
+    const validation = exportImportService.validateImportData(data);
+    if (!validation.valid) {
+      throw new Error(validation.error);
+    }
+    const imported = exportImportService.applyImportData(data);
+    setStats(imported.stats);
+    setBookmarks(imported.bookmarks);
+  };
+
   const startMultiModuleQuiz = (moduleIds) => {
     setMultiModuleIds(moduleIds);
   };
@@ -261,6 +278,8 @@ export const QuizProvider = ({ children }) => {
     getQuestionsByBlock,
     getGlobalStats,
     resetStats,
+    exportProgress,
+    importProgress,
     multiModuleIds,
     startMultiModuleQuiz,
     stopMultiModuleQuiz,

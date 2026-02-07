@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useQuiz } from '../hooks/useQuiz';
 import { useToast } from '../hooks/useToast';
@@ -8,8 +8,9 @@ import './StatisticsScreen.css';
 
 export default function StatisticsScreen() {
   const navigate = useNavigate();
-  const { questions, stats, resetStats, getGlobalStats } = useQuiz();
-  const { toast, showWarning, hideToast } = useToast();
+  const { questions, stats, resetStats, getGlobalStats, exportProgress, importProgress } = useQuiz();
+  const { toast, showWarning, showInfo, hideToast } = useToast();
+  const fileInputRef = useRef(null);
 
   const globalStats = getGlobalStats();
 
@@ -34,6 +35,24 @@ export default function StatisticsScreen() {
       blockStats[q.block].incorrect += questionStats.incorrect;
     }
   });
+
+  const handleExport = () => {
+    exportProgress();
+    showInfo('Progreso exportado correctamente', 2000);
+  };
+
+  const handleImport = async (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    try {
+      await importProgress(file);
+      showInfo('Progreso importado correctamente', 2000);
+    } catch (err) {
+      showWarning(err.message || 'Error al importar el archivo', 3000);
+    }
+    // Reset file input so the same file can be re-selected
+    if (fileInputRef.current) fileInputRef.current.value = '';
+  };
 
   const handleReset = () => {
     showWarning(
@@ -103,6 +122,21 @@ export default function StatisticsScreen() {
             </div>
 
             {/* Action Buttons */}
+            <div className="export-import-row">
+              <button className="export-btn" onClick={handleExport}>
+                Exportar progreso
+              </button>
+              <button className="import-btn" onClick={() => fileInputRef.current?.click()}>
+                Importar progreso
+              </button>
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept=".json"
+                onChange={handleImport}
+                style={{ display: 'none' }}
+              />
+            </div>
             <button className="reset-button" onClick={handleReset}>
               🔄 Resetear Estadísticas
             </button>
