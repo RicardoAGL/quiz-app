@@ -1,0 +1,553 @@
+{
+  "module": "Módulo 11",
+  "title": "Principios de Microeconomía",
+  "totalQuestions": 42,
+  "questions": [
+    {
+      "id": "m11-1",
+      "block": "BLOQUE 1: Las grandes ideas económicas",
+      "question": "¿Cuál de las siguientes definiciones de economía hace hincapié en la acción humana libre y los procesos de mercado?",
+      "options": [
+        "La ciencia que estudia la asignación de medios escasos para fines alternativos.",
+        "La ciencia social que estudia los procesos de interacción humana dirigidos a crear riqueza.",
+        "La teoría de la división para maximizar recursos para lograr un fin determinado.",
+        "La ciencia que estudia la producción y distribución de la riqueza nacional."
+      ],
+      "correctAnswer": 1,
+      "explanation": "La segunda definición enfatiza que la economía estudia las relaciones libres de intercambio de individuos en el mercado y los procesos de interacción humana dirigidos a crear riqueza. Este curso se centra principalmente en esta perspectiva."
+    },
+    {
+      "id": "m11-2",
+      "block": "BLOQUE 1: Las grandes ideas económicas",
+      "question": "¿Por qué realizan acciones económicas las personas, según la ciencia económica?",
+      "options": [
+        "Porque son altruistas y desean el bienestar colectivo.",
+        "Por obligación social y normas culturales impuestas.",
+        "Persiguiendo su propio interés.",
+        "Para maximizar el bienestar de la sociedad de forma consciente."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Las personas realizan acciones económicas persiguiendo su propio interés. Sin embargo, para lograrlo necesitan cooperar con los demás satisfaciendo los intereses de otros."
+    },
+    {
+      "id": "m11-3",
+      "block": "BLOQUE 1: Las grandes ideas económicas",
+      "question": "Según Adam Smith, ¿por qué el carnicero o el panadero trabajan para satisfacer tus necesidades?",
+      "options": [
+        "Por benevolencia y altruismo hacia el prójimo.",
+        "Por obligación legal impuesta por el Estado.",
+        "Por su propio interés personal.",
+        "Por mandato colectivo de la comunidad."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Adam Smith explicó en 'La riqueza de las naciones' (1776): 'No es por la benevolencia del carnicero o del panadero que podemos contar con nuestra cena, sino por su propio interés.' Para lograr su interés, deben satisfacer el nuestro."
+    },
+    {
+      "id": "m11-4",
+      "block": "BLOQUE 1: Las grandes ideas económicas",
+      "question": "¿Cuál es la función principal de instituciones como la propiedad privada, la libertad contractual y el imperio de la ley?",
+      "options": [
+        "Redistribuir la riqueza de los ricos hacia los pobres.",
+        "Alinear el interés personal con el interés social.",
+        "Eliminar la competencia para garantizar precios justos.",
+        "Sustituir el mecanismo de precios por la planificación central."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las buenas instituciones (propiedad privada, libertad contractual, libre competencia, imperio de la ley) son esenciales para alinear el interés personal con el interés social, permitiendo que la búsqueda del beneficio individual genere bienestar colectivo."
+    },
+    {
+      "id": "m11-5",
+      "block": "BLOQUE 1: Las grandes ideas económicas",
+      "question": "¿En qué consiste el coste de oportunidad de una decisión económica?",
+      "options": [
+        "El precio monetario pagado por adquirir un bien.",
+        "El coste total de producción incluyendo todos los factores.",
+        "El valor de la mejor alternativa a la que se renuncia al tomar una decisión.",
+        "Los impuestos que se pagan al consumir un bien."
+      ],
+      "correctAnswer": 2,
+      "explanation": "El coste de oportunidad es el valor de la mejor alternativa a la que renunciamos. Todas nuestras acciones tienen costes de oportunidad. Por ejemplo, una tienda en Calle Serrano que genera 40.000€ tiene un coste de oportunidad si el local podría alquilarse por 120.000€ al año."
+    },
+    {
+      "id": "m11-6",
+      "block": "BLOQUE 1: Las grandes ideas económicas",
+      "question": "El análisis económico se basa en un enfoque marginal. Esto significa que:",
+      "options": [
+        "Se compara el valor total de todos los bienes disponibles frente a otros.",
+        "Se evalúan los beneficios y costes de una unidad adicional en cada decisión.",
+        "Solo se consideran los costes monetarios directos de las acciones.",
+        "Se maximiza la producción total sin considerar los precios."
+      ],
+      "correctAnswer": 1,
+      "explanation": "El análisis económico es marginal: las decisiones cotidianas son elecciones marginales. Al comprar una coca-cola, comparamos el valor de esa unidad específica con el coste de un euro para nosotros en ese momento, no el valor total de todos los bienes."
+    },
+    {
+      "id": "m11-7",
+      "block": "BLOQUE 1: Las grandes ideas económicas",
+      "question": "¿Qué permite la especialización combinada con el libre intercambio en una economía?",
+      "options": [
+        "Que cada persona produzca todo lo que necesita de forma autosuficiente.",
+        "Que el gobierno controle la distribución óptima de bienes.",
+        "Que las personas se especialicen en lo que hacen mejor y accedan a mayor variedad de bienes.",
+        "Que se elimine la competencia entre productores."
+      ],
+      "correctAnswer": 2,
+      "explanation": "El libre intercambio permite la especialización: cada persona puede enfocarse en producir lo que hace mejor y, simultáneamente, consumir una variedad más amplia de bienes y servicios producidos por otros."
+    },
+    {
+      "id": "m11-8",
+      "block": "BLOQUE 1: Las grandes ideas económicas",
+      "question": "El crecimiento económico de los últimos 200 años ha producido principalmente:",
+      "options": [
+        "Mayor desigualdad sin mejoras en el bienestar general.",
+        "Reducción drástica de la pobreza extrema y aumento de la esperanza de vida.",
+        "Degradación de la salud pública en países desarrollados.",
+        "Disminución del PIB per cápita en economías emergentes."
+      ],
+      "correctAnswer": 1,
+      "explanation": "El crecimiento económico ha reducido la pobreza extrema del 35% en 1990 al 10.7% en 2013. La esperanza de vida ha aumentado de 33 años en 1900 a más de 70 en la actualidad. La correlación entre PIB per cápita y calidad de vida es clara."
+    },
+    {
+      "id": "m11-9",
+      "block": "BLOQUE 2: La acción humana y el cálculo económico",
+      "question": "¿Cuáles son las características fundamentales de la acción humana según la definición económica?",
+      "options": [
+        "Observable, involuntaria, instintiva y racional.",
+        "Voluntaria, consciente, creativa y no observable.",
+        "Compulsiva, inconsciente, rutinaria y medible.",
+        "Planificada, colectiva, predecible y forzada."
+      ],
+      "correctAnswer": 1,
+      "explanation": "La acción humana es: (1) voluntaria — no puede ser obligada ni prohibida; (2) consciente — no son actos reflejos; (3) creativa — capacidad de imaginar futuros nuevos; (4) no observable — el proceso mental interno no es accesible a terceros."
+    },
+    {
+      "id": "m11-10",
+      "block": "BLOQUE 2: La acción humana y el cálculo económico",
+      "question": "En economía, los fines que persiguen los individuos son:",
+      "options": [
+        "Limitados y objetivos, determinados por la sociedad.",
+        "Ilimitados y subjetivos.",
+        "Limitados y subjetivos.",
+        "Fijados por el gobierno según las necesidades sociales."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los fines son ilimitados (las personas pueden tener infinidad de fines) y subjetivos (cada persona los valora de forma distinta según su escala relativa de preferencias, que puede variar a lo largo de la vida)."
+    },
+    {
+      "id": "m11-11",
+      "block": "BLOQUE 2: La acción humana y el cálculo económico",
+      "question": "Los medios o recursos económicos son:",
+      "options": [
+        "Ilimitados y objetivos.",
+        "Ilimitados y subjetivos.",
+        "Limitados y subjetivos.",
+        "Abundantes en economías suficientemente desarrolladas."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Los medios son limitados (vivimos en un mundo de escasez — si los recursos fueran ilimitados, la economía no tendría sentido) y subjetivos (la utilidad que cada persona les otorga es distinta y subjetiva: un coche vale más para quien viaja 80 km al día que para quien trabaja a 5 minutos)."
+    },
+    {
+      "id": "m11-12",
+      "block": "BLOQUE 2: La acción humana y el cálculo económico",
+      "question": "La ley de preferencia temporal establece que:",
+      "options": [
+        "Las personas prefieren alcanzar sus fines en el espacio de tiempo más largo posible.",
+        "Las personas prefieren alcanzar sus fines en el espacio de tiempo más corto posible.",
+        "Las personas son indiferentes entre obtener un bien ahora o en el futuro.",
+        "Los fines futuros siempre tienen más valor que los fines presentes."
+      ],
+      "correctAnswer": 1,
+      "explanation": "La ley de preferencia temporal indica que las personas prefieren alcanzar sus fines en el espacio de tiempo más corto posible. Es una ley económica constante y fundamental sobre la acción humana. La preferencia temporal puede ser alta (impaciente) o baja (paciente), pero siempre existe."
+    },
+    {
+      "id": "m11-13",
+      "block": "BLOQUE 2: La acción humana y el cálculo económico",
+      "question": "¿Qué es el cálculo económico?",
+      "options": [
+        "El cálculo del PIB nacional realizado por el gobierno.",
+        "La diferencia psíquica entre el valor subjetivo de un fin y el coste de oportunidad de lograrlo.",
+        "El precio de mercado objetivo de un bien determinado.",
+        "El análisis estadístico de variables macroeconómicas."
+      ],
+      "correctAnswer": 1,
+      "explanation": "El cálculo económico es la diferencia psíquica entre el valor subjetivo del fin que queremos lograr y el coste (el valor del último fin al que renunciamos para lograrlo). Todos realizamos cálculo económico constantemente en nuestras decisiones cotidianas."
+    },
+    {
+      "id": "m11-14",
+      "block": "BLOQUE 3: Oferta, demanda y elasticidad",
+      "question": "La ley de la demanda establece que, manteniendo constante todo lo demás:",
+      "options": [
+        "Si el precio de un bien aumenta, la demanda total del mercado aumentará.",
+        "Si el precio de un bien aumenta, la cantidad demandada disminuirá.",
+        "Si el precio de un bien disminuye, la cantidad demandada también disminuirá.",
+        "La cantidad demandada es independiente del precio."
+      ],
+      "correctAnswer": 1,
+      "explanation": "La ley de la demanda establece una relación negativa entre precio y cantidad demandada: si el precio aumenta (manteniendo todo lo demás constante), la cantidad demandada disminuirá. Es importante: se mueve la cantidad demandada, no la curva de demanda completa."
+    },
+    {
+      "id": "m11-15",
+      "block": "BLOQUE 3: Oferta, demanda y elasticidad",
+      "question": "¿Cuál es la diferencia fundamental entre 'demanda' y 'cantidad demandada'?",
+      "options": [
+        "Son sinónimos que se usan indistintamente.",
+        "Demanda es la del mercado total; cantidad demandada es la de un consumidor individual.",
+        "Demanda es la relación completa entre precio y cantidad; cantidad demandada es la cantidad a un precio dado específico.",
+        "Cantidad demandada es el precio de mercado; demanda es la cantidad total producida."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Demanda es la relación (curva entera) entre precio y cantidad. Cantidad demandada es la cantidad específica que los consumidores planean comprar a un precio dado. Confundir ambos es un error típico: cuando sube el precio, no 'baja la demanda' sino que 'baja la cantidad demandada'."
+    },
+    {
+      "id": "m11-16",
+      "block": "BLOQUE 3: Oferta, demanda y elasticidad",
+      "question": "El excedente del consumidor se define como:",
+      "options": [
+        "Los ingresos totales del productor menos sus costes de producción.",
+        "La diferencia entre el precio máximo que el consumidor está dispuesto a pagar y el precio que realmente paga.",
+        "El beneficio que obtiene el gobierno por la recaudación de impuestos sobre el consumo.",
+        "El precio de mercado menos el coste marginal de producción."
+      ],
+      "correctAnswer": 1,
+      "explanation": "El excedente del consumidor es la diferencia entre el precio máximo dispuesto a pagar por una unidad marginal y el precio que realmente se paga. Es una medida indirecta del bienestar: si estoy dispuesto a pagar 10€ por un kilo de carne y lo compro por 4€, mi excedente es 6€."
+    },
+    {
+      "id": "m11-17",
+      "block": "BLOQUE 3: Oferta, demanda y elasticidad",
+      "question": "¿Cuál de las siguientes afirmaciones describe mejor el concepto de elasticidad en economía?",
+      "options": [
+        "Mide el cambio en el ingreso total de una empresa ante variaciones en la oferta de bienes.",
+        "Mide la sensibilidad de una variable ante cambios en otra, como la cantidad demandada ante cambios en el precio.",
+        "Se refiere a la capacidad de un mercado para autorregularse sin intervención gubernamental.",
+        "Es una medida de la eficiencia con la que una economía utiliza sus recursos."
+      ],
+      "correctAnswer": 1,
+      "explanation": "La elasticidad mide la sensibilidad de una variable ante cambios en otra. La elasticidad precio de la demanda mide cuánto cambia la cantidad demandada cuando cambia el precio. Hay también elasticidad renta y elasticidad cruzada."
+    },
+    {
+      "id": "m11-18",
+      "block": "BLOQUE 3: Oferta, demanda y elasticidad",
+      "question": "Una demanda elástica:",
+      "options": [
+        "Resulta en un escaso cambio en la cantidad ante pequeños cambios en el precio.",
+        "No es sensible a ningún cambio de precios.",
+        "Resulta en un mayor cambio en la cantidad ante pequeños cambios en el precio.",
+        "Solo se aplica a bienes de lujo."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Una demanda elástica (elasticidad > 1 en valor absoluto) resulta en un mayor cambio porcentual en la cantidad ante un pequeño cambio porcentual en el precio. Una demanda inelástica, por el contrario, apenas cambia la cantidad ante variaciones de precio."
+    },
+    {
+      "id": "m11-19",
+      "block": "BLOQUE 3: Oferta, demanda y elasticidad",
+      "question": "Dos bienes con elasticidad cruzada positiva son bienes:",
+      "options": [
+        "Independientes entre sí.",
+        "Sustitutivos.",
+        "Complementarios.",
+        "Inferiores."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Si la elasticidad cruzada es positiva, cuando sube el precio de un bien, aumenta la demanda del otro (se sustituye). Son bienes sustitutivos. Por ejemplo: café y té, mantequilla y margarina."
+    },
+    {
+      "id": "m11-20",
+      "block": "BLOQUE 3: Oferta, demanda y elasticidad",
+      "question": "Si dos bienes son complementarios (se consumen juntos):",
+      "options": [
+        "El aumento de demanda del primero disminuye la demanda del segundo.",
+        "El aumento de demanda del primero no afecta a la demanda del segundo.",
+        "El aumento de demanda del primero aumenta la demanda del segundo.",
+        "Tienen elasticidad cruzada positiva."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Los bienes complementarios se consumen conjuntamente (coches y gasolina, impresoras y cartuchos). El aumento de demanda de uno provoca un aumento en la demanda del otro. Su elasticidad cruzada es negativa."
+    },
+    {
+      "id": "m11-21",
+      "block": "BLOQUE 3: Oferta, demanda y elasticidad",
+      "question": "La elasticidad de la oferta está determinada por:",
+      "options": [
+        "Únicamente los inventarios disponibles del bien.",
+        "Únicamente los costes fijos de producción.",
+        "Los inventarios, el exceso de capacidad para el bien y la evolución de los costes marginales de producción.",
+        "Únicamente el número de productores en el mercado."
+      ],
+      "correctAnswer": 2,
+      "explanation": "La elasticidad de la oferta la determinan todos estos factores: los inventarios (permiten aumentar oferta rápidamente), el exceso de capacidad instalada, y la evolución de los costes marginales de producción (si los costes suben rápido al expandir producción, la oferta es inelástica)."
+    },
+    {
+      "id": "m11-22",
+      "block": "BLOQUE 4: El rol de los precios y fallos de mercado",
+      "question": "La problemática que plantea la planificación central frente al sistema de precios es de:",
+      "options": [
+        "De incentivos solamente.",
+        "De información solamente.",
+        "De cálculo económico solamente.",
+        "Todas son correctas: de incentivos, de información y de cálculo económico."
+      ],
+      "correctAnswer": 3,
+      "explanation": "La planificación central falla en tres dimensiones: (1) incentivos: los planificadores no tienen los incentivos correctos; (2) información: es imposible centralizar todo el conocimiento disperso en la sociedad; (3) cálculo económico: sin precios de mercado no se pueden comparar eficientemente los costes y beneficios."
+    },
+    {
+      "id": "m11-23",
+      "block": "BLOQUE 4: El rol de los precios y fallos de mercado",
+      "question": "Los precios máximos generan desabastecimiento:",
+      "options": [
+        "Siempre, independientemente del nivel al que se fijen.",
+        "Siempre y cuando estén por debajo del precio de mercado.",
+        "Nunca; en realidad generan excedente de oferta.",
+        "Siempre y cuando estén por encima del precio de mercado."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Un precio máximo solo genera desabastecimiento si se fija por debajo del precio de equilibrio de mercado. En ese caso, la cantidad demandada supera la cantidad ofrecida. Si se fija por encima del precio de mercado, no tiene efecto."
+    },
+    {
+      "id": "m11-24",
+      "block": "BLOQUE 4: El rol de los precios y fallos de mercado",
+      "question": "¿Cuáles son las consecuencias típicas de la imposición de precios máximos por debajo del precio de mercado?",
+      "options": [
+        "Desabastecimiento, racionamiento y contrabando en el mercado negro.",
+        "Mejora de la calidad de los bienes y aumento de la oferta.",
+        "Aumento de la demanda y eliminación de los mercados negros.",
+        "Asignación eficiente de los recursos y estabilidad en los precios."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Los precios máximos por debajo del equilibrio generan: desabastecimiento (demanda > oferta), racionamiento (largas colas, listas de espera), y contrabando en mercados negros donde se vende a precios superiores al máximo legal."
+    },
+    {
+      "id": "m11-25",
+      "block": "BLOQUE 4: El rol de los precios y fallos de mercado",
+      "question": "Los precios mínimos generan excedente de oferta:",
+      "options": [
+        "Siempre, independientemente del nivel al que se fijen.",
+        "Siempre y cuando estén por debajo del precio de mercado.",
+        "Siempre y cuando estén por encima del precio de mercado.",
+        "Nunca; en realidad generan desabastecimiento."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Un precio mínimo genera excedente (oferta > demanda) solo si se fija por encima del precio de equilibrio. El ejemplo más conocido es el salario mínimo: si está por encima del precio de equilibrio laboral, genera desempleo (excedente de trabajo no contratado)."
+    },
+    {
+      "id": "m11-26",
+      "block": "BLOQUE 4: El rol de los precios y fallos de mercado",
+      "question": "El primer teorema fundamental de la economía del bienestar establece que:",
+      "options": [
+        "Establece que si una economía es competitiva, logra la eficiencia.",
+        "Asume que existen mercados, competencia perfecta, precios que transmiten toda la información y consumidores excluibles.",
+        "Establece condiciones suficientes para la eficiencia, no necesarias.",
+        "Todas son correctas."
+      ],
+      "correctAnswer": 3,
+      "explanation": "El primer teorema fundamental establece (1) que la competencia perfecta lleva a la eficiencia, (2) bajo supuestos específicos (mercados completos, información perfecta, exclusión posible), y (3) son condiciones suficientes, no necesarias. Los tres enunciados son correctos."
+    },
+    {
+      "id": "m11-27",
+      "block": "BLOQUE 4: El rol de los precios y fallos de mercado",
+      "question": "Las externalidades en economía pueden ser:",
+      "options": [
+        "Siempre negativas, pues causan beneficios privados y perjuicios colectivos.",
+        "Tanto positivas como negativas.",
+        "Solo de carácter fiscal, relacionadas con impuestos.",
+        "Solo entre productores, nunca afectan a consumidores."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las externalidades pueden ser positivas (ej: I+D, educación — benefician a terceros no compensados) o negativas (ej: contaminación — perjudican a terceros sin compensación). Son fallos de mercado porque no conducen a una coordinación eficiente."
+    },
+    {
+      "id": "m11-28",
+      "block": "BLOQUE 4: El rol de los precios y fallos de mercado",
+      "question": "El Teorema de Coase establece que las negociaciones privadas pueden resolver externalidades eficientemente cuando:",
+      "options": [
+        "El gobierno interviene directamente para regular las externalidades.",
+        "Los costes de transacción son altos y los derechos de propiedad están indefinidos.",
+        "Los costes de transacción son bajos y los derechos de propiedad están claramente definidos.",
+        "No existen derechos de propiedad y el Estado actúa como árbitro."
+      ],
+      "correctAnswer": 2,
+      "explanation": "El Teorema de Coase establece que cuando los costes de transacción son bajos y los derechos de propiedad están claramente definidos, las partes negociarán voluntariamente para resolver las externalidades, sin necesidad de intervención gubernamental."
+    },
+    {
+      "id": "m11-29",
+      "block": "BLOQUE 5: Estructuras de mercado",
+      "question": "¿Cuál es la diferencia entre el concepto estático y dinámico de monopolio?",
+      "options": [
+        "El estático se refiere a la cantidad producida; el dinámico al precio cobrado.",
+        "El estático define monopolio como único vendedor en el mercado; el dinámico como situación donde no existe libre entrada al mercado.",
+        "El estático analiza el largo plazo; el dinámico el corto plazo.",
+        "No hay diferencia relevante entre ambos conceptos."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Concepto estático: hay monopolio cuando solo hay un único vendedor. Concepto dinámico: hay monopolio cuando no existe libre entrada al mercado (hay barreras de entrada, legales o naturales). El concepto dinámico es más relevante para entender las consecuencias del poder de mercado."
+    },
+    {
+      "id": "m11-30",
+      "block": "BLOQUE 5: Estructuras de mercado",
+      "question": "Desde el punto de vista dinámico, ¿cuáles son las consecuencias de los monopolios?",
+      "options": [
+        "Mayor innovación por los incentivos que generan las barreras de entrada.",
+        "Precios más bajos y mayor eficiencia productiva.",
+        "Precios más altos, menor oferta e incentivos a la búsqueda de privilegios legales y corrupción.",
+        "Mayor bienestar del consumidor gracias a las economías de escala."
+      ],
+      "correctAnswer": 2,
+      "explanation": "El monopolio dinámico restringe la competencia como proceso de descubrimiento. Sus consecuencias son: precios más altos (menor competencia), oferta más pequeña, menos innovación, y un incentivo perverso para buscar barreras legales de entrada mediante corrupción política."
+    },
+    {
+      "id": "m11-31",
+      "block": "BLOQUE 5: Estructuras de mercado",
+      "question": "Un monopolista, desde el punto de vista estático, maximiza beneficios:",
+      "options": [
+        "Produciendo la misma cantidad que en competencia perfecta al mismo precio.",
+        "Produciendo una cantidad menor que en competencia perfecta a un precio más alto.",
+        "Produciendo una cantidad mayor que en competencia perfecta a un precio más bajo.",
+        "Fijando el precio igual al coste marginal como en competencia perfecta."
+      ],
+      "correctAnswer": 1,
+      "explanation": "El monopolista enfrenta una curva de demanda descendente (no horizontal como en competencia perfecta). Su ingreso marginal es decreciente. Maximiza beneficios donde ingreso marginal = coste marginal, produciendo menos que el competitivo y cobrando un precio más alto."
+    },
+    {
+      "id": "m11-32",
+      "block": "BLOQUE 5: Estructuras de mercado",
+      "question": "El poder de mercado de un monopolista es mayor cuando la demanda que enfrenta es:",
+      "options": [
+        "Muy elástica (sensible a cambios de precio).",
+        "Perfectamente elástica (horizontal).",
+        "Muy inelástica (insensible a cambios de precio).",
+        "Perfectamente competitiva."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Cuanto más inelástica sea la demanda, más podrá el monopolista subir precios reduciendo poco la cantidad demandada, extrayendo mayor beneficio extraordinario. Las farmacéuticas son un ejemplo: los enfermos graves tienen demanda muy inelástica de sus medicamentos."
+    },
+    {
+      "id": "m11-33",
+      "block": "BLOQUE 5: Estructuras de mercado",
+      "question": "En un mercado perfectamente competitivo, la empresa maximiza beneficios cuando:",
+      "options": [
+        "Sus ingresos totales son máximos.",
+        "Su coste medio es mínimo.",
+        "El ingreso marginal es igual al coste marginal.",
+        "Su beneficio contable es máximo independientemente de los costes de oportunidad."
+      ],
+      "correctAnswer": 2,
+      "explanation": "La regla de maximización de beneficios es ingreso marginal (IMg) = coste marginal (CMg). En competencia perfecta, el precio = IMg, por lo tanto la empresa produce hasta donde P = CMg. Producir más o menos que este punto reduce el beneficio."
+    },
+    {
+      "id": "m11-34",
+      "block": "BLOQUE 5: Estructuras de mercado",
+      "question": "En mercados perfectamente competitivos, a largo plazo:",
+      "options": [
+        "Las empresas obtienen beneficios extraordinarios sostenidos gracias a la eficiencia.",
+        "El beneficio económico se reduce a cero por la entrada de nuevos competidores.",
+        "Solo las grandes empresas sobreviven y obtienen economías de escala.",
+        "El gobierno fija los precios para garantizar beneficios mínimos."
+      ],
+      "correctAnswer": 1,
+      "explanation": "En competencia perfecta, si hay beneficios extraordinarios, nuevas empresas entran al mercado. El aumento de oferta baja el precio hasta que el beneficio económico sea cero (el beneficio contable cubre solo el coste de oportunidad del capital). Es el equilibrio de largo plazo."
+    },
+    {
+      "id": "m11-35",
+      "block": "BLOQUE 5: Estructuras de mercado",
+      "question": "¿Cuál de las siguientes NO constituye una barrera de entrada al mercado?",
+      "options": [
+        "Patentes y derechos exclusivos concedidos por el Estado.",
+        "Economías de escala que favorecen a la empresa ya instalada.",
+        "Reducción del precio por parte de la empresa establecida para atraer a más competidores.",
+        "Licencias y regulaciones que limitan legalmente la entrada de nuevas empresas."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Reducir precios para atraer más competidores es la acción contraria a crear barreras de entrada; de hecho, eliminaría barreras. Las barreras de entrada son obstáculos que dificultan la llegada de nuevos competidores: patentes, economías de escala, regulaciones, costes irrecuperables elevados."
+    },
+    {
+      "id": "m11-36",
+      "block": "BLOQUE 6: Bienes públicos, impuestos y democracia",
+      "question": "Los bienes rivales en consumo y excluibles en la oferta son:",
+      "options": [
+        "Privados",
+        "Club",
+        "Recursos comunes",
+        "Públicos"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Los bienes privados son rivales (mi consumo reduce la cantidad disponible para otros) y excluibles (se puede impedir a quienes no pagan). Los bienes públicos son no rivales y no excluibles. Los bienes club son no rivales pero excluibles."
+    },
+    {
+      "id": "m11-37",
+      "block": "BLOQUE 6: Bienes públicos, impuestos y democracia",
+      "question": "¿Cuál de las siguientes características describe a los bienes públicos?",
+      "options": [
+        "Son bienes que solo pueden ser consumidos por individuos que paguen por ellos.",
+        "Se consumen simultáneamente y no se puede excluir a nadie de su uso.",
+        "Son bienes cuyo consumo reduce la cantidad disponible para otros.",
+        "Son producidos exclusivamente por el sector público."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los bienes públicos son no rivales (muchas personas pueden consumirlos simultáneamente sin reducir su disponibilidad) y no excluibles (no se puede impedir a nadie su uso). La defensa nacional es el ejemplo clásico."
+    },
+    {
+      "id": "m11-38",
+      "block": "BLOQUE 6: Bienes públicos, impuestos y democracia",
+      "question": "La tragedia de los comunes explica que:",
+      "options": [
+        "Los recursos naturales se gestionan eficientemente como propiedad pública.",
+        "Los recursos privados son siempre gestionados de manera insostenible.",
+        "Los recursos comunes tienden a sobreexplotarse y destruirse cuando no hay derechos de propiedad privada asignados.",
+        "Los recursos se distribuyen equitativamente cuando el gobierno asigna subsidios."
+      ],
+      "correctAnswer": 2,
+      "explanation": "La tragedia de los comunes: cuando un recurso es de acceso libre (no hay derechos de propiedad), cada individuo tiene incentivos para usarlo al máximo, ignorando el coste sobre los demás. El resultado es la sobreexplotación y eventual destrucción del recurso."
+    },
+    {
+      "id": "m11-39",
+      "block": "BLOQUE 6: Bienes públicos, impuestos y democracia",
+      "question": "¿Quién paga realmente el impuesto sobre los bienes de consumo?",
+      "options": [
+        "Exclusivamente quien paga el cheque al recaudador.",
+        "Siempre el consumidor.",
+        "Siempre el productor.",
+        "Ambos, consumidor y productor, pero paga más el que tiene una elasticidad relativa menor."
+      ],
+      "correctAnswer": 3,
+      "explanation": "La incidencia del impuesto recae sobre el lado del mercado con elasticidad menor. Si la demanda es más inelástica que la oferta, el consumidor asume más carga. Si la oferta es más inelástica, el productor asume más. Quien paga el cheque al Estado no determina quién carga realmente con el impuesto."
+    },
+    {
+      "id": "m11-40",
+      "block": "BLOQUE 6: Bienes públicos, impuestos y democracia",
+      "question": "Ante un aumento muy grande de los impuestos (a la derecha de la curva de Laffer), los ingresos fiscales:",
+      "options": [
+        "Suben porque cuanto más grande es el impuesto, mayor es la recaudación.",
+        "Bajan porque el impuesto eleva el precio por encima de la disponibilidad a pagar del consumidor, reduciendo las transacciones.",
+        "Se mantienen constantes según la curva de Laffer.",
+        "No hay suficiente información para determinar qué sucederá."
+      ],
+      "correctAnswer": 1,
+      "explanation": "La curva de Laffer muestra que a partir de un punto, subir impuestos reduce la recaudación: el impuesto eleva el precio tan por encima de la valoración de los consumidores que las transacciones se reducen drásticamente, generando menos base imponible."
+    },
+    {
+      "id": "m11-41",
+      "block": "BLOQUE 6: Bienes públicos, impuestos y democracia",
+      "question": "La innovación disruptiva:",
+      "options": [
+        "No cambia ni afecta los procesos de mercado existentes.",
+        "Crea un nuevo mercado y valores que desplazan a empresas y productos existentes.",
+        "Supone únicamente una mejora incremental en bienes y servicios preexistentes.",
+        "Está financiada principalmente por el sector público."
+      ],
+      "correctAnswer": 1,
+      "explanation": "La innovación disruptiva crea un nuevo mercado y valores que, con el tiempo, desplazan a empresas y productos existentes. Se diferencia de la innovación sostenida (mejoras incrementales). Puede entrar por el bajo mercado (clientes poco exigentes) o crear un mercado completamente nuevo."
+    },
+    {
+      "id": "m11-42",
+      "block": "BLOQUE 6: Bienes públicos, impuestos y democracia",
+      "question": "La paradoja de Condorcet en la teoría de la elección social describe:",
+      "options": [
+        "Que las votaciones siempre producen una opción preferida por la mayoría en todas las comparaciones.",
+        "La posibilidad de que no exista una opción preferida por la mayoría en todas las comparaciones directas, aunque cada opción individual sea preferida sobre otras en distintas combinaciones.",
+        "Que todos los votantes tienen preferencias idénticas, lo que lleva a un consenso perfecto.",
+        "La tendencia de los votantes a cambiar sus preferencias con el tiempo."
+      ],
+      "correctAnswer": 1,
+      "explanation": "La paradoja de Condorcet demuestra que las preferencias colectivas pueden ser inconsistentes (no transitivas) aunque las individuales lo sean: A gana a B, B gana a C, pero C puede ganar a A. Esto muestra las limitaciones de agregar preferencias individuales en decisiones colectivas."
+    }
+  ]
+}

@@ -1,0 +1,869 @@
+{
+  "module": "Microeconomía",
+  "title": "Principios de Microeconomía (EU Inversión)",
+  "totalQuestions": 67,
+  "questions": [
+    {
+      "id": "micro-1",
+      "block": "Módulo 4: La formación de los precios",
+      "question": "La motivación del intercambio es:",
+      "options": [
+        "en primer lugar, obtener una ventaja.",
+        "en segundo lugar, obtener una ventaja mayor a una menor.",
+        "Ambas son correctas.",
+        "Ninguna es correcta."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Respuesta correcta: Ambas son correctas."
+    },
+    {
+      "id": "micro-2",
+      "block": "Módulo 4: La formación de los precios",
+      "question": "¿Cuál es el papel principal de los precios en una economía de mercado?",
+      "options": [
+        "Los precios son un mecanismo para calcular los ingresos fiscales del gobierno.",
+        "Los precios son una herramienta utilizada exclusivamente para la contabilidad de costos en las empresas.",
+        "Los precios son equivalentes al valor de los bienes.",
+        "Los precios son un mecanismo de revelación de información."
+      ],
+      "correctAnswer": 3,
+      "explanation": "Respuesta correcta: Los precios son un mecanismo de revelación de información."
+    },
+    {
+      "id": "micro-3",
+      "block": "Módulo 4: La formación de los precios",
+      "question": "Compraventa de una vivienda. El vendedor valora en 200.000€ la vivienda y el comprador, en 250.000€. El precio de la vivienda para que tenga lugar el intercambio será:",
+      "options": [
+        "200.000€.",
+        "por encima de 250.000€.",
+        "entre 200.000€ y 250.000€.",
+        "Es imposible que se realice el intercambio."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Respuesta correcta: entre 200.000€ y 250.000€."
+    },
+    {
+      "id": "micro-4",
+      "block": "Módulo 4: La formación de los precios",
+      "question": "En competencia unilateral de compradores, el precio de mercado:",
+      "options": [
+        "estará entre la valoración subjetiva mínima y máxima de los compradores.",
+        "será la valoración subjetiva máxima del comprador que más esté dispuesto a pagar.",
+        "estará entre la valoración subjetiva máxima del comprador definitivo y la valoración subjetiva máxima del siguiente potencial comprador (comprador \"fracasado\").",
+        "No es posible el intercambio en esta situación."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Respuesta correcta: estará entre la valoración subjetiva máxima del comprador definitivo y la valoración subjetiva máxima del siguiente potencial comprador (comprador \"fracasado\")."
+    },
+    {
+      "id": "micro-5",
+      "block": "Módulo 4: La formación de los precios",
+      "question": "Único comprador y varios proveedores. Mercadona quiere comprar pan de molde a un precio máximo de 1€/barra y tiene 4 posibles proveedores (1, 2, 3 y 4) que valoran subjetivamente el producto a un mínimo valor de 0.55€, 0.60€, 0.65€ y 0.68€ respectivamente.",
+      "options": [
+        "Mercadona comprará el pan de molde a cualquiera de los productores.",
+        "Mercadona comprará solo si le ofrecen un precio de 0.50€/barra.",
+        "Mercadona comprará el producto a cualquiera de los proveedores 2, 3 y 4.",
+        "Ninguna es correcta."
+      ],
+      "correctAnswer": 3,
+      "explanation": "Respuesta correcta: Ninguna es correcta."
+    },
+    {
+      "id": "micro-6",
+      "block": "Módulo 4: La formación de los precios",
+      "question": "En competencia bilateral el precio:",
+      "options": [
+        "Se establece entre los valores subjetivos de los compradores y vendedores \"marginales\".",
+        "El mercado siempre está en desequilibrio.",
+        "Todas son correctas.",
+        "Ninguna es correcta."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: Se establece entre los valores subjetivos de los compradores y vendedores \"marginales\"."
+    },
+    {
+      "id": "micro-7",
+      "block": "Módulo 6: La elasticidad",
+      "question": "¿Cuál de las siguientes afirmaciones describe mejor el concepto de elasticidad en economía?",
+      "options": [
+        "La elasticidad mide el cambio en el ingreso total de una empresa ante variaciones en la oferta de bienes.",
+        "La elasticidad mide la sensibilidad de una variable ante cambios en otra variable, como la cantidad demandada en respuesta a cambios en el precio.",
+        "La elasticidad se refiere a la capacidad de un mercado para autorregularse sin intervención gubernamental.",
+        "La elasticidad es una medida de la eficiencia con la que una economía utiliza sus recursos."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Respuesta correcta: La elasticidad mide la sensibilidad de una variable ante cambios en otra variable, como la cantidad demandada en respuesta a cambios en el precio."
+    },
+    {
+      "id": "micro-8",
+      "block": "Módulo 6: La elasticidad",
+      "question": "Una demanda elástica:",
+      "options": [
+        "resulta en un mayor cambio en la cantidad a pequeños cambios en el precio.",
+        "resulta en un escaso cambio en la cantidad a pequeños cambios en el precio.",
+        "no es sensible a cambios de precios sobre el bien.",
+        "Ninguna es correcta."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: resulta en un mayor cambio en la cantidad a pequeños cambios en el precio."
+    },
+    {
+      "id": "micro-9",
+      "block": "Módulo 6: La elasticidad",
+      "question": "Dos bienes con elasticidad cruzada positiva son bienes:",
+      "options": [
+        "independientes.",
+        "sustitutivos.",
+        "complementarios.",
+        "Ninguna de las anteriores."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Respuesta correcta: sustitutivos."
+    },
+    {
+      "id": "micro-10",
+      "block": "Módulo 6: La elasticidad",
+      "question": "Si dos bienes son complementarios,",
+      "options": [
+        "el aumento de demanda del primer bien aumenta la demanda del segundo.",
+        "el aumento de demanda del primer bien disminuye la demanda del segundo.",
+        "el aumento de demanda del primer bien no afecta a la demanda del segundo.",
+        "Ninguna de las anteriores."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: el aumento de demanda del primer bien aumenta la demanda del segundo."
+    },
+    {
+      "id": "micro-11",
+      "block": "Módulo 6: La elasticidad",
+      "question": "La elasticidad de la oferta la determinan",
+      "options": [
+        "los inventarios.",
+        "el exceso de capacidad para el bien.",
+        "la evolución de los costes marginales de producción.",
+        "Todas son correctas."
+      ],
+      "correctAnswer": 3,
+      "explanation": "Respuesta correcta: Todas son correctas."
+    },
+    {
+      "id": "micro-12",
+      "block": "Módulo 7: El rol de los precios",
+      "question": "El cambio en la oferta y/o la demanda de un bien o servicio",
+      "options": [
+        "puede afectar a la oferta y la demanda de otros bienes y servicios",
+        "puede afectar solo a la oferta de otros bienes y servicios producidos dentro del mismo sector",
+        "solo afecta al mercado de ese bien o servicio",
+        "afecta siempre a la productividad de los trabajadores"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: puede afectar a la oferta y la demanda de otros bienes y servicios"
+    },
+    {
+      "id": "micro-13",
+      "block": "Módulo 7: El rol de los precios",
+      "question": "La capacidad humana de descubrir oportunidades, desajustes en el mercado y, posteriormente, encontrar soluciones creativas para coordinarlo, se conoce como",
+      "options": [
+        "Todas son correctas",
+        "función empresarial",
+        "productividad marginal del trabajo",
+        "relación marginal de sustitución"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Respuesta correcta: función empresarial"
+    },
+    {
+      "id": "micro-14",
+      "block": "Módulo 7: El rol de los precios",
+      "question": "¿Qué necesita hacer el planificador central para resolver el problema del cálculo económico sobre el petróleo?",
+      "options": [
+        "Determinar los precios de venta del petróleo en el mercado global.",
+        "Conocer los usos posibles del petróleo, sus sustitutos y los sustitutos de los sustitutos en cada uso.",
+        "Reunir información sobre los costos de extracción y transporte del petróleo.",
+        "Hacer predicciones sobre el consumo futuro de petróleo."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Respuesta correcta: Conocer los usos posibles del petróleo, sus sustitutos y los sustitutos de los sustitutos en cada uso."
+    },
+    {
+      "id": "micro-15",
+      "block": "Módulo 7: El rol de los precios",
+      "question": "¿Qué implicaría reunir información sobre los sustitutos de los sustitutos del petróleo?",
+      "options": [
+        "Conocer solo el costo de producción del petróleo.",
+        "Controlar la oferta y demanda del petróleo en el mercado.",
+        "Entender todas las alternativas posibles para cada uso del petróleo.",
+        "Reducir la producción de petróleo para aumentar los precios."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Respuesta correcta: Entender todas las alternativas posibles para cada uso del petróleo."
+    },
+    {
+      "id": "micro-16",
+      "block": "Módulo 7: El rol de los precios",
+      "question": "La problemática que plantea la planificación central es",
+      "options": [
+        "Todas son correctas",
+        "de incentivos",
+        "de información",
+        "de cálculo económico"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: Todas son correctas"
+    },
+    {
+      "id": "micro-17",
+      "block": "Módulo 7: El rol de los precios",
+      "question": "Siguiendo el ejemplo del petróleo, el sistema de precios resuelve el problema de los incentivos",
+      "options": [
+        "aumentando el precio de un producto derivado del petróleo (asfalto) para que los consumidores lo demanden menos y recurran a sustitutos (hormigón), liberando así el petróleo para otros usos.",
+        "disminuyendo el precio de un producto derivado del petróleo (asfalto) para que los consumidores lo demanden aún más, liberando así el petróleo para otros usos.",
+        "aumentando el precio de un producto derivado del petróleo (asfalto) para que los consumidores lo demanden aún más, liberando así el petróleo para otros usos.",
+        "aumentando el precio de un producto derivado del petróleo (asfalto) para que los consumidores lo demanden menos y recurran a sustitutos (hormigón), reduciendo aún más la cantidad disponible de petróleo para otros usos."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: aumentando el precio de un producto derivado del petróleo (asfalto) para que los consumidores lo demanden menos y recurran a sustitutos (hormigón), liberando así el petróleo para otros usos."
+    },
+    {
+      "id": "micro-18",
+      "block": "Módulo 7: El rol de los precios",
+      "question": "Para poder realizar el cálculo económico",
+      "options": [
+        "Todas son correctas",
+        "no deben existir derechos de propiedad privada",
+        "debe haber sistema de fijación de precios",
+        "debe haber libre empresarialidad"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: Todas son correctas"
+    },
+    {
+      "id": "micro-19",
+      "block": "Módulo 7: El rol de los precios",
+      "question": "¿Qué es la especulación económica?",
+      "options": [
+        "La práctica que llevan a cabo los fondos buitre para parasitar a los propietarios de viviendas.",
+        "El intento de ganar dinero con los precios sin necesidad de cooperar.",
+        "La coordinación intertemporal de la oferta y la demanda de los recursos escasos.",
+        "El control de los precios por parte de los gobiernos."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Respuesta correcta: La coordinación intertemporal de la oferta y la demanda de los recursos escasos."
+    },
+    {
+      "id": "micro-20",
+      "block": "Módulo 8: El control de los precios",
+      "question": "Los precios máximos",
+      "options": [
+        "generan siempre desabastecimiento.",
+        "generan desabastecimiento siempre y cuando estén por debajo del precio de mercado.",
+        "generan excedente.",
+        "generan excedente siempre y cuando estén por encima del precio de mercado."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Respuesta correcta: generan desabastecimiento siempre y cuando estén por debajo del precio de mercado."
+    },
+    {
+      "id": "micro-21",
+      "block": "Módulo 8: El control de los precios",
+      "question": "¿Cuáles son las consecuencias típicas de la imposición de precios máximos?",
+      "options": [
+        "Desabastecimiento, racionamiento y contrabando en el mercado negro.",
+        "Mejora de la calidad de los bienes y aumento de la oferta.",
+        "Aumento de la demanda y eliminación de los mercados negros.",
+        "Asignación eficiente de los recursos y estabilidad en los precios."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: Desabastecimiento, racionamiento y contrabando en el mercado negro."
+    },
+    {
+      "id": "micro-22",
+      "block": "Módulo 8: El control de los precios",
+      "question": "Los precios mínimos",
+      "options": [
+        "generan siempre desabastecimiento.",
+        "generan desabastecimiento siempre y cuando estén por debajo del precio de mercado.",
+        "generan excedente.",
+        "generan excedente siempre y cuando estén por encima del precio de mercado."
+      ],
+      "correctAnswer": 3,
+      "explanation": "Respuesta correcta: generan excedente siempre y cuando estén por encima del precio de mercado."
+    },
+    {
+      "id": "micro-23",
+      "block": "Módulo 8: El control de los precios",
+      "question": "El salario mínimo genera",
+      "options": [
+        "contrabando en el mercado negro, ya que hay personas dispuestas a trabajar por menos dinero que el salario mínimo que no pueden hacerlo legalmente.",
+        "sobreespecialización en los trabajadores.",
+        "Ambas son correctas.",
+        "Ninguna es correcta."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Respuesta correcta: Ambas son correctas."
+    },
+    {
+      "id": "micro-24",
+      "block": "Módulo 8: El control de los precios",
+      "question": "¿Cuáles son las consecuencias típicas de la imposición de precios mínimos?",
+      "options": [
+        "Excedente no vendido, pérdidas irrecuperables y subsidios para las existencias no vendidas.",
+        "Mejora en la rentabilidad de los productos y aumento en la calidad sin efectos secundarios.",
+        "Reducción de la oferta y aumento de la eficiencia en la asignación de los recursos.",
+        "Eliminación del contrabando y estabilización de los mercados."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: Excedente no vendido, pérdidas irrecuperables y subsidios para las existencias no vendidas."
+    },
+    {
+      "id": "micro-25",
+      "block": "Módulo 9: Las externalidades",
+      "question": "El primer teorema fundamental de la economía del bienestar",
+      "options": [
+        "establece que si una economía es competitiva, logra la eficiencia.",
+        "asume que existen mercados, que existe competencia perfecta, que los precios transmiten toda la información disponible (información perfecta) y que los consumidores pueden quedar excluidos si no pagan el precio de un bien.",
+        "establece condiciones suficientes para la eficiencia en la economía, no necesarias.",
+        "Todas son correctas."
+      ],
+      "correctAnswer": 3,
+      "explanation": "Respuesta correcta: Todas son correctas."
+    },
+    {
+      "id": "micro-26",
+      "block": "Módulo 9: Las externalidades",
+      "question": "Las externalidades",
+      "options": [
+        "son siempre negativas, puesto que causan beneficios privados y perjuicios colectivos.",
+        "Todas son incorrectas.",
+        "no provocan ineficiencias en el mercado.",
+        "pueden ser positivas o negativas."
+      ],
+      "correctAnswer": 3,
+      "explanation": "Respuesta correcta: pueden ser positivas o negativas."
+    },
+    {
+      "id": "micro-27",
+      "block": "Módulo 9: Las externalidades",
+      "question": "Las externalidades se consideran fallos de mercado porque no conducen a una coordinación eficiente.",
+      "options": [
+        "Verdadero",
+        "llena el espacio en blanco. La contaminación produce una externalidad positiva/negativa y el I+D produce una externalidad positiva/negativa.",
+        "Falso"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: Verdadero"
+    },
+    {
+      "id": "micro-28",
+      "block": "Módulo 9: Las externalidades",
+      "question": "El mercado no es capaz de producir soluciones al problema de las externalidades.",
+      "options": [
+        "Falso",
+        "Verdadero"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: Falso"
+    },
+    {
+      "id": "micro-29",
+      "block": "Módulo 9: Las externalidades",
+      "question": "¿Qué condiciones establece el Teorema de Coase para que las negociaciones privadas aseguren un equilibrio de mercado eficiente, incluso en presencia de externalidades?",
+      "options": [
+        "Que el gobierno intervenga directamente para regular las externalidades.",
+        "Que los costos de transacción sean altos y los derechos de propiedad estén indefinidos.",
+        "Que el mercado resuelva todas las externalidades sin necesidad de derechos de propiedad.",
+        "Que los costos de transacción sean bajos y los derechos de propiedad estén claramente definidos."
+      ],
+      "correctAnswer": 3,
+      "explanation": "Respuesta correcta: Que los costos de transacción sean bajos y los derechos de propiedad estén claramente definidos."
+    },
+    {
+      "id": "micro-30",
+      "block": "Módulo 9: Las externalidades",
+      "question": "Para solventar el problema de las externalidades, el gobierno emplea impuestos y subsidios pigouvianos, cuyo objetivo es",
+      "options": [
+        "Los impuestos y subsidios pigouvianos no tienen el objetivo de paliar las externalidades.",
+        "que las personas con mayor renta paguen el precio de las externalidades.",
+        "reducir la demanda (impuestos) de los bienes que producen externalidades negativas y aumentar la demanda (subsidios) de los bienes que producen externalidades positivas.",
+        "reducir la demanda (subsidios) de los bienes que producen externalidades positivas y aumentar la demanda (impuestos) de los bienes que producen externalidades negativas."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Respuesta correcta: reducir la demanda (impuestos) de los bienes que producen externalidades negativas y aumentar la demanda (subsidios) de los bienes que producen externalidades positivas."
+    },
+    {
+      "id": "micro-32",
+      "block": "Módulo 10: Maximización de beneficios",
+      "question": "Una empresa de patitos de goma vende 1200 unidades. Su coste medio son 0.40 unidades monetarias (um) y el precio de los patitos es de 1.50 um. ¿Cuál será el beneficio de la empresa?",
+      "options": [
+        "320 unidades monetarias.",
+        "1320 unidades monetarias.",
+        "2700 unidades monetarias.",
+        "4500 unidades monetarias."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Respuesta correcta: 1320 unidades monetarias."
+    },
+    {
+      "id": "micro-33",
+      "block": "Módulo 10: Maximización de beneficios",
+      "question": "En un mercado competitivo, ¿Cómo se comportan las empresas en relación con el precio de sus productos?",
+      "options": [
+        "Las empresas fijan el precio de sus productos de acuerdo con sus costes de producción.",
+        "Las empresas tienen la capacidad de influir en el precio del mercado.",
+        "Las empresas son precio-aceptantes y deben aceptar el precio determinado por el mercado.",
+        "Las empresas establecen precios en función de los precios de sus competidores más cercanos."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Respuesta correcta: Las empresas son precio-aceptantes y deben aceptar el precio determinado por el mercado."
+    },
+    {
+      "id": "micro-34",
+      "block": "Módulo 10: Maximización de beneficios",
+      "question": "Las condiciones para que exista un mercado competitivo son:",
+      "options": [
+        "Producto similar y muchos compradores y vendedores.",
+        "Producto diferenciado y muchos compradores y vendedores.",
+        "Producto similar y pocos compradores y vendedores.",
+        "Producto diferenciado y pocos compradores y vendedores."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: Producto similar y muchos compradores y vendedores."
+    },
+    {
+      "id": "micro-35",
+      "block": "Módulo 10: Maximización de beneficios",
+      "question": "Un empresario decidirá reducir su producción cuando:",
+      "options": [
+        "Ingreso marginal < Coste marginal",
+        "Ingreso marginal > Coste marginal",
+        "Ingreso total < Coste total",
+        "Ingreso total > Coste total"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: Ingreso marginal < Coste marginal"
+    },
+    {
+      "id": "micro-36",
+      "block": "Módulo 10: Maximización de beneficios",
+      "question": "En el medio plazo, si el precio de mercado está por debajo de los costes variables medios, la empresa debería:",
+      "options": [
+        "cerrar y salir lo antes posible de la industria.",
+        "salir lo antes posible, pero no cerrar, porque es insostenible en el largo plazo.",
+        "permanecer en la industria.",
+        "entrar en la industria."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: cerrar y salir lo antes posible de la industria."
+    },
+    {
+      "id": "micro-37",
+      "block": "Módulo 10: Maximización de beneficios",
+      "question": "En el mercado competitivo, las empresas:",
+      "options": [
+        "determinan el precio según su coste marginal.",
+        "determinan el precio según su coste medio.",
+        "determinan el coste medio según el precio.",
+        "determinan el ingreso marginal según el precio."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Respuesta correcta: determinan el coste medio según el precio."
+    },
+    {
+      "id": "micro-38",
+      "block": "Módulo 11: Mercados competitivos",
+      "question": "Una buena definición de competencia sería:",
+      "options": [
+        "Multitud de personas o empresas con diferentes cualidades tratando de competir unas con otras para lograr alcanzar una meta.",
+        "Multitud de personas o empresas con las mismas características y compitiendo todas ellas de la misma forma.",
+        "Ambas son correctas.",
+        "Ambas son incorrectas."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Respuesta correcta: Ambas son correctas."
+    },
+    {
+      "id": "micro-39",
+      "block": "Módulo 11: Mercados competitivos",
+      "question": "Competencia significa:",
+      "options": [
+        "gran concurrencia de vendedores de forma simultánea",
+        "gran divergencia de vendedores de forma simultánea",
+        "poca variedad de vendedores de forma simultánea",
+        "mucha homogeneidad de vendedores de forma paralela"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: gran concurrencia de vendedores de forma simultánea"
+    },
+    {
+      "id": "micro-40",
+      "block": "Módulo 11: Mercados competitivos",
+      "question": "El modelo de competencia perfecta presupone",
+      "options": [
+        "información asimétrica",
+        "que no hay costes de transacción",
+        "un vendedor posee poder de mercado para fijar el precio",
+        "Todas son correctas."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Respuesta correcta: que no hay costes de transacción"
+    },
+    {
+      "id": "micro-41",
+      "block": "Módulo 11: Mercados competitivos",
+      "question": "En los mercados disputables, los vendedores",
+      "options": [
+        "tienen incentivos para subir los precios, ya que no son tomadores de precios.",
+        "no tienen incentivos para subir los precios, ya que atraerían nuevos vendedores que, produciendo, bajarían de nuevo el precio.",
+        "no tienen en cuenta los costes de producción, ya que las barreras de entrada evitan que aparezcan nuevos vendedores.",
+        "Ninguna es correcta."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Respuesta correcta: no tienen incentivos para subir los precios, ya que atraerían nuevos vendedores que, produciendo, bajarían de nuevo el precio."
+    },
+    {
+      "id": "micro-42",
+      "block": "Módulo 11: Mercados competitivos",
+      "question": "Un ejemplo de barrera de entrada por diferenciación de producto es:",
+      "options": [
+        "Cocacola",
+        "Inditex",
+        "Iberia",
+        "Todas son correctas."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: Cocacola"
+    },
+    {
+      "id": "micro-43",
+      "block": "Módulo 11: Mercados competitivos",
+      "question": "Las barreras de entrada son",
+      "options": [
+        "siempre fruto de la naturaleza del mercado.",
+        "siempre fruto de la intervención del Estado mediante la ley.",
+        "fruto tanto de las condiciones particulares del mercado y de los privilegios legales que otorga el Estado.",
+        "Ninguna de las anteriores."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Respuesta correcta: fruto tanto de las condiciones particulares del mercado y de los privilegios legales que otorga el Estado."
+    },
+    {
+      "id": "micro-44",
+      "block": "Módulo 14: Innovaciones disruptivas",
+      "question": "¿Cuál de las siguientes opciones describe mejor una barrera de entrada en un mercado?",
+      "options": [
+        "Una reducción en el precio de los productos por parte de las empresas existentes para aumentar la competencia.",
+        "Un aumento en la demanda de productos que facilita la entrada de nuevas empresas al mercado.",
+        "La existencia de muchas empresas en el mercado que reducen la necesidad de barreras de entrada.",
+        "Un alto coste inicial o requisitos específicos que dificultan que nuevas empresas ingresen al mercado."
+      ],
+      "correctAnswer": 3,
+      "explanation": "Respuesta correcta: Un alto coste inicial o requisitos específicos que dificultan que nuevas empresas ingresen al mercado."
+    },
+    {
+      "id": "micro-45",
+      "block": "Módulo 14: Innovaciones disruptivas",
+      "question": "La innovación disruptiva",
+      "options": [
+        "no cambia o afecta a los procesos de mercado existentes.",
+        "crea un nuevo mercado y valores que desplaza a empresas y productos existentes.",
+        "supone una mejora en bienes y servicios preexistentes.",
+        "está financiada por el sector público."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Respuesta correcta: crea un nuevo mercado y valores que desplaza a empresas y productos existentes."
+    },
+    {
+      "id": "micro-46",
+      "block": "Módulo 14: Innovaciones disruptivas",
+      "question": "Una forma de introducir una innovación disruptiva es",
+      "options": [
+        "crear un nuevo mercado, concentrando consumidores atraídos por el producto.",
+        "atender clientes poco exigentes.",
+        "Ambas son correctas.",
+        "Ambas son incorrectas."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Respuesta correcta: Ambas son correctas."
+    },
+    {
+      "id": "micro-47",
+      "block": "Módulo 14: Innovaciones disruptivas",
+      "question": "¿Cuál de las siguientes estrategias es más característica de un innovador disruptivo en un mercado?",
+      "options": [
+        "Buscar vacíos o ventajas legales para bloquear a sus competidores.",
+        "Fijar precios muy altos para maximizar el margen de beneficio inmediato.",
+        "Seguir las prácticas estándar de la industria sin hacer cambios significativos en el producto.",
+        "Asegurar que todos los productos ofrecidos sean idénticos a los de los competidores."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: Buscar vacíos o ventajas legales para bloquear a sus competidores."
+    },
+    {
+      "id": "micro-48",
+      "block": "Módulo 15: Bienes públicos",
+      "question": "Los bienes rivales en consumo y excluibles en la oferta son",
+      "options": [
+        "privados",
+        "club",
+        "recursos comunes",
+        "públicos"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: privados"
+    },
+    {
+      "id": "micro-49",
+      "block": "Módulo 15: Bienes públicos",
+      "question": "La Wifi, la música digital y el cine son ejemplos de bienes",
+      "options": [
+        "rivales y excluibles",
+        "rivales y no excluibles",
+        "no rivales y excluibles",
+        "no rivales y no excluibles"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Respuesta correcta: no rivales y excluibles"
+    },
+    {
+      "id": "micro-50",
+      "block": "Módulo 15: Bienes públicos",
+      "question": "¿Cuál de las siguientes características describe a los bienes públicos?",
+      "options": [
+        "Son bienes que solo pueden ser consumidos por individuos que paguen por ellos.",
+        "Se consumen simultáneamente y no se puede excluir a nadie de su uso.",
+        "Son bienes cuyo consumo reduce la cantidad disponible para otros.",
+        "Son producidos exclusivamente por el sector público."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Respuesta correcta: Se consumen simultáneamente y no se puede excluir a nadie de su uso."
+    },
+    {
+      "id": "micro-51",
+      "block": "Módulo 15: Bienes públicos",
+      "question": "Según la definición económica de bien público, ¿cuál de los siguientes ejemplos son bienes públicos?",
+      "options": [
+        "La sanidad y la educación pública",
+        "La defensa nacional",
+        "Las autovías",
+        "Todas son correctas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Respuesta correcta: La defensa nacional"
+    },
+    {
+      "id": "micro-52",
+      "block": "Módulo 15: Bienes públicos",
+      "question": "¿Qué explica la tragedia de los comunes?",
+      "options": [
+        "Que los recursos naturales se gestionan eficientemente cuando son propiedad de una entidad pública.",
+        "Que los recursos privados siempre son gestionados de manera insostenible por los propietarios.",
+        "Que los recursos privados y públicos se mantienen equitativamente cuando se asignan subsidios gubernamentales.",
+        "Que los recursos comunes tienden a ser sobreexplotados y eventualmente se destruyen cuando no existen derechos de propiedad privada asignados y hay libre acceso."
+      ],
+      "correctAnswer": 3,
+      "explanation": "Respuesta correcta: Que los recursos comunes tienden a ser sobreexplotados y eventualmente se destruyen cuando no existen derechos de propiedad privada asignados y hay libre acceso."
+    },
+    {
+      "id": "micro-53",
+      "block": "Módulo 15: Bienes públicos",
+      "question": "Un ejemplo de la tragedia de los comunes es",
+      "options": [
+        "la sobreexplotación de las calles, que genera atascos y falta de aparcamiento.",
+        "la infrautilización de los centros comerciales.",
+        "el abandono de urbanizaciones turísticas por la falta de acuerdo entre los propietarios.",
+        "Todas son correctas."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: la sobreexplotación de las calles, que genera atascos y falta de aparcamiento."
+    },
+    {
+      "id": "micro-54",
+      "block": "Módulo 15: Bienes públicos",
+      "question": "La tragedia de los anticomunes se produce cuando la propiedad está muy atomizada.",
+      "options": [
+        "Verdadero",
+        "Falso"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: Verdadero"
+    },
+    {
+      "id": "micro-56",
+      "block": "Módulo 17: Impuestos y subsidios",
+      "question": "¿Quién paga realmente el impuesto sobre los bienes de consumo?",
+      "options": [
+        "El que paga el cheque al recaudador, sea consumidor o productor.",
+        "Siempre el consumidor.",
+        "Siempre el productor.",
+        "Ambos. consumidor y productor, pero paga más el que tiene una elasticidad relativa menor."
+      ],
+      "correctAnswer": 3,
+      "explanation": "Respuesta correcta: Ambos. consumidor y productor, pero paga más el que tiene una elasticidad relativa menor."
+    },
+    {
+      "id": "micro-57",
+      "block": "Módulo 17: Impuestos y subsidios",
+      "question": "Con impuestos, el excedente de consumidor",
+      "options": [
+        "es igual o mayor a sin impuestos.",
+        "es igual o menor a sin impuestos.",
+        "es igual a sin impuestos.",
+        "No hay datos suficientes para saber si será menor o mayor a sin impuestos."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Respuesta correcta: es igual o menor a sin impuestos."
+    },
+    {
+      "id": "micro-58",
+      "block": "Módulo 17: Impuestos y subsidios",
+      "question": "¿Qué representa la pérdida irrecuperable de eficiencia causada por un impuesto?",
+      "options": [
+        "Las ganancias adicionales que los consumidores obtienen al comprar bienes con impuestos reducidos.",
+        "La reducción en el bienestar general debido a la transferencia de ingresos entre consumidores y productores.",
+        "Las transacciones que dejan de realizarse porque la disponibilidad a pagar de algunos consumidores es menor que el precio aumentado por el impuesto.",
+        "La mejora en la eficiencia del mercado debido a la redistribución de ingresos entre diferentes grupos."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Respuesta correcta: Las transacciones que dejan de realizarse porque la disponibilidad a pagar de algunos consumidores es menor que el precio aumentado por el impuesto."
+    },
+    {
+      "id": "micro-59",
+      "block": "Módulo 17: Impuestos y subsidios",
+      "question": "Si nos situamos a la izquierda de la curva de Laffer, un aumento en el tamaño del impuesto",
+      "options": [
+        "aumentará la recaudación.",
+        "disminuirá la recaudación.",
+        "mantendrá constante la recaudación.",
+        "La curva de Laffer no hace referencia a la recaudación tributaria."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: aumentará la recaudación."
+    },
+    {
+      "id": "micro-60",
+      "block": "Módulo 17: Impuestos y subsidios",
+      "question": "Ante un aumento muy grande de los impuestos (a la derecha de la curva de Laffer), los ingresos fiscales",
+      "options": [
+        "suben porque cuanto más grande es el impuesto, mayor es la recaudación.",
+        "bajan porque se reduce la demanda del bien ya que el impuesto ha aumentado el precio por encima de la disponibilidad a pagar del consumidor.",
+        "se mantienen constantes.",
+        "No hay suficiente información para determinar qué sucederá con los ingresos fiscales."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Respuesta correcta: bajan porque se reduce la demanda del bien ya que el impuesto ha aumentado el precio por encima de la disponibilidad a pagar del consumidor."
+    },
+    {
+      "id": "micro-61",
+      "block": "Módulo 17: Impuestos y subsidios",
+      "question": "Ante una demanda elástica, frente a una inelástica, la pérdida irrecuperable de eficiencia causada por un impuesto es",
+      "options": [
+        "mayor porque la cantidad intercambiada disminuirá más.",
+        "menor porque la cantidad intercambiada disminuirá menos.",
+        "No hay suficiente información para determinar qué sucederá con la pérdida irrecuperable de eficiencia.",
+        "La elasticidad de la demanda es independiente a la pérdida irrecuperable de eficiencia provocada por los impuestos."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: mayor porque la cantidad intercambiada disminuirá más."
+    },
+    {
+      "id": "micro-62",
+      "block": "Módulo 17: Impuestos y subsidios",
+      "question": "¿Quién se beneficiaría más con un subsidio a la producción de los plátanos de Canarias?",
+      "options": [
+        "Los consumidores, porque su demanda es más elástica y, por tanto, absorberán el subsidio.",
+        "Los productores, porque su oferta es más inelástica y, por tanto, absorberán el subsidio.",
+        "Los productores, porque son los que reciben el subsidio por parte del gobierno.",
+        "Ni productores ni consumidores se verán beneficiados."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Respuesta correcta: Los productores, porque su oferta es más inelástica y, por tanto, absorberán el subsidio."
+    },
+    {
+      "id": "micro-63",
+      "block": "Módulo 19: Problemas de la democracia",
+      "question": "¿Qué describe la paradoja de Condorcet en el contexto de la teoría de la elección social?",
+      "options": [
+        "La posibilidad de que no exista una opción que sea preferida por la mayoría en todas las comparaciones uno a uno, a pesar de que cada opción individual sea preferida sobre otras en diferentes combinaciones.",
+        "La situación en la que un sistema de votación siempre elige la opción que la mayoría prefiere en todas las comparaciones directas.",
+        "El fenómeno en el que todos los votantes tienen preferencias idénticas, lo que lleva a un consenso perfecto en la elección.",
+        "La tendencia de los votantes a cambiar sus preferencias con el tiempo, alterando el resultado de la elección."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: La posibilidad de que no exista una opción que sea preferida por la mayoría en todas las comparaciones uno a uno, a pesar de que cada opción individual sea preferida sobre otras en diferentes combinaciones."
+    },
+    {
+      "id": "micro-64",
+      "block": "Módulo 19: Problemas de la democracia",
+      "question": "En decisiones de políticas públicas, si el ingreso marginal del individuo es menor a su coste marginal, el individuo",
+      "options": [
+        "optará racionalmente por emplear tiempo en informarse para votar con conocimiento.",
+        "optará irracionalmente por emplear tiempo en informarse para votar con conocimiento.",
+        "optará irracionalmente por no emplear tiempo en informarse para votar con conocimiento.",
+        "optará racionalmente por no emplear tiempo en informarse para votar con conocimiento."
+      ],
+      "correctAnswer": 3,
+      "explanation": "Respuesta correcta: optará racionalmente por no emplear tiempo en informarse para votar con conocimiento."
+    },
+    {
+      "id": "micro-65",
+      "block": "Módulo 19: Problemas de la democracia",
+      "question": "Los sesgos de los votantes anti-mercado, anti-extranjero, del trabajo, pesimista son",
+      "options": [
+        "sesgos racionales, dado que tienen un fundamento argumental consistente con las evidencias disponibles.",
+        "sesgos irracionales, dado que tienen un fundamento emocional que no se corresponde con las evidencias disponibles."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Respuesta correcta: sesgos irracionales, dado que tienen un fundamento emocional que no se corresponde con las evidencias disponibles."
+    },
+    {
+      "id": "micro-66",
+      "block": "Módulo 19: Problemas de la democracia",
+      "question": "Los sesgos de los individuos son exclusivos de las elecciones públicas.",
+      "options": [
+        "Verdadero",
+        "Falso"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Respuesta correcta: Falso"
+    },
+    {
+      "id": "micro-67",
+      "block": "Módulo 19: Problemas de la democracia",
+      "question": "Seleccione la opción incorrecta:",
+      "options": [
+        "Los políticos influyen en las decisiones de los votantes mediante la propaganda y el populismo.",
+        "Los grupos de interés o lobbies conectan con los reguladores para obtener privilegios políticos y así capturar rentas.",
+        "Los burócratas están controlados por los ciudadanos, por lo que no corren el riesgo de cometer corrupción ni malversación.",
+        "No hay ninguna incorrecta."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Respuesta correcta: Los burócratas están controlados por los ciudadanos, por lo que no corren el riesgo de cometer corrupción ni malversación."
+    },
+    {
+      "id": "micro-68",
+      "block": "Módulo 19: Problemas de la democracia",
+      "question": "La libertad de expresión, de pensamiento, de asociación y la descentralización del poder están fuertemente asociados a",
+      "options": [
+        "la democracia liberal",
+        "los regímenes autoritarios",
+        "las monarquías",
+        "las tecnocracias"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respuesta correcta: la democracia liberal"
+    },
+    {
+      "id": "micro-69",
+      "block": "Módulo 19: Problemas de la democracia",
+      "question": "Los países más prósperos del mundo son",
+      "options": [
+        "dictaduras",
+        "democracias",
+        "tecnocracias",
+        "teocracias"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Respuesta correcta: democracias"
+    }
+  ]
+}
