@@ -1,0 +1,847 @@
+{
+  "module": "Módulo 12",
+  "title": "Principios de Macroeconomía",
+  "totalQuestions": 60,
+  "questions": [
+    {
+      "id": "m12-1",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "El dinero se define como:",
+      "options": [
+        "El medio de pago más aceptado por el gobierno",
+        "El activo con mayor rentabilidad en la economía",
+        "El bien que sirve exclusivamente como unidad de cuenta",
+        "El activo respaldado por reservas de oro",
+        "El bien más líquido de una economía"
+      ],
+      "correctAnswer": 4,
+      "explanation": "El dinero es, por definición, el bien más líquido de una economía. La liquidez es la propiedad esencial que convierte a un bien en dinero según la teoría monetaria clásica (Menger)."
+    },
+    {
+      "id": "m12-2",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "La 'dinerabilidad' de un bien hace referencia a:",
+      "options": [
+        "Su nivel de liquidez",
+        "Su valor intrínseco como materia prima",
+        "Su capacidad de ser emitido por el banco central",
+        "Su aceptación internacional como reserva de valor",
+        "Su respaldo en metales preciosos"
+      ],
+      "correctAnswer": 0,
+      "explanation": "La dinerabilidad es la aptitud de un bien para convertirse en dinero, y se mide por su nivel de liquidez: cuanto más líquido es un bien, mayor es su dinerabilidad."
+    },
+    {
+      "id": "m12-3",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "Un bien es líquido cuando:",
+      "options": [
+        "Puede venderse o comprarse en grandes cantidades sin mover el precio de mercado",
+        "Tiene un precio fijo establecido por el gobierno",
+        "Su oferta es infinitamente elástica",
+        "Puede almacenarse sin perder valor durante largos períodos",
+        "Está denominado en una moneda de reserva internacional"
+      ],
+      "correctAnswer": 0,
+      "explanation": "La liquidez significa que un bien puede transaccionarse en grandes cantidades sin alterar significativamente su precio de mercado. Esto lo diferencia de bienes ilíquidos cuyas ventas masivas deprimen su cotización."
+    },
+    {
+      "id": "m12-4",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "Según Menger, la liquidez de un bien se mide por:",
+      "options": [
+        "El menor diferencial (spread) entre precio de compra y venta (bid/ask)",
+        "El volumen diario de transacciones en el mercado",
+        "La velocidad de circulación del bien en la economía",
+        "La volatilidad de su precio a lo largo del tiempo",
+        "El porcentaje del PIB que representa su mercado"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Para Menger, el indicador de liquidez es el spread bid/ask: cuanto menor sea la diferencia entre el precio al que se puede comprar y vender, mayor es la liquidez del bien."
+    },
+    {
+      "id": "m12-5",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "¿Cuál de las siguientes NO es una función clásica del dinero?",
+      "options": [
+        "Medio de pago o de cambio",
+        "Unidad de cuenta",
+        "Depósito de valor",
+        "Patrón de pagos diferidos",
+        "Medio de ahorro obligatorio"
+      ],
+      "correctAnswer": 4,
+      "explanation": "Las funciones clásicas del dinero son: medio de pago, unidad de cuenta, depósito de valor y patrón de pagos diferidos. 'Medio de ahorro obligatorio' no es una función reconocida del dinero."
+    },
+    {
+      "id": "m12-6",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "La crítica principal a la función 'depósito de valor' del dinero es que:",
+      "options": [
+        "Todo bien económico es reserva de valor, no solo el dinero",
+        "El dinero pierde valor con la inflación y no puede ser depósito",
+        "Solo los metales preciosos pueden ser verdaderos depósitos de valor",
+        "El depósito de valor corresponde exclusivamente a los activos financieros",
+        "La función de depósito entra en conflicto con la de medio de pago"
+      ],
+      "correctAnswer": 0,
+      "explanation": "La crítica es que cualquier bien económico sirve como reserva de valor (una casa, el oro, las acciones), por lo que esta función no distingue al dinero de otros bienes. No es una función exclusiva del dinero."
+    },
+    {
+      "id": "m12-7",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "El 'desdoblamiento monetario' se refiere a:",
+      "options": [
+        "La división del dinero en billetes y monedas",
+        "El proceso por el que el banco central duplica la base monetaria",
+        "La separación entre dinero fiduciario y dinero mercancía",
+        "La coexistencia de dos monedas en una misma economía",
+        "El fenómeno por el que distintas funciones del dinero son desempeñadas por bienes diferentes"
+      ],
+      "correctAnswer": 4,
+      "explanation": "El desdoblamiento monetario ocurre cuando las funciones del dinero se reparten entre diferentes bienes: por ejemplo, el oro como depósito de valor y el papel moneda como medio de cambio. Es la separación funcional del dinero."
+    },
+    {
+      "id": "m12-8",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "La inflación subyacente se diferencia del IPC general en que:",
+      "options": [
+        "Excluye los precios de alimentos no elaborados y energía",
+        "Incluye solo los bienes de consumo duradero",
+        "Mide únicamente la inflación importada del exterior",
+        "Se calcula con base en los precios al por mayor",
+        "Incorpora las expectativas de inflación de los agentes"
+      ],
+      "correctAnswer": 0,
+      "explanation": "La inflación subyacente excluye los componentes más volátiles del IPC: alimentos no elaborados y productos energéticos. Esto permite identificar la tendencia inflacionaria estructural eliminando fluctuaciones estacionales o de materias primas."
+    },
+    {
+      "id": "m12-9",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "Según la teoría cuantitativa, la causa principal de la inflación es:",
+      "options": [
+        "El aumento de los costes de producción (inflación de costes)",
+        "El exceso de demanda agregada sobre la oferta agregada",
+        "La devaluación del tipo de cambio nominal",
+        "Los shocks externos de oferta como el petróleo",
+        "El incremento en la cantidad de dinero en circulación"
+      ],
+      "correctAnswer": 4,
+      "explanation": "La teoría cuantitativa del dinero establece que la inflación es siempre y en todo lugar un fenómeno monetario: es el exceso de crecimiento de la masa monetaria lo que genera inflación a largo plazo."
+    },
+    {
+      "id": "m12-10",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "La ecuación cuantitativa M·v = P·Q se atribuye principalmente a:",
+      "options": [
+        "John Maynard Keynes",
+        "Milton Friedman",
+        "Alfred Marshall",
+        "David Ricardo",
+        "Irving Fisher"
+      ],
+      "correctAnswer": 4,
+      "explanation": "Irving Fisher formalizó la ecuación cuantitativa del dinero: M·v = P·Q, donde M es la masa monetaria, v la velocidad de circulación, P el nivel de precios y Q el volumen de transacciones reales."
+    },
+    {
+      "id": "m12-11",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "En la ecuación M·v = P·Q, el lado M·v representa:",
+      "options": [
+        "El PIB nominal de la economía",
+        "El valor real de la producción",
+        "El ahorro total de la economía",
+        "La riqueza financiera agregada",
+        "La totalidad de pagos realizados en la economía"
+      ],
+      "correctAnswer": 4,
+      "explanation": "M·v representa el flujo total de pagos en la economía: la cantidad de dinero en circulación (M) multiplicada por el número de veces que ese dinero cambia de manos (v) en un período dado."
+    },
+    {
+      "id": "m12-12",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "Los cuantitativistas concluyen que un aumento de M genera inflación porque asumen que:",
+      "options": [
+        "La velocidad (v) no está vinculada a M y M no afecta a la producción real (Q)",
+        "La velocidad aumenta proporcionalmente al aumento de M",
+        "La producción real (Q) cae cuando aumenta M",
+        "Los precios son completamente rígidos a corto plazo",
+        "El banco central controla directamente los precios finales"
+      ],
+      "correctAnswer": 0,
+      "explanation": "El argumento cuantitativista es que v es estable (no depende de M) y Q está determinada por factores reales. Por tanto, ΔM → ΔP proporcionalmente. Si M sube y v y Q son constantes, P debe subir en la misma proporción."
+    },
+    {
+      "id": "m12-13",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "Desde la visión keynesiana, la inflación se produce cuando:",
+      "options": [
+        "La demanda agregada supera a la oferta agregada sin capacidad ociosa disponible",
+        "El banco central aumenta excesivamente la base monetaria",
+        "Los salarios nominales crecen por encima de la productividad",
+        "El tipo de cambio se deprecia reduciendo el poder adquisitivo",
+        "Los tipos de interés caen por debajo del tipo natural"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Para Keynes, la inflación es un fenómeno de demanda: solo hay presiones inflacionarias cuando la demanda agregada supera la oferta agregada y no existe capacidad productiva ociosa para absorber el exceso de demanda con más producción."
+    },
+    {
+      "id": "m12-14",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "Si existe capacidad productiva ociosa, un aumento de la demanda agregada genera principalmente:",
+      "options": [
+        "Inflación sin crecimiento real (estanflación)",
+        "Caída del tipo de cambio nominal",
+        "Reducción de los tipos de interés reales",
+        "Aumento del desempleo estructural",
+        "Aumento de la producción real sin presiones inflacionarias significativas"
+      ],
+      "correctAnswer": 4,
+      "explanation": "Con capacidad ociosa (trabajadores y capital desempleados), un estímulo de demanda se traduce en más producción real, no en inflación. Las empresas pueden producir más sin subir precios porque tienen recursos infrautilizados."
+    },
+    {
+      "id": "m12-15",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "La diferencia entre cuantitativistas y cualitativistas en teoría monetaria es que los cualitativistas sostienen que:",
+      "options": [
+        "La demanda de dinero depende también de la calidad y el tipo de dinero utilizado",
+        "Solo la cantidad de dinero determina los precios, no su composición",
+        "La velocidad de circulación es constante en el largo plazo",
+        "El nivel de precios es proporcional a la masa monetaria",
+        "El banco central debe controlar M1 en lugar de M2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Los cualitativistas argumentan que no es solo la cantidad sino también la calidad del dinero lo que importa: la demanda de dinero puede variar según el tipo de dinero en circulación (oro vs. papel fiduciario, por ejemplo)."
+    },
+    {
+      "id": "m12-16",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "El objetivo de inflación estándar de los principales bancos centrales (BCE, Fed) es:",
+      "options": [
+        "2% anual",
+        "0% (estabilidad de precios absoluta)",
+        "Entre 1% y 3% anual como banda",
+        "El crecimiento del PIB nominal menos el crecimiento real",
+        "Inflación negativa en períodos de recesión"
+      ],
+      "correctAnswer": 0,
+      "explanation": "El objetivo de inflación del BCE y la Fed es el 2% anual, considerado el nivel óptimo que proporciona un colchón contra la deflación, permite flexibilidad de precios relativos y mantiene la estabilidad de precios."
+    },
+    {
+      "id": "m12-17",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "El 'precio interno de la moneda' se refiere a:",
+      "options": [
+        "El tipo de interés del banco central",
+        "El tipo de cambio nominal con el dólar",
+        "La paridad del poder adquisitivo",
+        "El coeficiente de reservas bancarias",
+        "El índice general de precios (inverso del poder adquisitivo del dinero)"
+      ],
+      "correctAnswer": 4,
+      "explanation": "El precio interno de la moneda es su poder adquisitivo doméstico, medido inversamente por el índice general de precios. Cuando el IPC sube, el valor interno de la moneda cae proporcionalmente."
+    },
+    {
+      "id": "m12-18",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "Una política monetaria expansiva en el contexto de la curva de Phillips implica:",
+      "options": [
+        "Un movimiento a lo largo de la curva: más inflación a cambio de menos desempleo",
+        "Un desplazamiento hacia arriba de toda la curva de Phillips",
+        "Un movimiento a lo largo de la curva: menos inflación y menos desempleo",
+        "Un desplazamiento hacia abajo de la curva de Phillips",
+        "La curva de Phillips no se ve afectada por la política monetaria"
+      ],
+      "correctAnswer": 0,
+      "explanation": "En la curva de Phillips original, la política monetaria expansiva produce un movimiento a lo largo de la curva hacia arriba-izquierda: acepta más inflación a cambio de reducir el desempleo. Es el trade-off inflación-desempleo."
+    },
+    {
+      "id": "m12-19",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "Si el banco central estabiliza el PIB nominal, el nivel de precios debería:",
+      "options": [
+        "Mantenerse constante independientemente de la productividad",
+        "Crecer al 2% anual como objetivo",
+        "Caer cuando aumenta la productividad (deflación por productividad)",
+        "Crecer al mismo ritmo que el crecimiento poblacional",
+        "Seguir la trayectoria de los precios de las materias primas"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Si el PIB nominal (P·Q) se mantiene constante y Q crece por mejoras de productividad, entonces P debe caer. Esta 'deflación por productividad' es benigna y diferente de la deflación por caída de demanda."
+    },
+    {
+      "id": "m12-20",
+      "block": "BLOQUE I: Moneda y Política Monetaria",
+      "question": "La paridad dólar-oro establecida en el sistema de Bretton Woods (1944) era:",
+      "options": [
+        "35 dólares por onza troy de oro",
+        "20 dólares por onza troy de oro",
+        "50 dólares por onza troy de oro",
+        "1 dólar = 1 gramo de oro fino",
+        "La paridad la fijaba el FMI anualmente"
+      ],
+      "correctAnswer": 0,
+      "explanation": "El sistema de Bretton Woods (1944) estableció la paridad fija de 35 dólares por onza troy de oro. Las demás monedas se anclaron al dólar, que era convertible en oro a esa tasa. Nixon suspendió esta convertibilidad en 1971."
+    },
+    {
+      "id": "m12-21",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "La política fiscal busca la estabilidad macroeconómica mediante el uso de:",
+      "options": [
+        "Los tipos de interés y la masa monetaria",
+        "El tipo de cambio y las reservas internacionales",
+        "Los impuestos y el gasto público",
+        "La regulación bancaria y los coeficientes de reservas",
+        "La política de rentas y los controles salariales"
+      ],
+      "correctAnswer": 2,
+      "explanation": "La política fiscal es el conjunto de decisiones del gobierno sobre impuestos (ingresos) y gasto público (gastos) para influir en la demanda agregada, estabilizar el ciclo económico y alcanzar objetivos macroeconómicos."
+    },
+    {
+      "id": "m12-22",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "Un superávit fiscal se produce cuando:",
+      "options": [
+        "El PIB crece por encima de su potencial",
+        "Los tipos de interés caen por debajo del crecimiento económico",
+        "La deuda pública se reduce respecto al año anterior",
+        "Los ingresos tributarios crecen más rápido que el PIB",
+        "Los ingresos públicos superan al gasto público en un período"
+      ],
+      "correctAnswer": 4,
+      "explanation": "El superávit fiscal ocurre cuando los ingresos del Estado (impuestos, tasas, etc.) superan a sus gastos en un período determinado. Es la situación contraria al déficit fiscal."
+    },
+    {
+      "id": "m12-23",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "¿Cuál de los siguientes NO es un objetivo típico de la política fiscal?",
+      "options": [
+        "Estabilizar el ciclo económico",
+        "Redistribuir la renta",
+        "Maximizar la recaudación tributaria",
+        "Financiar bienes públicos",
+        "Reducir el desempleo en recesiones"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Maximizar la recaudación no es un objetivo de la política fiscal. Los objetivos son: estabilización del ciclo, redistribución de la renta, provisión de bienes públicos y corrección de externalidades. La recaudación es un medio, no un fin."
+    },
+    {
+      "id": "m12-24",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "Una política fiscal expansiva es equivalente a:",
+      "options": [
+        "Un superávit fiscal",
+        "Una reducción del gasto público sin cambios impositivos",
+        "Un aumento de impuestos para financiar mayor gasto",
+        "Un déficit fiscal",
+        "Un presupuesto equilibrado con mayor volumen"
+      ],
+      "correctAnswer": 3,
+      "explanation": "La política fiscal expansiva implica aumentar el gasto público y/o reducir impuestos para estimular la demanda agregada. El resultado es un déficit fiscal: el gobierno gasta más de lo que recauda."
+    },
+    {
+      "id": "m12-25",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "La política fiscal contracíclica en una fase de auge económico debe ser:",
+      "options": [
+        "Expansiva, para prolongar el crecimiento",
+        "Neutral, dejando actuar los estabilizadores automáticos",
+        "Contractiva, para enfriar la economía y generar superávit",
+        "Expansiva en gasto pero contractiva en impuestos",
+        "Independiente del ciclo económico"
+      ],
+      "correctAnswer": 2,
+      "explanation": "La política contracíclica implica 'ir contra el ciclo': en auge, la política fiscal debe ser contractiva (subir impuestos, reducir gasto) para moderar el sobrecalentamiento y acumular superávit que usará en futuras recesiones."
+    },
+    {
+      "id": "m12-26",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "Un aumento de impuestos es un ejemplo de política fiscal:",
+      "options": [
+        "Expansiva",
+        "Neutral",
+        "Contractiva",
+        "Automática",
+        "Estructural"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Aumentar impuestos reduce la renta disponible de los hogares y los beneficios empresariales, lo que contrae la demanda agregada. Es por tanto una medida de política fiscal contractiva o restrictiva."
+    },
+    {
+      "id": "m12-27",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "Los estabilizadores automáticos son:",
+      "options": [
+        "Medidas de política fiscal aprobadas por el parlamento en cada recesión",
+        "Intervenciones del banco central en momentos de crisis",
+        "Fondos de reserva creados en períodos de superávit para usarlos en recesión",
+        "Reglas fiscales constitucionales que limitan el déficit",
+        "Partidas del presupuesto que actúan anticíclicamente sin necesidad de ajuste discrecional"
+      ],
+      "correctAnswer": 4,
+      "explanation": "Los estabilizadores automáticos son mecanismos que suavizan el ciclo económico automáticamente, sin necesidad de nuevas leyes o decisiones políticas. Se activan solas cuando la economía se contrae o expande."
+    },
+    {
+      "id": "m12-28",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "El ejemplo más paradigmático de estabilizador automático es:",
+      "options": [
+        "El gasto en infraestructuras del gobierno",
+        "Las transferencias internacionales del FMI",
+        "Los planes de estímulo fiscal aprobados en recesión",
+        "El seguro de desempleo",
+        "Los tipos de interés oficiales del banco central"
+      ],
+      "correctAnswer": 3,
+      "explanation": "El seguro de desempleo es el estabilizador automático por excelencia: en recesión, más personas quedan desempleadas y automáticamente reciben prestaciones, sosteniendo la demanda sin intervención discrecional."
+    },
+    {
+      "id": "m12-29",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "Los impuestos proporcionales a la renta actúan como estabilizadores automáticos porque:",
+      "options": [
+        "La recaudación cae automáticamente en recesión al reducirse los ingresos gravables",
+        "El gobierno decide reducir los tipos impositivos cuando cae el PIB",
+        "Generan superávit en auge que se usa en recesión",
+        "Redistribuyen automáticamente la renta de ricos a pobres",
+        "Limitan el crecimiento del gasto público en términos reales"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Los impuestos sobre la renta son anticíclicos automáticos: en recesión, los ingresos de hogares y empresas caen, reduciendo automáticamente la carga tributaria sin cambio de tipos. Esto frena la contracción de la demanda privada."
+    },
+    {
+      "id": "m12-30",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "El multiplicador keynesiano describe el proceso por el cual:",
+      "options": [
+        "El gasto de un agente se convierte en ingreso de otro, generando rondas sucesivas de gasto",
+        "Un aumento de la masa monetaria multiplica el nivel de precios",
+        "El banco central amplifica los efectos de la política fiscal",
+        "Las exportaciones netas se multiplican por el tipo de cambio",
+        "Los impuestos se multiplican para financiar el gasto público"
+      ],
+      "correctAnswer": 0,
+      "explanation": "El multiplicador keynesiano: cuando el gobierno gasta 1€, ese euro es ingreso de alguien que gasta una proporción (c), que es ingreso de otro que también gasta una proporción, generando rondas sucesivas. El efecto total es mayor que el impulso inicial."
+    },
+    {
+      "id": "m12-31",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "Con una propensión marginal a consumir c = 0,8, el multiplicador del gasto público (kG) es:",
+      "options": [
+        "0,8",
+        "1,25",
+        "2,5",
+        "5",
+        "8"
+      ],
+      "correctAnswer": 3,
+      "explanation": "kG = 1/(1-c) = 1/(1-0,8) = 1/0,2 = 5. Con c=0,8, cada euro de gasto público genera 5 euros de PIB en total a través de las rondas sucesivas de consumo."
+    },
+    {
+      "id": "m12-32",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "Con c = 0,75 y un aumento del gasto público de 200€, el incremento total del PIB (ΔY) será:",
+      "options": [
+        "200€",
+        "400€",
+        "600€",
+        "800€",
+        "1.000€"
+      ],
+      "correctAnswer": 3,
+      "explanation": "kG = 1/(1-0,75) = 1/0,25 = 4. ΔY = kG × ΔG = 4 × 200 = 800€. La propensión marginal a consumir de 0,75 genera un multiplicador de 4 que amplifica el estímulo fiscal inicial."
+    },
+    {
+      "id": "m12-33",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "Con c = 0,8, el multiplicador impositivo (kT) es:",
+      "options": [
+        "-5",
+        "-4",
+        "-3",
+        "-2",
+        "-1"
+      ],
+      "correctAnswer": 1,
+      "explanation": "kT = -c/(1-c) = -0,8/(1-0,8) = -0,8/0,2 = -4. El multiplicador impositivo es negativo (subir impuestos reduce el PIB) y menor en valor absoluto que kG porque la primera ronda de una rebaja impositiva se ahorra parcialmente."
+    },
+    {
+      "id": "m12-34",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "Con c = 0,8 y una reducción de impuestos de 100€ (ΔT = -100), el incremento del PIB es:",
+      "options": [
+        "100€",
+        "400€",
+        "500€",
+        "800€",
+        "-400€"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ΔY = kT × ΔT = (-4) × (-100) = 400€. Una rebaja fiscal de 100€ con c=0,8 genera un aumento del PIB de 400€, menor que los 500€ que generaría un gasto directo de 100€ (kG=5)."
+    },
+    {
+      "id": "m12-35",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "¿Por qué el multiplicador del gasto (|kG|) es mayor que el multiplicador impositivo (|kT|)?",
+      "options": [
+        "Porque el gasto público es más eficiente que la inversión privada",
+        "Porque los impuestos generan distorsiones que el gasto no genera",
+        "Porque el gasto público no está sujeto a efectos multiplicadores negativos",
+        "Porque la primera ronda del gasto público es 100% demanda, mientras que una rebaja impositiva se ahorra parcialmente",
+        "Porque los impuestos se recaudan con retardo mientras el gasto es inmediato"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Con gasto público, la primera ronda inyecta el 100% como demanda directa. Con una rebaja impositiva, los hogares ahorran una fracción (1-c) de lo que reciben, por lo que la primera ronda solo genera c en demanda. De ahí que |kG| > |kT|."
+    },
+    {
+      "id": "m12-36",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "Con c = 0,8 y un tipo impositivo t = 0,25, el multiplicador del gasto con sector público (kG) es:",
+      "options": [
+        "5",
+        "4",
+        "2,5",
+        "2",
+        "1,25"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Con impuestos proporcionales: kG = 1/(1-c(1-t)) = 1/(1-0,8×0,75) = 1/(1-0,6) = 1/0,4 = 2,5. Los impuestos proporcionales actúan como estabilizadores automáticos reduciendo el multiplicador."
+    },
+    {
+      "id": "m12-37",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "Si el gobierno aumenta simultáneamente el gasto (ΔG) y los impuestos (ΔT) en la misma cantidad, el efecto neto sobre el PIB es:",
+      "options": [
+        "Cero (los efectos se cancelan exactamente)",
+        "Igual al aumento del gasto (ΔY = ΔG), según el teorema de Haavelmo",
+        "Negativo, porque los impuestos tienen mayor impacto que el gasto",
+        "Positivo, pero menor que ΔG",
+        "Depende de la propensión marginal a consumir"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Teorema del presupuesto equilibrado de Haavelmo: ΔY = ΔG × kG + ΔT × kT = ΔG × (1/(1-c)) + ΔG × (-c/(1-c)) = ΔG × (1-c)/(1-c) = ΔG. Un presupuesto equilibrado expande el PIB en la cantidad del gasto adicional."
+    },
+    {
+      "id": "m12-38",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "La 'equivalencia ricardiana' en política fiscal fue formulada por el economista clásico:",
+      "options": [
+        "Adam Smith",
+        "John Stuart Mill",
+        "David Ricardo",
+        "Thomas Malthus",
+        "Alfred Marshall"
+      ],
+      "correctAnswer": 2,
+      "explanation": "La equivalencia ricardiana fue formulada por David Ricardo: si el gobierno financia gasto con deuda, los agentes racionales anticipan futuros impuestos para repagar esa deuda y ahorran equivalentemente hoy, neutralizando el estímulo fiscal."
+    },
+    {
+      "id": "m12-39",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "El multiplicador del atesoramiento (cuando todo el ingreso adicional se ahorra) es:",
+      "options": [
+        "Infinito",
+        "Igual al multiplicador del gasto",
+        "Igual a 1/(1-c)",
+        "Negativo",
+        "Cero"
+      ],
+      "correctAnswer": 4,
+      "explanation": "Si c=0 (toda la renta adicional se atesora/ahorra), el multiplicador kG = 1/(1-0) = 1. Pero el multiplicador del atesoramiento en sí (el efecto de un aumento del ahorro sobre el PIB) es cero: la paradoja del ahorro keynesiana indica que más ahorro individual no genera más PIB."
+    },
+    {
+      "id": "m12-40",
+      "block": "BLOQUE II: Política Fiscal",
+      "question": "El 'efecto expulsión' (crowding out) describe cómo:",
+      "options": [
+        "El aumento del gasto privado desplaza al gasto público",
+        "La política monetaria expansiva reduce la eficacia de la política fiscal",
+        "Las importaciones crecen desplazando la producción nacional",
+        "El endeudamiento público sube los tipos de interés y desplaza la inversión privada",
+        "El exceso de empleo público reduce la productividad del sector privado"
+      ],
+      "correctAnswer": 3,
+      "explanation": "El crowding out ocurre cuando el déficit fiscal requiere emitir deuda pública, lo que aumenta los tipos de interés en el mercado de capitales, encareciendo el crédito y reduciendo la inversión privada. La política fiscal 'expulsa' al sector privado."
+    },
+    {
+      "id": "m12-41",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "La Frontera de Posibilidades de Producción (FPP) representa:",
+      "options": [
+        "El nivel de producción que maximiza el bienestar social",
+        "La cantidad máxima de bienes que puede producir una economía dados sus factores y tecnología",
+        "La combinación de bienes que iguala oferta y demanda en todos los mercados",
+        "El nivel de producción consistente con pleno empleo de la mano de obra",
+        "La producción potencial en ausencia de perturbaciones externas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La FPP muestra todas las combinaciones máximas de dos bienes (o sectores) que una economía puede producir dados sus factores productivos (trabajo, capital) y nivel tecnológico. Puntos en la frontera son eficientes; dentro, ineficientes."
+    },
+    {
+      "id": "m12-42",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "La FPP tiene forma cóncava (curvada hacia el origen) porque:",
+      "options": [
+        "La tecnología es constante y no permite mejoras de productividad",
+        "Los factores productivos son perfectamente homogéneos",
+        "El capital no se deprecia en el corto plazo",
+        "Los recursos son perfectamente sustituibles entre sectores",
+        "El coste de oportunidad es creciente debido a los rendimientos decrecientes de los factores"
+      ],
+      "correctAnswer": 4,
+      "explanation": "La concavidad refleja costes de oportunidad crecientes: a medida que reasignamos más recursos hacia un bien, los factores son cada vez menos adecuados para ese uso (rendimientos decrecientes), por lo que debemos sacrificar cantidades crecientes del otro bien."
+    },
+    {
+      "id": "m12-43",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "La FPP se desplaza hacia afuera (crecimiento económico) cuando:",
+      "options": [
+        "Aumenta el consumo presente a costa del consumo futuro",
+        "El gobierno aumenta el gasto público",
+        "El banco central reduce los tipos de interés",
+        "Se produce un shock externo positivo de demanda",
+        "La inversión en capital nuevo supera la depreciación del capital existente"
+      ],
+      "correctAnswer": 4,
+      "explanation": "La FPP se expande cuando aumenta la dotación de factores o mejora la tecnología. El capital neto crece cuando la inversión (formación bruta de capital fijo) supera la depreciación, ampliando la capacidad productiva futura."
+    },
+    {
+      "id": "m12-44",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "El supuesto fundamental del modelo de Solow en el largo plazo es:",
+      "options": [
+        "Los precios son perfectamente rígidos",
+        "El progreso tecnológico es endógeno al proceso de ahorro",
+        "La función de producción tiene rendimientos crecientes a escala",
+        "En equilibrio de largo plazo, la inversión iguala al ahorro determinando el estado estacionario",
+        "El crecimiento poblacional es nulo"
+      ],
+      "correctAnswer": 3,
+      "explanation": "El mecanismo central de Solow: el ahorro se destina a inversión, que aumenta el capital per cápita, hasta que la acumulación de capital exactamente compensa la depreciación y el crecimiento poblacional. Ese equilibrio es el estado estacionario."
+    },
+    {
+      "id": "m12-45",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "En el modelo de Solow con y = k^0,5, tasa de ahorro s = 0,3, depreciación δ = 0,05 y crecimiento poblacional n = 0,01, el capital per cápita en estado estacionario (k*) es:",
+      "options": [
+        "25",
+        "16",
+        "9",
+        "36",
+        "100"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Condición de estado estacionario: s·f(k*) = (n+δ)·k*. Con f(k)=k^0,5: 0,3·k^0,5 = 0,06·k → k^0,5 = 0,06/0,3 = 0,2 → k* = (0,3/0,06)² = 5² = 25."
+    },
+    {
+      "id": "m12-46",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "Con los mismos datos (y = k^0,5, s = 0,3, δ = 0,05, n = 0,01), el producto per cápita en estado estacionario (y*) es:",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correctAnswer": 2,
+      "explanation": "y* = f(k*) = (k*)^0,5 = 25^0,5 = 5. Una vez calculado k*=25, el producto per cápita en estado estacionario se obtiene directamente aplicando la función de producción."
+    },
+    {
+      "id": "m12-47",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "El estado estacionario en el modelo de Solow se define como la situación en que:",
+      "options": [
+        "La tasa de crecimiento del PIB es cero",
+        "El desempleo es igual a la tasa natural",
+        "El capital por trabajador (k) permanece constante (k̇ = 0)",
+        "El ahorro iguala al consumo por trabajador",
+        "La productividad total de los factores deja de crecer"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El estado estacionario es cuando k̇ = s·f(k) - (n+δ)·k = 0. El capital por trabajador ya no varía: la nueva inversión exactamente repone la depreciación y dota de capital a los nuevos trabajadores."
+    },
+    {
+      "id": "m12-48",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "La afirmación 'en el estado estacionario de Solow el PIB deja de crecer' es:",
+      "options": [
+        "Correcta: el PIB per cápita y el PIB total se estancan",
+        "Correcta solo para el PIB per cápita; el PIB total puede crecer",
+        "Incorrecta: el PIB per cápita crece al ritmo del progreso tecnológico",
+        "Correcta solo si no hay progreso tecnológico exógeno",
+        "Incorrecta: el PIB total sigue creciendo a la tasa de crecimiento poblacional n"
+      ],
+      "correctAnswer": 4,
+      "explanation": "En el estado estacionario básico de Solow, el PIB per cápita (y) es constante, pero el PIB total (Y = y·L) crece a la tasa n porque la población crece. El crecimiento per cápita requiere progreso tecnológico exógeno."
+    },
+    {
+      "id": "m12-49",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "Si la economía se encuentra a la izquierda del estado estacionario de Solow (k < k*), entonces:",
+      "options": [
+        "El capital per cápita crece porque la inversión s·f(k) supera el requerimiento (n+δ)·k",
+        "El capital per cápita cae porque la inversión es insuficiente",
+        "La economía permanece en ese punto indefinidamente",
+        "El capital per cápita oscila alrededor de k*",
+        "El ahorro cae hasta igualar la depreciación"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A la izquierda de k*: s·f(k) > (n+δ)·k, por lo que k̇ > 0 y el capital per cápita crece. La economía converge hacia k* desde abajo. La estabilidad del estado estacionario garantiza esta convergencia."
+    },
+    {
+      "id": "m12-50",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "La 'regla de oro' en el modelo de Solow establece que el consumo per cápita se maximiza cuando:",
+      "options": [
+        "La tasa de ahorro iguala a la participación del capital en la renta (α)",
+        "La productividad marginal del capital (PMgK) iguala a (n + δ)",
+        "El capital per cápita está por encima del estado estacionario",
+        "La tasa de ahorro se reduce al mínimo posible",
+        "El crecimiento del PIB per cápita es máximo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La regla de oro de acumulación del capital (Phelps, 1961): el consumo per cápita en estado estacionario se maximiza cuando PMgK = n + δ, es decir, cuando el producto marginal del capital iguala al coste de mantener el capital per cápita constante."
+    },
+    {
+      "id": "m12-51",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "Con función Cobb-Douglas Y = K^α · L^(1-α), α = 0,3, n = 0,02 y δ = 0,08, la tasa de ahorro de la regla de oro (s_gold) es:",
+      "options": [
+        "0,10",
+        "0,20",
+        "0,25",
+        "0,30",
+        "0,40"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Con Cobb-Douglas, la condición de regla de oro PMgK = n+δ implica s_gold = α. La tasa de ahorro óptima que maximiza el consumo per cápita es igual a la participación del capital en la renta: s_gold = α = 0,3."
+    },
+    {
+      "id": "m12-52",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "La afirmación 'más ahorro siempre genera más consumo en el estado estacionario' es:",
+      "options": [
+        "Correcta: mayor ahorro implica más capital y más producción disponible",
+        "Correcta solo en economías abiertas con libre movilidad de capital",
+        "Correcta solo cuando la economía está por debajo de la regla de oro",
+        "Incorrecta: el ahorro y el consumo evolucionan en la misma dirección siempre",
+        "Incorrecta: por encima de s_gold, mayor ahorro reduce el consumo en estado estacionario"
+      ],
+      "correctAnswer": 4,
+      "explanation": "Solo es cierto hasta s = s_gold (regla de oro). Si s > s_gold, la economía está en sobreacumulación de capital: más ahorro implica más capital pero menos consumo porque se dedica demasiada producción a mantener ese capital. Hay un trade-off."
+    },
+    {
+      "id": "m12-53",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "La 'ampliación del capital' en el modelo de Solow se refiere a:",
+      "options": [
+        "El aumento del stock total de capital en la economía",
+        "Dotar a los nuevos trabajadores (por crecimiento poblacional) del mismo capital per cápita que los existentes",
+        "La mejora tecnológica que hace más productivo el capital existente",
+        "El proceso de sustitución de capital antiguo por capital más moderno",
+        "La inversión extranjera directa que amplía la base de capital nacional"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La ampliación del capital (capital widening) es la inversión necesaria para mantener el capital per cápita constante cuando crece la población: hay que dotar a los n·L nuevos trabajadores del mismo k que los trabajadores existentes. Cuesta n·k por trabajador."
+    },
+    {
+      "id": "m12-54",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "El modelo de Solow se denomina 'neoclásico exógeno' porque:",
+      "options": [
+        "El progreso tecnológico no está explicado dentro del modelo sino que se asume exógenamente",
+        "Los factores productivos son determinados fuera del sistema de precios",
+        "El gobierno fija exógenamente la tasa de ahorro y la inversión",
+        "El crecimiento depende exclusivamente de factores externos al país",
+        "La función de producción tiene rendimientos exógenamente crecientes"
+      ],
+      "correctAnswer": 0,
+      "explanation": "El modelo de Solow es exógeno porque el factor clave del crecimiento a largo plazo —el progreso tecnológico— no se explica dentro del modelo. Se añade como una variable externa (A que crece a tasa g). Los modelos endógenos (Romer, Lucas) intentan explicar A."
+    },
+    {
+      "id": "m12-55",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "El modelo neoclásico de crecimiento fue propuesto originalmente por:",
+      "options": [
+        "Paul Romer, 1986",
+        "Evsey Domar, 1946",
+        "Robert Solow, 1956",
+        "Roy Harrod, 1939",
+        "Robert Lucas, 1988"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Robert Solow publicó su modelo de crecimiento neoclásico en 1956 ('A Contribution to the Theory of Economic Growth'). Por este trabajo recibió el Premio Nobel de Economía en 1987. Swan publicó simultáneamente un modelo equivalente."
+    },
+    {
+      "id": "m12-56",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "El modelo de Harrod-Domar pertenece a la tradición:",
+      "options": [
+        "Clásica (Ricardo, Smith)",
+        "Monetarista (Friedman, Phelps)",
+        "Institucionalista (Veblen, Commons)",
+        "Keynesiana",
+        "Austriaca (Hayek, Mises)"
+      ],
+      "correctAnswer": 3,
+      "explanation": "El modelo Harrod-Domar (1939/1946) es un modelo de crecimiento keynesiano que extiende al largo plazo el análisis de Keynes sobre la demanda efectiva. A diferencia de Solow, asume proporciones fijas de factores (tecnología Leontief)."
+    },
+    {
+      "id": "m12-57",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "El modelo Harrod-Domar es una síntesis de los trabajos de:",
+      "options": [
+        "Roy Harrod (1939) y Evsey Domar (1946)",
+        "Robert Solow (1956) y Trevor Swan (1956)",
+        "Paul Romer (1986) y Robert Lucas (1988)",
+        "John Hicks (1937) y Alvin Hansen (1953)",
+        "Franco Modigliani (1944) y Milton Friedman (1957)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "El modelo Harrod-Domar combina el trabajo de Roy Harrod (1939) 'An Essay in Dynamic Theory' y Evsey Domar (1946) 'Capital Expansion, Rate of Growth, and Employment', que llegaron independientemente a conclusiones similares."
+    },
+    {
+      "id": "m12-58",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "La función de producción del modelo Harrod-Domar es de tipo:",
+      "options": [
+        "Cobb-Douglas con elasticidad de sustitución unitaria",
+        "CES (Elasticidad de Sustitución Constante) con elasticidad entre 0 y 1",
+        "Lineal con factores perfectamente sustituibles",
+        "Logarítmica con rendimientos decrecientes",
+        "Leontief (proporciones fijas): Y = mín(K/ν, L/b)"
+      ],
+      "correctAnswer": 4,
+      "explanation": "Harrod-Domar usa una función de producción Leontief con proporciones fijas de factores: Y = mín(K/ν, L/b), donde ν es el coeficiente capital-output y b es el coeficiente trabajo-output. No hay sustitución posible entre capital y trabajo."
+    },
+    {
+      "id": "m12-59",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "La elasticidad de sustitución entre capital y trabajo en el modelo Harrod-Domar es:",
+      "options": [
+        "Infinita (perfecta sustituibilidad)",
+        "Igual a la unidad (Cobb-Douglas)",
+        "Entre 0 y 1",
+        "Cero (perfecta complementariedad: proporciones fijas)",
+        "Negativa (los factores son sustitutos estratégicos)"
+      ],
+      "correctAnswer": 3,
+      "explanation": "La función Leontief (proporciones fijas) tiene elasticidad de sustitución igual a cero: capital y trabajo se combinan en proporciones fijas y no existe posibilidad de sustituir uno por otro. Es el caso extremo de complementariedad perfecta."
+    },
+    {
+      "id": "m12-60",
+      "block": "BLOQUE III: Crecimiento Económico",
+      "question": "En el modelo Harrod-Domar, la productividad marginal del capital (PMgK) es:",
+      "options": [
+        "Creciente a medida que aumenta el stock de capital",
+        "Constante hasta que el capital complementa al trabajo, luego cero",
+        "Decreciente como en el modelo de Solow",
+        "Igual a la tasa de ahorro dividida por el coeficiente capital-output",
+        "Igual al producto medio del capital (sin rendimientos decrecientes)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Con función Leontief, la PMgK es constante (= 1/ν) mientras el capital no supere el límite impuesto por el factor trabajo complementario; una vez superado ese límite, la PMgK cae a cero. Esto contrasta con los rendimientos decrecientes de Solow."
+    }
+  ]
+}
