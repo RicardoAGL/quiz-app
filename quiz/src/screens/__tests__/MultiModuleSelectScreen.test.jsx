@@ -35,11 +35,11 @@ describe('MultiModuleSelectScreen', () => {
 
   it('should render module cards for all modules', () => {
     renderSimple();
-    // There are 9 modules in the config
+    // There are 13 modules in the config (includes modulo10-12 and 11a/11b)
     const cards = screen.getAllByRole('button').filter(
       (btn) => btn.classList.contains('multi-select-card')
     );
-    expect(cards.length).toBe(9);
+    expect(cards.length).toBe(13);
   });
 
   it('should render "Seleccionar todos" button', () => {
