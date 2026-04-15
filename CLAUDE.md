@@ -96,6 +96,17 @@ From the `/quiz` directory:
 4. Ensure responsive design works on mobile/tablet/desktop
 5. Update README.md to document new features
 
+### Git Workflow (enforce on every task)
+1. **Always work on a feature branch** — never commit directly to `main`
+   - Branch naming: `feat/`, `fix/`, `chore/`, `docs/` + short description (e.g. `feat/add-modulo13`)
+2. **Atomic conventional commits** per logical unit of work:
+   - Format: `type(scope): description` — e.g. `feat(data): add modulo13 derivatives`
+   - Types: `feat`, `fix`, `chore`, `docs`, `refactor`
+   - One commit per file/feature — do not bundle unrelated changes
+3. **Push the branch** after each task completes
+4. **Open a PR** — Ricardo reviews and merges to `main` (never auto-merge)
+5. GitHub Actions deploys to GitHub Pages automatically on merge to `main`
+
 ### Before Suggesting Changes
 - **Proactive Improvements**: Suggest optimizations when noticed, but WAIT for approval before implementing
 - **Major Architecture Changes**: Always ask for confirmation and explain trade-offs

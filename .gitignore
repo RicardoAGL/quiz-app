@@ -62,3 +62,9 @@ web-build/
 .env
 .env.local
 .env.*.local
+
+# Claude Code internal state
+.claude/
+
+# Raw course text files (source material, not app code)
+txt/
